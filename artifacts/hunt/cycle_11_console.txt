@@ -1,0 +1,15 @@
+Hunt cycle 11: 4 hypotheses, 4 walk-forward folds, optimizer cap 200, min 150 dev trades. Trials so far: 305.
+  dca-grid-long        REJECTED at dev-baseline   PF 0.77 < 1.10; Sharpe -0.83 < 0.50; walk-forward: 3 of 4 folds failed
+  dca-grid-short       REJECTED at dev-baseline   PF 0.84 < 1.10; Sharpe -0.62 < 0.50; walk-forward: 3 of 4 folds failed
+  dca-rsi-long         REJECTED at dev-baseline   PF 0.74 < 1.10; Sharpe -0.46 < 0.50; walk-forward: 3 of 4 folds failed
+  dca-trend-long       REJECTED at dev-baseline   PF 0.75 < 1.10; Sharpe -0.67 < 0.50; walk-forward: 3 of 4 folds failed
+
+Trials: 305 -> 309. Locked OOS runs this cycle: 0.
+No champion: every hypothesis so far has been rejected.
+Report: artifacts\hunt\cycle_11\report.json
+HTML:   S:\Personal\trading-bot\artifacts\hunt\cycle_11\report.html
+
+Research run idle: hypothesis queue empty: every registered strategy has been tested.
+Cycles completed this run: 1 (11); trials 305 -> 309
+Experiments: 20 new, 0 reused from the store (502 stored in artifacts/cache/experiments.jsonl); 15 workers; 1.2s.
+Brief: artifacts\research\brief.md (~5943 tokens, estimated). Model calls made by this run: 0.

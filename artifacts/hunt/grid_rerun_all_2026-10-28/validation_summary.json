@@ -1,0 +1,1461 @@
+{
+  "candidates": 38,
+  "passedEveryHardGate": 0,
+  "survivors": [],
+  "trials": {
+    "raw": 5616,
+    "distinct": 5473,
+    "effective": 618
+  },
+  "pboSearch": 0.4732711732711733,
+  "rows": [
+    {
+      "strategy": "ema-cross-atr",
+      "parameters": {
+        "fast": 20,
+        "slow": 100,
+        "longOnly": 1,
+        "atrLen": 14,
+        "atrMult": 6
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 31.09437915760185,
+      "sharpe": 0.8269376426218294,
+      "profitFactor": 1.4877074330910134,
+      "tradesPerYear": 55.70479452054795,
+      "dsrGate": 8.856386904925454e-05,
+      "dsrEffective": 0.00030767669638707534,
+      "dsrRaw": 8.856386904925454e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 1.0,
+      "bootstrapSharpeP05": -0.27332276307036274,
+      "bootstrapPfP05": 0.7172848699402851,
+      "slippage2xNetPct": 28.44531996969202,
+      "commission2xNetPct": 26.9509884913014,
+      "minTrackRecordDays": 1268.0010441722586,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/ema-cross-atr/5f1642500610/validation_report.json"
+    },
+    {
+      "strategy": "bollinger-reversion",
+      "parameters": {
+        "bbLen": 70,
+        "bbMult": 1.5,
+        "atrMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -29.725126739379714,
+      "sharpe": -0.8642908325525394,
+      "profitFactor": 0.8767447120294132,
+      "tradesPerYear": 209.81027397260274,
+      "dsrGate": 5.812943809327725e-11,
+      "dsrEffective": 4.1341710730603503e-10,
+      "dsrRaw": 5.812943809327725e-11,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.0,
+      "bootstrapSharpeP05": -1.8038895991790884,
+      "bootstrapPfP05": 0.7662982604175642,
+      "slippage2xNetPct": -37.026761450366244,
+      "commission2xNetPct": -44.152610235073375,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bull",
+        "bear",
+        "high-vol",
+        "low-vol",
+        "trending",
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/bollinger-reversion/d7eec0986cfc/validation_report.json"
+    },
+    {
+      "strategy": "trend-pullback-rsi",
+      "parameters": {
+        "trendLen": 400,
+        "rsiLen": 4,
+        "level": 10,
+        "atrMult": 4
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -2.332460202707043,
+      "sharpe": -0.20522742622469556,
+      "profitFactor": 0.9202684778044229,
+      "tradesPerYear": 52.36917808219179,
+      "dsrGate": 4.057590552216546e-08,
+      "dsrEffective": 2.1347566515439783e-07,
+      "dsrRaw": 4.057590552216546e-08,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.011235955056179775,
+      "bootstrapSharpeP05": -1.0806643847538349,
+      "bootstrapPfP05": 0.6606914941279978,
+      "slippage2xNetPct": -4.427497002211855,
+      "commission2xNetPct": -6.512035489328971,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bull",
+        "high-vol",
+        "low-vol",
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/trend-pullback-rsi/32bb25d08019/validation_report.json"
+    },
+    {
+      "strategy": "failed-breakout-fade",
+      "parameters": {
+        "breakBars": 6,
+        "excursionAtr": 0.75,
+        "stopBufferAtr": 1,
+        "maxHold": 24
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 16.937706473304793,
+      "sharpe": 0.7089715808715028,
+      "profitFactor": 1.1901434291392434,
+      "tradesPerYear": 85.0582191780822,
+      "dsrGate": 9.336205512163812e-05,
+      "dsrEffective": 0.00030130334924758896,
+      "dsrRaw": 9.336205512163812e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.8109756097560976,
+      "bootstrapSharpeP05": -0.260183850870349,
+      "bootstrapPfP05": 0.940454013296978,
+      "slippage2xNetPct": 11.673012757145651,
+      "commission2xNetPct": 6.783371305300312,
+      "minTrackRecordDays": 1944.7239594277785,
+      "losingRegimes": [
+        "bear",
+        "high-vol"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/failed-breakout-fade/0dd80f57923f/validation_report.json"
+    },
+    {
+      "strategy": "volume-climax-reversal",
+      "parameters": {
+        "volMult": 1.5,
+        "rangeAtr": 2,
+        "maxHold": 24
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -9.50557871660883,
+      "sharpe": -0.20156833990799006,
+      "profitFactor": 0.926950244435778,
+      "tradesPerYear": 88.06027397260274,
+      "dsrGate": 1.0299768832097533e-07,
+      "dsrEffective": 4.908515822534603e-07,
+      "dsrRaw": 1.0299768832097533e-07,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.0,
+      "bootstrapSharpeP05": -1.3275397934998405,
+      "bootstrapPfP05": 0.6977945767439102,
+      "slippage2xNetPct": -15.229882264577332,
+      "commission2xNetPct": -20.79646269964146,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bear",
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/volume-climax-reversal/d475490aac9c/validation_report.json"
+    },
+    {
+      "strategy": "session-momentum",
+      "parameters": {
+        "moveMult": 0.75,
+        "holdBars": 12,
+        "atrMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -2.7375064847544706,
+      "sharpe": -0.08926277674983267,
+      "profitFactor": 0.956080654717109,
+      "tradesPerYear": 65.71164383561644,
+      "dsrGate": 2.046719728246339e-07,
+      "dsrEffective": 9.569180694930908e-07,
+      "dsrRaw": 2.046719728246339e-07,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.0,
+      "bootstrapSharpeP05": -1.1259392737878613,
+      "bootstrapPfP05": 0.6991673176897892,
+      "slippage2xNetPct": -5.812227698677197,
+      "commission2xNetPct": -8.807379767889234,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bull",
+        "bear",
+        "high-vol",
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/session-momentum/5f96a407262b/validation_report.json"
+    },
+    {
+      "strategy": "noise-area-momentum",
+      "parameters": {
+        "lookbackDays": 21,
+        "bandMult": 1.75,
+        "firstHour": 0
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": 23.90301641009971,
+      "sharpe": 0.5457061729110884,
+      "profitFactor": 1.1301954213451342,
+      "tradesPerYear": 196.13424657534247,
+      "dsrGate": 3.4559988080613493e-06,
+      "dsrEffective": 1.6315608407940702e-05,
+      "dsrRaw": 3.4559988080613493e-06,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.06557377049180328,
+      "bootstrapSharpeP05": -0.3912919079375112,
+      "bootstrapPfP05": 0.8861909316201839,
+      "slippage2xNetPct": 7.521132566342104,
+      "commission2xNetPct": -5.980987047182973,
+      "minTrackRecordDays": 2624.069270342057,
+      "losingRegimes": [
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/noise-area-momentum/8ec5712ed37a/validation_report.json"
+    },
+    {
+      "strategy": "mtf-trend-pullback",
+      "parameters": {
+        "maDays": 50,
+        "entryLen": 48,
+        "trailMult": 1
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "bootstrap_pf_p05"
+      ],
+      "netProfitPct": 31.745891433466934,
+      "sharpe": 0.9851671883787789,
+      "profitFactor": 1.3763763073523794,
+      "tradesPerYear": 72.04931506849316,
+      "dsrGate": 0.0003996295522191269,
+      "dsrEffective": 0.0011907663649222114,
+      "dsrRaw": 0.0003996295522191269,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.9523809523809523,
+      "bootstrapSharpeP05": 0.028941041313706804,
+      "bootstrapPfP05": 0.9827847772006724,
+      "slippage2xNetPct": 29.098839773325082,
+      "commission2xNetPct": 26.85976030825097,
+      "minTrackRecordDays": 949.9711694977146,
+      "losingRegimes": [
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/mtf-trend-pullback/dbb9411621f8/validation_report.json"
+    },
+    {
+      "strategy": "efficiency-regime-switch",
+      "parameters": {
+        "erLen": 168,
+        "erThreshold": 0.1,
+        "atrMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": 16.50242835294908,
+      "sharpe": 0.31983521116511343,
+      "profitFactor": 1.0486596039685219,
+      "tradesPerYear": 203.47260273972603,
+      "dsrGate": 4.140547877394659e-06,
+      "dsrEffective": 1.6708770258948837e-05,
+      "dsrRaw": 4.140547877394659e-06,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.0873015873015873,
+      "bootstrapSharpeP05": -0.7037567717981171,
+      "bootstrapPfP05": 0.8446824446543166,
+      "slippage2xNetPct": -3.5362937984192655,
+      "commission2xNetPct": -19.5609414748807,
+      "minTrackRecordDays": 9363.610572983793,
+      "losingRegimes": [
+        "bull",
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/efficiency-regime-switch/5003a0b1c561/validation_report.json"
+    },
+    {
+      "strategy": "volume-conditioned-reversal",
+      "parameters": {
+        "extremeFrac": 0.3,
+        "holdDays": 3,
+        "stopMult": 1
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 21.82752688290801,
+      "sharpe": 0.6860917257330726,
+      "profitFactor": 1.2311342103670404,
+      "tradesPerYear": 73.05000000000001,
+      "dsrGate": 5.30427904400319e-05,
+      "dsrEffective": 0.00018385645854595775,
+      "dsrRaw": 5.30427904400319e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.6885245901639344,
+      "bootstrapSharpeP05": -0.3165914120352452,
+      "bootstrapPfP05": 0.8629754438209271,
+      "slippage2xNetPct": 19.275017696935336,
+      "commission2xNetPct": 17.18926835720889,
+      "minTrackRecordDays": 1970.7344247723986,
+      "losingRegimes": [
+        "high-vol"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/volume-conditioned-reversal/2d1a20633a6e/validation_report.json"
+    },
+    {
+      "strategy": "ema-cross-control",
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 22.137703855800915,
+      "sharpe": 0.8805671449054283,
+      "profitFactor": 1.2797741482824894,
+      "tradesPerYear": 73.71712328767124,
+      "dsrGate": 0.0002621558189408882,
+      "dsrEffective": 0.0007904086168819488,
+      "dsrRaw": 0.0002621558189408882,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.4791666666666667,
+      "bootstrapSharpeP05": -0.0830056642771016,
+      "bootstrapPfP05": 0.9645237063497173,
+      "slippage2xNetPct": 20.463092601835985,
+      "commission2xNetPct": 18.93503109556338,
+      "minTrackRecordDays": 1239.0270625387518,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/ema-cross-control/248e6fe70e3a/validation_report.json"
+    },
+    {
+      "strategy": "cipher-b-dots",
+      "parameters": {
+        "tfHours": 6,
+        "level": 47,
+        "atrMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 6.513762302303072,
+      "sharpe": 0.2453454910009775,
+      "profitFactor": 1.0653121772616294,
+      "tradesPerYear": 80.38835616438357,
+      "dsrGate": 2.2867820356092907e-06,
+      "dsrEffective": 9.56297529318671e-06,
+      "dsrRaw": 2.2867820356092907e-06,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.05405405405405406,
+      "bootstrapSharpeP05": -0.8168879826653994,
+      "bootstrapPfP05": 0.7662150285116687,
+      "slippage2xNetPct": 3.2716516738213297,
+      "commission2xNetPct": 0.21458175322051076,
+      "minTrackRecordDays": 15948.533949778348,
+      "losingRegimes": [
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/cipher-b-dots/b0dd8b3304e4/validation_report.json"
+    },
+    {
+      "strategy": "cipher-b-sommi-flag",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -6.1702566544987185,
+      "sharpe": -0.2396073129811857,
+      "profitFactor": 0.9093918846100174,
+      "tradesPerYear": 60.041095890410965,
+      "dsrGate": 8.346959631999733e-08,
+      "dsrEffective": 3.993039419784222e-07,
+      "dsrRaw": 8.346959631999733e-08,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.38095238095238093,
+      "bootstrapSharpeP05": -1.3532681297724856,
+      "bootstrapPfP05": 0.6005389084698824,
+      "slippage2xNetPct": -10.504937099855816,
+      "commission2xNetPct": -14.778877532109036,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bear",
+        "high-vol",
+        "low-vol",
+        "trending",
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/cipher-b-sommi-flag/c63b2faf60d2/validation_report.json"
+    },
+    {
+      "strategy": "cipher-b-divergence",
+      "parameters": {
+        "tfHours": 2,
+        "limitScale": 0.75,
+        "atrMult": 1
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -7.637423438654767,
+      "sharpe": -0.17698389570523454,
+      "profitFactor": 0.9227014221647873,
+      "tradesPerYear": 65.04452054794521,
+      "dsrGate": 1.3633889764457287e-07,
+      "dsrEffective": 6.379899223418808e-07,
+      "dsrRaw": 1.3633889764457287e-07,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.0,
+      "bootstrapSharpeP05": -1.2494939569601617,
+      "bootstrapPfP05": 0.6493672623605837,
+      "slippage2xNetPct": -12.534080778238877,
+      "commission2xNetPct": -17.52997020506828,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bear",
+        "high-vol",
+        "low-vol",
+        "trending",
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/cipher-b-divergence/02e55bf92550/validation_report.json"
+    },
+    {
+      "strategy": "cipher-b-confluence",
+      "parameters": {
+        "tfHours": 6,
+        "level": 47,
+        "atrMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 21.795241981779647,
+      "sharpe": 0.7259890702942509,
+      "profitFactor": 1.3229922634507292,
+      "tradesPerYear": 51.368493150684934,
+      "dsrGate": 4.868018789581619e-05,
+      "dsrEffective": 0.00017479669586810536,
+      "dsrRaw": 4.868018789581619e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.6081081081081081,
+      "bootstrapSharpeP05": -0.29013111267031344,
+      "bootstrapPfP05": 0.875431549851823,
+      "slippage2xNetPct": 19.31356317016104,
+      "commission2xNetPct": 17.223430012805995,
+      "minTrackRecordDays": 1677.9944325062074,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/cipher-b-confluence/45e1e1d2dae7/validation_report.json"
+    },
+    {
+      "strategy": "squeeze-momentum",
+      "parameters": {
+        "tfHours": 2,
+        "kcMult": 2,
+        "atrMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": 8.860344581878078,
+      "sharpe": 0.4105797732953109,
+      "profitFactor": 1.1200511280014356,
+      "tradesPerYear": 127.42054794520548,
+      "dsrGate": 4.485271288959074e-06,
+      "dsrEffective": 1.882697670624828e-05,
+      "dsrRaw": 4.485271288959074e-06,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.4426229508196721,
+      "bootstrapSharpeP05": -0.5990032437060188,
+      "bootstrapPfP05": 0.8406274095062728,
+      "slippage2xNetPct": 3.960721117083388,
+      "commission2xNetPct": -0.599225831514083,
+      "minTrackRecordDays": 5323.9796828379085,
+      "losingRegimes": [
+        "high-vol"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/squeeze-momentum/69c8f21ae985/validation_report.json"
+    },
+    {
+      "strategy": "dca-grid-long",
+      "parameters": {
+        "orders": 7,
+        "overlap": 0.2,
+        "martingale": 0.15,
+        "takeProfit": 0.01
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 3.671363218302748,
+      "sharpe": 0.7613072594393475,
+      "profitFactor": 1.494368388628329,
+      "tradesPerYear": 419.95410958904114,
+      "dsrGate": 0.0002204620199583868,
+      "dsrEffective": 0.0006423203525390301,
+      "dsrRaw": 0.0002204620199583868,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.5586206896551724,
+      "bootstrapSharpeP05": -0.16439253036148202,
+      "bootstrapPfP05": 0.8903204305769377,
+      "slippage2xNetPct": 3.2629303877907967,
+      "commission2xNetPct": 2.6361696483232278,
+      "minTrackRecordDays": 1814.6268129777418,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/dca-grid-long/4ad4e10794c9/validation_report.json"
+    },
+    {
+      "strategy": "dca-grid-short",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": 2.029681973705144,
+      "sharpe": 0.1744868882325369,
+      "profitFactor": 1.038890123234386,
+      "tradesPerYear": 306.2095890410959,
+      "dsrGate": 1.8419733494261165e-06,
+      "dsrEffective": 7.62420466588464e-06,
+      "dsrRaw": 1.8419733494261165e-06,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.02666666666666667,
+      "bootstrapSharpeP05": -0.762107522747187,
+      "bootstrapPfP05": 0.833357557356841,
+      "slippage2xNetPct": -1.4143007029511323,
+      "commission2xNetPct": -1.3261363267580206,
+      "minTrackRecordDays": 32622.318134363293,
+      "losingRegimes": [
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/dca-grid-short/c16b5638658e/validation_report.json"
+    },
+    {
+      "strategy": "dca-rsi-long",
+      "parameters": {
+        "rsiLevel": 30,
+        "overlap": 0.15,
+        "takeProfit": 0.02,
+        "orders": 5,
+        "martingale": 0.15
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 3.971827018336671,
+      "sharpe": 0.7921580871001561,
+      "profitFactor": 1.943359352349715,
+      "tradesPerYear": 57.70616438356165,
+      "dsrGate": 0.00021388597898675833,
+      "dsrEffective": 0.0006357612422221065,
+      "dsrRaw": 0.00021388597898675833,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.14285714285714285,
+      "bootstrapSharpeP05": -0.12749351561042327,
+      "bootstrapPfP05": 0.9909456820666415,
+      "slippage2xNetPct": 3.799353794325122,
+      "commission2xNetPct": 3.613897535116828,
+      "minTrackRecordDays": 1619.7139264875177,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/dca-rsi-long/70b50e0011a9/validation_report.json"
+    },
+    {
+      "strategy": "dca-trend-long",
+      "parameters": {
+        "maDays": 100,
+        "overlap": 0.2,
+        "takeProfit": 0.005,
+        "orders": 5,
+        "martingale": 0.15
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 2.1992388795872397,
+      "sharpe": 0.619219313880856,
+      "profitFactor": 1.9796328583649734,
+      "tradesPerYear": 351.9075342465754,
+      "dsrGate": 0.0001276245105040477,
+      "dsrEffective": 0.00037644523308926614,
+      "dsrRaw": 0.0001276245105040477,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.38095238095238093,
+      "bootstrapSharpeP05": -0.2739003956157123,
+      "bootstrapPfP05": 0.8340402731341537,
+      "slippage2xNetPct": 1.7674096958588015,
+      "commission2xNetPct": 1.1842288000028178,
+      "minTrackRecordDays": 2887.938215750391,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/dca-trend-long/8888e0597897/validation_report.json"
+    },
+    {
+      "strategy": "cascade-fade",
+      "parameters": {
+        "dropAtr": 2,
+        "volMult": 2,
+        "holdBars": 48
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "stress_slippage_2x",
+        "stress_commission_2x",
+        "min_track_record"
+      ],
+      "netProfitPct": -23.327732178408578,
+      "sharpe": -0.7542801277588321,
+      "profitFactor": 0.8187931700613144,
+      "tradesPerYear": 70.38150684931507,
+      "dsrGate": 8.504291967898166e-10,
+      "dsrEffective": 4.998148232756509e-09,
+      "dsrRaw": 8.504291967898166e-10,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.0,
+      "bootstrapSharpeP05": -1.7979933108507178,
+      "bootstrapPfP05": 0.6101216034306968,
+      "slippage2xNetPct": -28.161884534139503,
+      "commission2xNetPct": -33.095335481375166,
+      "minTrackRecordDays": "Infinity",
+      "losingRegimes": [
+        "bull",
+        "bear",
+        "high-vol",
+        "low-vol",
+        "trending",
+        "ranging"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/cascade-fade/c87baa38fb3c/validation_report.json"
+    },
+    {
+      "strategy": "round-number-bounce",
+      "parameters": {
+        "levelStep": 2500,
+        "freshBars": 24,
+        "holdBars": 24
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 22.11657721209541,
+      "sharpe": 0.5692128379681157,
+      "profitFactor": 1.1663708644014956,
+      "tradesPerYear": 68.38013698630138,
+      "dsrGate": 1.7795343633280967e-05,
+      "dsrEffective": 6.765358920971423e-05,
+      "dsrRaw": 1.7795343633280967e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.14285714285714285,
+      "bootstrapSharpeP05": -0.42750267016171273,
+      "bootstrapPfP05": 0.8708288287179239,
+      "slippage2xNetPct": 15.81801056539216,
+      "commission2xNetPct": 10.53309749537683,
+      "minTrackRecordDays": 2794.81702350501,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/round-number-bounce/4009a1b35398/validation_report.json"
+    },
+    {
+      "strategy": "cipher-a-ribbon",
+      "parameters": {
+        "tfHours": 2,
+        "atrMult": 2.5,
+        "diamondExit": 1
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 47.542441862075655,
+      "sharpe": 0.7227627610980847,
+      "profitFactor": 1.1958388460196472,
+      "tradesPerYear": 132.09041095890413,
+      "dsrGate": 6.569298482310393e-05,
+      "dsrEffective": 0.0002250975646651107,
+      "dsrRaw": 6.569298482310393e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.9523809523809523,
+      "bootstrapSharpeP05": -0.3291763192627142,
+      "bootstrapPfP05": 0.8720633011178844,
+      "slippage2xNetPct": 38.95449494951242,
+      "commission2xNetPct": 30.35896885536664,
+      "minTrackRecordDays": 1763.7571607904185,
+      "losingRegimes": [
+        "bull",
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/cipher-a-ribbon/a8e766167707/validation_report.json"
+    },
+    {
+      "strategy": "crowding-filtered-breakout",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.7,
+        "trailMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_pf_p05"
+      ],
+      "netProfitPct": 12.28815936881098,
+      "sharpe": 1.0220029873509209,
+      "profitFactor": 1.5031182232383737,
+      "tradesPerYear": 53.70342465753425,
+      "dsrGate": 0.0003665302948774339,
+      "dsrEffective": 0.0011319233619494378,
+      "dsrRaw": 0.0003665302948774339,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 1.0,
+      "bootstrapSharpeP05": 0.015810348068898434,
+      "bootstrapPfP05": 0.9504559697910769,
+      "slippage2xNetPct": 11.709511024868835,
+      "commission2xNetPct": 11.206415870923813,
+      "minTrackRecordDays": 836.4769418738937,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/crowding-filtered-breakout/6886b1469dd9/validation_report.json"
+    },
+    {
+      "strategy": "donchian-breakout",
+      "parameters": {
+        "entryLen": 96,
+        "exitLen": 48,
+        "atrMult": 4
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05"
+      ],
+      "netProfitPct": 58.71596593992052,
+      "sharpe": 0.9801374714536025,
+      "profitFactor": 1.5017744803625805,
+      "tradesPerYear": 57.70616438356165,
+      "dsrGate": 0.00024445996250036986,
+      "dsrEffective": 0.0007887913117529846,
+      "dsrRaw": 0.00024445996250036986,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 1.0,
+      "bootstrapSharpeP05": -0.07181405652197792,
+      "bootstrapPfP05": 0.8702360265348149,
+      "slippage2xNetPct": 54.83782285908727,
+      "commission2xNetPct": 51.80379868856755,
+      "minTrackRecordDays": 892.3927788780571,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/donchian-breakout/3474471b8f10/validation_report.json"
+    },
+    {
+      "strategy": "donchian-ensemble-trend",
+      "parameters": {
+        "baseDays": 1,
+        "minAgree": 3,
+        "trailMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 7.4551515485786535,
+      "sharpe": 0.586330114153574,
+      "profitFactor": 1.2374800381213311,
+      "tradesPerYear": 73.71712328767124,
+      "dsrGate": 3.0458452600648378e-05,
+      "dsrEffective": 0.00010833867623919312,
+      "dsrRaw": 3.0458452600648378e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 1.0,
+      "bootstrapSharpeP05": -0.39834553286512453,
+      "bootstrapPfP05": 0.8091523457095134,
+      "slippage2xNetPct": 6.720975730771572,
+      "commission2xNetPct": 6.041022552840802,
+      "minTrackRecordDays": 2759.261038733739,
+      "losingRegimes": [
+        "bull",
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/donchian-ensemble-trend/8c7fbebbf9da/validation_report.json"
+    },
+    {
+      "strategy": "funding-carry-tilt",
+      "parameters": {
+        "band": 0.2,
+        "stopMult": 1
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 16.2689949547576,
+      "sharpe": 0.5585405986201316,
+      "profitFactor": 1.2107209355304083,
+      "tradesPerYear": 57.03904109589041,
+      "dsrGate": 2.6696046880027756e-05,
+      "dsrEffective": 9.530555334603453e-05,
+      "dsrRaw": 2.6696046880027756e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.8125,
+      "bootstrapSharpeP05": -0.43444936932590417,
+      "bootstrapPfP05": 0.8424619944083558,
+      "slippage2xNetPct": 14.348043562196167,
+      "commission2xNetPct": 12.771866205876915,
+      "minTrackRecordDays": 3067.8039152429074,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/funding-carry-tilt/a3ff5fcdd09a/validation_report.json"
+    },
+    {
+      "strategy": "funding-tilt",
+      "parameters": {
+        "threshold": 0.3,
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "bootstrap_pf_p05"
+      ],
+      "netProfitPct": 21.30752565022769,
+      "sharpe": 0.9807741478776408,
+      "profitFactor": 1.3742214111168842,
+      "tradesPerYear": 66.04520547945206,
+      "dsrGate": 0.0004521526976175753,
+      "dsrEffective": 0.0013164783571146777,
+      "dsrRaw": 0.0004521526976175753,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.8333333333333334,
+      "bootstrapSharpeP05": 0.025570415704303764,
+      "bootstrapPfP05": 0.9825213562003552,
+      "slippage2xNetPct": 19.776191919526998,
+      "commission2xNetPct": 18.444986417003804,
+      "minTrackRecordDays": 982.9994867467893,
+      "losingRegimes": [
+        "high-vol"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/funding-tilt/caa6b2ae0a6c/validation_report.json"
+    },
+    {
+      "strategy": "ichimoku-cloud",
+      "parameters": {
+        "tfHours": 6,
+        "periodSet": 1,
+        "atrMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_pf_p05"
+      ],
+      "netProfitPct": 28.550545960821474,
+      "sharpe": 1.0486648339563511,
+      "profitFactor": 1.5793431116999317,
+      "tradesPerYear": 59.04041095890411,
+      "dsrGate": 0.00044761851457444956,
+      "dsrEffective": 0.0013566550228025038,
+      "dsrRaw": 0.00044761851457444956,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.8620689655172413,
+      "bootstrapSharpeP05": 0.047952418663277936,
+      "bootstrapPfP05": 0.9233855776954576,
+      "slippage2xNetPct": 26.703111389399226,
+      "commission2xNetPct": 25.31808261054307,
+      "minTrackRecordDays": 797.531537488917,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/ichimoku-cloud/e4e77e452342/validation_report.json"
+    },
+    {
+      "strategy": "impulse-bar-continuation",
+      "parameters": {
+        "rangeAtr": 2,
+        "bodyFrac": 0.8,
+        "holdBars": 18,
+        "atrMult": 3
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge"
+      ],
+      "netProfitPct": 73.69217207091513,
+      "sharpe": 1.7845978666905693,
+      "profitFactor": 1.5547138664614293,
+      "tradesPerYear": 97.06643835616438,
+      "dsrGate": 0.01895698759460005,
+      "dsrEffective": 0.041356236337245646,
+      "dsrRaw": 0.01895698759460005,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.8791666666666667,
+      "bootstrapSharpeP05": 0.8861916236975738,
+      "bootstrapPfP05": 1.2629576268120524,
+      "slippage2xNetPct": 64.79350733693936,
+      "commission2xNetPct": 57.66747845848992,
+      "minTrackRecordDays": 248.4017543625906,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/impulse-bar-continuation/f6e9a028cd6a/validation_report.json"
+    },
+    {
+      "strategy": "keltner-breakout",
+      "parameters": {
+        "emaLen": 72,
+        "bandMult": 1.5,
+        "atrMult": 5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_pf_p05"
+      ],
+      "netProfitPct": 62.975493289877946,
+      "sharpe": 1.0927646697984499,
+      "profitFactor": 1.3366425537630013,
+      "tradesPerYear": 173.45205479452056,
+      "dsrGate": 0.00044014226058876,
+      "dsrEffective": 0.0013739068787968257,
+      "dsrRaw": 0.00044014226058876,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 1.0,
+      "bootstrapSharpeP05": 0.05791066031007557,
+      "bootstrapPfP05": 0.9734795930913527,
+      "slippage2xNetPct": 52.4237368293744,
+      "commission2xNetPct": 44.24081982562677,
+      "minTrackRecordDays": 697.1997489586433,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/keltner-breakout/133804846ea1/validation_report.json"
+    },
+    {
+      "strategy": "max-min-daily",
+      "parameters": {
+        "lookbackDays": 10,
+        "holdDays": 2,
+        "stopMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 14.390995082430447,
+      "sharpe": 0.7554051308770076,
+      "profitFactor": 1.3251727846591892,
+      "tradesPerYear": 53.369863013698634,
+      "dsrGate": 0.00010156519144117023,
+      "dsrEffective": 0.0003317760988493234,
+      "dsrRaw": 0.00010156519144117023,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.9864864864864865,
+      "bootstrapSharpeP05": -0.3265582034413331,
+      "bootstrapPfP05": 0.8696655058928144,
+      "slippage2xNetPct": 13.230272722352687,
+      "commission2xNetPct": 12.204282976876657,
+      "minTrackRecordDays": 1658.6380651719999,
+      "losingRegimes": [
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/max-min-daily/9ef7a8ccfe87/validation_report.json"
+    },
+    {
+      "strategy": "nr-compression-breakout",
+      "parameters": {
+        "nrLen": 5,
+        "holdBars": 24,
+        "stopMult": 0.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 11.84102135692462,
+      "sharpe": 0.35192039494618405,
+      "profitFactor": 1.1023061215139522,
+      "tradesPerYear": 62.042465753424665,
+      "dsrGate": 3.3496408386784533e-06,
+      "dsrEffective": 1.4137141780074503e-05,
+      "dsrRaw": 3.3496408386784533e-06,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.2972972972972973,
+      "bootstrapSharpeP05": -0.6950547784852202,
+      "bootstrapPfP05": 0.7811658637981757,
+      "slippage2xNetPct": 6.901013402553513,
+      "commission2xNetPct": 2.09715601722984,
+      "minTrackRecordDays": 7389.045424804787,
+      "losingRegimes": [
+        "bear"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/nr-compression-breakout/6d0ac0c18f74/validation_report.json"
+    },
+    {
+      "strategy": "supertrend",
+      "parameters": {
+        "tfHours": 2,
+        "atrLen": 7,
+        "mult": 4
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 57.39169894956157,
+      "sharpe": 0.7446343951062359,
+      "profitFactor": 1.2470394834451792,
+      "tradesPerYear": 123.75136986301371,
+      "dsrGate": 7.27894727880974e-05,
+      "dsrEffective": 0.00024860413775076645,
+      "dsrRaw": 7.27894727880974e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.3333333333333333,
+      "bootstrapSharpeP05": -0.2041662650789437,
+      "bootstrapPfP05": 0.915491264309702,
+      "slippage2xNetPct": 44.081364520555354,
+      "commission2xNetPct": 33.561127136269995,
+      "minTrackRecordDays": 1649.62922251781,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/supertrend/65bcaae176b2/validation_report.json"
+    },
+    {
+      "strategy": "ts-momentum",
+      "parameters": {
+        "lookback": 72,
+        "threshold": 0.01,
+        "atrMult": 5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 50.729644613790256,
+      "sharpe": 0.8778268743181876,
+      "profitFactor": 1.2759535057002702,
+      "tradesPerYear": 156.77397260273975,
+      "dsrGate": 0.00015737439390380408,
+      "dsrEffective": 0.0005140896927820771,
+      "dsrRaw": 0.00015737439390380408,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.6885245901639344,
+      "bootstrapSharpeP05": -0.1698805888171773,
+      "bootstrapPfP05": 0.9141428980444207,
+      "slippage2xNetPct": 42.82100598731466,
+      "commission2xNetPct": 36.814870226459526,
+      "minTrackRecordDays": 1158.4769664056184,
+      "losingRegimes": [
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/ts-momentum/45aa7e104edd/validation_report.json"
+    },
+    {
+      "strategy": "tsmom-vote",
+      "parameters": {
+        "baseDays": 4,
+        "unanimous": 1,
+        "stopMult": 1
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "plateau_edge",
+        "regime_losses",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 13.037036428149062,
+      "sharpe": 0.4478518340789256,
+      "profitFactor": 1.1825812509807057,
+      "tradesPerYear": 59.70753424657535,
+      "dsrGate": 1.0990594977036638e-05,
+      "dsrEffective": 4.177246229528408e-05,
+      "dsrRaw": 1.0990594977036638e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.41379310344827586,
+      "bootstrapSharpeP05": -0.5895821866180981,
+      "bootstrapPfP05": 0.7530441176537678,
+      "slippage2xNetPct": 11.037988549785194,
+      "commission2xNetPct": 9.377179105859955,
+      "minTrackRecordDays": 4751.319270183926,
+      "losingRegimes": [
+        "bull",
+        "high-vol",
+        "trending"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/tsmom-vote/3e96f79ba8da/validation_report.json"
+    },
+    {
+      "strategy": "turmoil-reversal",
+      "parameters": {
+        "zEntry": 0.75,
+        "volQuantile": 0.7,
+        "holdPeriods": 6
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_score",
+        "bootstrap_sharpe_p05",
+        "bootstrap_pf_p05",
+        "min_track_record"
+      ],
+      "netProfitPct": 14.728289981127475,
+      "sharpe": 0.6356880340166388,
+      "profitFactor": 1.1936697098057614,
+      "tradesPerYear": 66.37876712328767,
+      "dsrGate": 5.3689959774212255e-05,
+      "dsrEffective": 0.00018079130058852564,
+      "dsrRaw": 5.3689959774212255e-05,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.22972972972972974,
+      "bootstrapSharpeP05": -0.3231293131085309,
+      "bootstrapPfP05": 0.9077133173611817,
+      "slippage2xNetPct": 11.935371905665848,
+      "commission2xNetPct": 9.259030538672297,
+      "minTrackRecordDays": 2406.9961036359887,
+      "losingRegimes": [
+        "bear"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/turmoil-reversal/2c3dae36c699/validation_report.json"
+    },
+    {
+      "strategy": "vol-regime-switch",
+      "parameters": {
+        "regimeLen": 360,
+        "channelLen": 96,
+        "edgeFrac": 0.05,
+        "atrMult": 2.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo",
+        "plateau_edge"
+      ],
+      "netProfitPct": 59.16686348973697,
+      "sharpe": 1.0901759464914913,
+      "profitFactor": 1.378431051954296,
+      "tradesPerYear": 84.72465753424657,
+      "dsrGate": 0.00039479020345177307,
+      "dsrEffective": 0.0012543238185562945,
+      "dsrRaw": 0.00039479020345177307,
+      "pboSearch": 0.4732711732711733,
+      "plateauScore": 0.9916666666666667,
+      "bootstrapSharpeP05": 0.16987472601611447,
+      "bootstrapPfP05": 1.0481180299772155,
+      "slippage2xNetPct": 50.8389925686912,
+      "commission2xNetPct": 43.50480553454397,
+      "minTrackRecordDays": 690.0023457005072,
+      "losingRegimes": [
+        "high-vol"
+      ],
+      "lookahead": "pass",
+      "report": "artifacts/validation/vol-regime-switch/4d27a1870e30/validation_report.json"
+    }
+  ]
+}

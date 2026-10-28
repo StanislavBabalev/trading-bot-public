@@ -1,0 +1,270 @@
+{
+  "baseCosts": {
+    "commissionRate": 0.0004,
+    "slippageRate": 0.0002,
+    "fundingScale": 1,
+    "adverseFundingRate": null
+  },
+  "scenarios": [
+    {
+      "name": "slippage_x0",
+      "group": "slippage",
+      "value": 0,
+      "description": "slippage 0 x base (0.000 % per side)",
+      "metrics": {
+        "netProfitPct": 4.085543691790416,
+        "profitFactor": 1.9726557493967083,
+        "sharpe": 0.8216945835696722,
+        "dailySharpe": 0.043009460210317,
+        "maxDrawdownPct": 3.2506159592472468,
+        "cagrPct": 1.344637932117676,
+        "calmar": 0.41365634974272913,
+        "trades": 175,
+        "tradesPerYear": 58.37328767123288,
+        "feesPaid": 35.345271007851196,
+        "fundingReceived": -26.82332245817023,
+        "slippageCost": 0
+      }
+    },
+    {
+      "name": "slippage_x1",
+      "group": "slippage",
+      "value": 1,
+      "description": "slippage 1 x base (0.020 % per side)",
+      "metrics": {
+        "netProfitPct": 3.971827018336671,
+        "profitFactor": 1.943359352349715,
+        "sharpe": 0.7921580871001561,
+        "dailySharpe": 0.04146344932615239,
+        "maxDrawdownPct": 3.281862104624802,
+        "cagrPct": 1.3076918164376838,
+        "calmar": 0.39846031757241834,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.296614465397035,
+        "fundingReceived": -27.310449585255007,
+        "slippageCost": 17.6483263302222
+      }
+    },
+    {
+      "name": "slippage_x2",
+      "group": "slippage",
+      "value": 2,
+      "description": "slippage 2 x base (0.040 % per side)",
+      "metrics": {
+        "netProfitPct": 3.799353794325122,
+        "profitFactor": 1.8995360566104367,
+        "sharpe": 0.7577910314628338,
+        "dailySharpe": 0.03966459541919605,
+        "maxDrawdownPct": 3.312763969096259,
+        "cagrPct": 1.2516044888754685,
+        "calmar": 0.3778127571270685,
+        "trades": 170,
+        "tradesPerYear": 56.705479452054796,
+        "feesPaid": 35.22277886765163,
+        "fundingReceived": -28.945555083069845,
+        "slippageCost": 35.22285555990262
+      }
+    },
+    {
+      "name": "slippage_x3",
+      "group": "slippage",
+      "value": 3,
+      "description": "slippage 3 x base (0.060 % per side)",
+      "metrics": {
+        "netProfitPct": 3.6898884503492324,
+        "profitFactor": 1.8713141234802029,
+        "sharpe": 0.7365813673349355,
+        "dailySharpe": 0.03855443085973151,
+        "maxDrawdownPct": 3.343654176373746,
+        "cagrPct": 1.2159747456076397,
+        "calmar": 0.3636664204688735,
+        "trades": 170,
+        "tradesPerYear": 56.705479452054796,
+        "feesPaid": 35.20651543825827,
+        "fundingReceived": -29.732766786457944,
+        "slippageCost": 52.80994838309471
+      }
+    },
+    {
+      "name": "slippage_x4",
+      "group": "slippage",
+      "value": 4,
+      "description": "slippage 4 x base (0.080 % per side)",
+      "metrics": {
+        "netProfitPct": 2.1732518561341063,
+        "profitFactor": 1.411505163839611,
+        "sharpe": 0.4104330832878375,
+        "dailySharpe": 0.02148304944153158,
+        "maxDrawdownPct": 4.651893850019975,
+        "cagrPct": 0.7197263309022262,
+        "calmar": 0.15471684309802894,
+        "trades": 162,
+        "tradesPerYear": 54.036986301369865,
+        "feesPaid": 34.0906693203495,
+        "fundingReceived": -30.737620818277435,
+        "slippageCost": 68.18156285512379
+      }
+    },
+    {
+      "name": "commission_x1",
+      "group": "commission",
+      "value": 1,
+      "description": "commission 1 x base (0.040 % per side)",
+      "metrics": {
+        "netProfitPct": 3.971827018336671,
+        "profitFactor": 1.943359352349715,
+        "sharpe": 0.7921580871001561,
+        "dailySharpe": 0.04146344932615239,
+        "maxDrawdownPct": 3.281862104624802,
+        "cagrPct": 1.3076918164376838,
+        "calmar": 0.39846031757241834,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.296614465397035,
+        "fundingReceived": -27.310449585255007,
+        "slippageCost": 17.6483263302222
+      }
+    },
+    {
+      "name": "commission_x2",
+      "group": "commission",
+      "value": 2,
+      "description": "commission 2 x base (0.080 % per side)",
+      "metrics": {
+        "netProfitPct": 3.613897535116828,
+        "profitFactor": 1.854787655108884,
+        "sharpe": 0.7245731864604424,
+        "dailySharpe": 0.037925893946081514,
+        "maxDrawdownPct": 3.3789100649316577,
+        "cagrPct": 1.1912258101823392,
+        "calmar": 0.35254735618612365,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 70.47247185162486,
+        "fundingReceived": -27.260310599916682,
+        "slippageCost": 17.618137032533117
+      }
+    },
+    {
+      "name": "commission_x3",
+      "group": "commission",
+      "value": 3,
+      "description": "commission 3 x base (0.120 % per side)",
+      "metrics": {
+        "netProfitPct": 3.2571882282458997,
+        "profitFactor": 1.7672490205512623,
+        "sharpe": 0.6565556452258093,
+        "dailySharpe": 0.034365693122284185,
+        "maxDrawdownPct": 3.4758643955091415,
+        "cagrPct": 1.0748897722583584,
+        "calmar": 0.30924387431429395,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 105.52798024423868,
+        "fundingReceived": -27.21028434814043,
+        "slippageCost": 17.588015749177238
+      }
+    },
+    {
+      "name": "funding_off",
+      "group": "funding",
+      "value": 0,
+      "description": "no funding (isolates the funding contribution)",
+      "metrics": {
+        "netProfitPct": 4.248192545338303,
+        "profitFactor": 2.018558785624879,
+        "sharpe": 0.846229351115716,
+        "dailySharpe": 0.04429366863719593,
+        "maxDrawdownPct": 3.210790394651586,
+        "cagrPct": 1.3974352025879488,
+        "calmar": 0.43523090293148503,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.33951179436877,
+        "fundingReceived": 0,
+        "slippageCost": 17.669775010326052
+      }
+    },
+    {
+      "name": "funding_x3",
+      "group": "funding",
+      "value": 3,
+      "description": "every settled rate x 3",
+      "metrics": {
+        "netProfitPct": 3.4211482380354097,
+        "profitFactor": 1.7976578593503276,
+        "sharpe": 0.6840718014554767,
+        "dailySharpe": 0.03580595456511795,
+        "maxDrawdownPct": 3.4238955076792754,
+        "cagrPct": 1.1283963745725822,
+        "calmar": 0.32956507347895436,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.21102699251469,
+        "fundingReceived": -81.7281715556675,
+        "slippageCost": 17.605532562639524
+      }
+    },
+    {
+      "name": "funding_spike_2021-05",
+      "group": "funding-spike",
+      "value": 0.000325209139784946,
+      "description": "every settlement charged against the position at 2021-05's mean |rate| (0.0325 % per 8h)",
+      "metrics": {
+        "netProfitPct": 3.139547516250163,
+        "profitFactor": 1.726019118379993,
+        "sharpe": 0.631097224828944,
+        "dailySharpe": 0.03303313849557639,
+        "maxDrawdownPct": 3.6366487799645313,
+        "cagrPct": 1.0364640819424453,
+        "calmar": 0.28500527399089504,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.22163319971333,
+        "fundingReceived": -109.54622686155861,
+        "slippageCost": 17.61083565319455
+      }
+    },
+    {
+      "name": "funding_spike_2022-06",
+      "group": "funding-spike",
+      "value": 7.742166666666666E-05,
+      "description": "every settlement charged against the position at 2022-06's mean |rate| (0.0077 % per 8h)",
+      "metrics": {
+        "netProfitPct": 3.983244329990865,
+        "profitFactor": 1.9467542340968649,
+        "sharpe": 0.7950686922920018,
+        "dailySharpe": 0.041615797364815126,
+        "maxDrawdownPct": 3.3123139936008674,
+        "cagrPct": 1.3114024734728114,
+        "calmar": 0.39591731822717857,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.311385057272744,
+        "fundingReceived": -26.17992115501834,
+        "slippageCost": 17.655711627494405
+      }
+    },
+    {
+      "name": "funding_spike_2022-11",
+      "group": "funding-spike",
+      "value": 0.0001545715555555555,
+      "description": "every settlement charged against the position at 2022-11's mean |rate| (0.0155 % per 8h)",
+      "metrics": {
+        "netProfitPct": 3.7198588385318754,
+        "profitFactor": 1.8765865089451985,
+        "sharpe": 0.7440505544710929,
+        "dailySharpe": 0.03894538598266829,
+        "maxDrawdownPct": 3.4133937403421624,
+        "cagrPct": 1.2257322623355327,
+        "calmar": 0.359094893697398,
+        "trades": 173,
+        "tradesPerYear": 57.70616438356165,
+        "feesPaid": 35.28339669496394,
+        "fundingReceived": -52.20533636045262,
+        "slippageCost": 17.641717432135348
+      }
+    }
+  ]
+}

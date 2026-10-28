@@ -1,0 +1,99 @@
+{
+  // Fixed research constants. Never tune these per strategy.
+  "symbol": "BTCUSDT",
+  "intervalMinutes": 60,
+  "dataDir": "data/bybit",
+  "initialCapital": 10000,
+
+  // Per side, as fractions of notional: 0.04% commission + 0.02% slippage.
+  "costs": { "commissionRate": 0.0004, "slippageRate": 0.0002 },
+  "fundingEnabled": true,
+
+  // Confirmed by the user 2026-10-26: 1% equity risk per trade (needs a stop), max 1x leverage.
+  // mode: FixedFraction | RiskPerTrade | VolTarget
+  "sizing": {
+    "mode": "RiskPerTrade",
+    "fraction": 1.0,
+    "riskPerTrade": 0.01,
+    "volTargetAnnual": 0.20,
+    "volLookbackBars": 720
+  },
+
+  // Confirmed by the user 2026-10-26: no max-drawdown stop and no daily-loss stop (null = off).
+  "risk": {
+    "maxLeverage": 1.0,
+    "maxDrawdownStop": null,
+    "dailyLossStop": null
+  },
+
+  // Hunt rules. N and the optimizer cap confirmed by the user 2026-10-26.
+  // A walk-forward fold fails when it loses money or its PF is below foldMinProfitFactor;
+  // "fails >= 2 of 4 folds" = maxFoldFailures 1. Trade floor is per year (50/yr = 150 on the 3-year dev window).
+  "hunt": {
+    "hypothesesPerCycle": 5,
+    "optimizerMaxEvaluations": 200,
+    "minProfitFactor": 1.1,
+    "minSharpe": 0.5,
+    "maxDrawdownPct": 30,
+    "minTradesPerYear": 50,
+    "plateauMinProfitFactor": 1.05,
+    "plateauMinSharpe": 0.3,
+    "walkForward": { "trainMonths": 12, "testMonths": 3, "stepMonths": 6, "maxFoldFailures": 1, "foldMinProfitFactor": 1.0 }
+  },
+
+  // Local research controller (`research run`, also `hunt`). Limits bound work per invocation and never change results;
+  // a run that hits one pauses without recording a half-done cycle, and the next run resumes from the experiment store.
+  // There is no network access and no model call anywhere in these commands. workers 0 = logical processors - 1.
+  "research": {
+    "maxCyclesPerRun": 20,
+    "maxNewExperimentsPerRun": 100000,
+    "maxNewExperimentsPerCycle": 5000,
+    "maxRuntimeMinutes": 120,
+    "workers": 0,
+    "maxManagedMemoryMb": 4096,
+    "experimentStore": "artifacts/cache/experiments.jsonl"
+  },
+
+  // Validation harness (AUDIT.md, README "Validation gates"). validate-export reads holdoutGate .. minRegisteredGridForSelection;
+  // python -m validation reads the rest. A locked-OOS run (hunt step 7, backtest --unlock-oos) needs a report for the exact
+  // candidate, code, data and this file in which every hard gate passed. Changing anything here invalidates existing reports.
+  "validation": {
+    "holdoutGate": true,
+    "outputDir": "artifacts/validation",
+    "perturbationSteps": [0.1, 0.2, 0.3],
+    "slippageMultipliers": [0, 1, 2, 3, 4],
+    "commissionMultipliers": [1, 2, 3],
+    "fundingScale": 3,
+    // Dev months only: 2024-03 is inside the locked OOS window (AUDIT.md D2).
+    "fundingSpikeMonths": ["2021-05", "2022-06", "2022-11"],
+    "minRegisteredGridForSelection": 10,
+    "gates": {
+      "minDeflatedSharpe": 0.95,
+      "maxPbo": 0.20,
+      "minPlateauScore": 0.60,
+      "plateauMinProfitFactor": 1.05,
+      "plateauMinSharpe": 0.30,
+      "regimeMinTrades": 20,
+      "maxLosingRegimes": 1,
+      "regimeConcentrationMaxTradeShare": 0.30,
+      "bootstrapMinSharpeP05": 0.0,
+      "bootstrapMinProfitFactorP05": 1.0,
+      "stressMultiplier": 2,
+      "minTrackRecordConfidence": 0.95,
+      "minTradesPerYear": 50
+    },
+    "cpcv": { "groups": 6, "testGroups": 2, "embargoFraction": 0.01 },
+    "cscv": { "blocks": 16 },
+    "bootstrap": { "paths": 5000, "meanBlockLengths": [24, 48, 72], "seed": 20261027 },
+    "regimes": { "smaDays": 200, "slopeDays": 20, "volDays": 30, "erDays": 30, "lookbackDays": 365, "minHistoryDays": 90, "volQuantile": 0.75 },
+    "stress": { "gapPcts": [0.10, 0.15, 0.20] }
+  },
+
+  // Development (optimize here only) and locked out-of-sample windows. "To" dates are exclusive.
+  "split": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "oosFrom": "2024-01-01T00:00:00Z",
+    "oosTo": "2026-10-26T00:00:00Z"
+  }
+}

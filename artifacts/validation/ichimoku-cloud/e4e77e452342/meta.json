@@ -1,0 +1,185 @@
+{
+  "candidate": {
+    "id": "e4e77e4523420c2191ee02a738bb33c9",
+    "identity": {
+      "strategy": "ichimoku-cloud",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 3,
+        "periodSet": 1,
+        "tfHours": 6
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "ichimoku-cloud",
+    "family": "cloud-trend",
+    "description": "Ichimoku 9/26/52/26 (periodSet 1) or 20/60/120/30 (periodSet 2): long when the close is above the cloud, tenkan > kijun and the close is above the close displacement-1 periods ago, on the period that first becomes true; exit on a close below kijun; short: the mirror; stop atrMult x ATR.",
+    "version": 1
+  },
+  "parameters": {
+    "tfHours": 6,
+    "periodSet": 1,
+    "atrMult": 3
+  },
+  "searchSpace": [
+    {
+      "name": "tfHours",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "periodSet",
+      "min": 1,
+      "max": 2,
+      "step": 1,
+      "values": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 1.5,
+      "max": 3.5,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 12855.054596082147,
+    "netProfit": 2855.0545960821473,
+    "netProfitPct": 28.550545960821474,
+    "cagrPct": 8.738384842759327,
+    "maxDrawdownPct": 5.872582817490738,
+    "profitFactor": 1.5793431116999317,
+    "sharpe": 1.0486648339563511,
+    "sortino": 1.9306425783795187,
+    "calmar": 1.4879968685555467,
+    "trades": 177,
+    "tradesPerYear": 59.04041095890411,
+    "winRatePct": 32.20338983050848,
+    "avgTradeNetPnl": 16.13025195526657,
+    "timeInMarketPct": 59.87442922374429,
+    "turnoverPerYear": 22.08072902748573,
+    "feesPaid": 293.4574387692718,
+    "fundingReceived": -237.45558065211384,
+    "slippageCost": 146.72886069249492,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.05488962608718485,
+    "dailySkewness": 2.3041386870891065,
+    "dailyKurtosis": 18.902277490162724
+  },
+  "attribution": {
+    "grossPnl": 3532.6964761960635,
+    "slippageCost": 146.72886069249492,
+    "commission": 293.4574387692718,
+    "fundingReceived": -237.45558065211384,
+    "netPnl": 2855.0545960821473
+  },
+  "maxBarsHeld": 1169,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 40,
+  "lookAheadAudit": {
+    "strategy": "ichimoku-cloud",
+    "parameters": {
+      "tfHours": 6,
+      "periodSet": 1,
+      "atrMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 374,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 255,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:50:06.1347963Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "candidate": {
+    "id": "68b48bcf8f82230e700d64fcddf317a3",
+    "identity": {
+      "strategy": "cipher-a-ribbon",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 2.5,
+        "diamondExit": 1,
+        "tfHours": 4
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "cipher-a-ribbon",
+    "family": "ema-ribbon",
+    "description": "Market Cipher A: EMA(11) crossing above EMA(33) goes long, below goes short; with diamondExit = 1 a long also exits on a 'blood diamond' (bearish WT cross on the period EMA(5) crosses under EMA(11)), a short on the mirror; stop atrMult x ATR(14) of the period bars.",
+    "version": 1
+  },
+  "parameters": {
+    "tfHours": 4,
+    "atrMult": 2.5,
+    "diamondExit": 1
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "tfHours",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 1.5,
+      "max": 3.5,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5
+      ]
+    },
+    {
+      "name": "diamondExit",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "values": [
+        0,
+        1
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 12372.495921185953,
+    "netProfit": 2372.495921185953,
+    "netProfitPct": 23.72495921185953,
+    "cagrPct": 7.359434540792842,
+    "maxDrawdownPct": 12.315515564463277,
+    "profitFactor": 1.223311476056923,
+    "sharpe": 0.5669869804379919,
+    "sortino": 0.9755054917261514,
+    "calmar": 0.5975742145971275,
+    "trades": 219,
+    "tradesPerYear": 73.05000000000001,
+    "winRatePct": 24.65753424657534,
+    "avgTradeNetPnl": 10.833314708611697,
+    "timeInMarketPct": 82.54185692541857,
+    "turnoverPerYear": 39.207036144354284,
+    "feesPaid": 493.8615396844886,
+    "fundingReceived": -178.58361835314244,
+    "slippageCost": 246.9309015171236,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.02967745493584345,
+    "dailySkewness": 1.922514061890446,
+    "dailyKurtosis": 15.879643099893793
+  },
+  "attribution": {
+    "grossPnl": 3291.8719807407156,
+    "slippageCost": 246.9309015171236,
+    "commission": 493.8615396844886,
+    "fundingReceived": -178.58361835314244,
+    "netPnl": 2372.495921185953
+  },
+  "maxBarsHeld": 1505,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 40,
+  "lookAheadAudit": {
+    "strategy": "cipher-a-ribbon",
+    "parameters": {
+      "tfHours": 4,
+      "atrMult": 2.5,
+      "diamondExit": 1
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 411,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 286,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:48.3543309Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

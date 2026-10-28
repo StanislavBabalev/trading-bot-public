@@ -1,0 +1,46 @@
+Registered 3532 new trials (total 5616). Replayed 5616 registered trials on the dev window in 3.12s: 5616 identical, 0 different.
+Already grid-searched before this run: donchian-breakout, keltner-breakout, ts-momentum, impulse-bar-continuation, vol-regime-switch, donchian-ensemble-trend, funding-crowding-fade, nr-compression-breakout, tsmom-vote, max-min-daily, crowding-filtered-breakout, funding-tilt, funding-carry-tilt, funding-fade-wide, cipher-a-ribbon, supertrend, ichimoku-cloud, turmoil-reversal
+Defaults re-validated: 0 of 18 pass; trials raw/distinct/effective 5616/5473/618; search PBO 0.473
+Best points validated: 0 of 38 pass every hard gate
+
+This run: strategy | grid | new | best params | net% | Sharpe | PF | tr/yr | DD% | hunt rules | gates (failed) | DSR
+ema-cross-atr | 1344 | 1291 | fast=20 slow=100 longOnly=1 atrLen=14 atrMult=6 | 31.1 | 0.83 | 1.49 | 56 | 15.0 | REJECT: 3/4 folds, edge:slow, no plateau | REJECT (7) | 0.00
+bollinger-reversion | 112 | 111 | bbLen=70 bbMult=1.5 atrMult=3 | -29.7 | -0.86 | 0.88 | 210 | 30.8 | REJECT: PF 0.88, Sharpe -0.86, DD 31%, 2/4 folds, edge:bbMult, no plateau | REJECT (10) | 0.00
+trend-pullback-rsi | 192 | 191 | trendLen=400 rsiLen=4 level=10 atrMult=4 | -2.3 | -0.21 | 0.92 | 52 | 6.3 | REJECT: PF 0.92, Sharpe -0.21, 2/4 folds, edge:trendLen+level+atrMult, no plateau | REJECT (10) | 0.00
+failed-breakout-fade | 192 | 191 | breakBars=6 excursionAtr=0.75 stopBufferAtr=1 maxHold=24 | 16.9 | 0.71 | 1.19 | 85 | 11.1 | REJECT: edge:excursionAtr+stopBufferAtr, no plateau | REJECT (7) | 0.00
+volume-climax-reversal | 140 | 139 | volMult=1.5 rangeAtr=2 maxHold=24 | -9.5 | -0.20 | 0.93 | 88 | 29.9 | REJECT: PF 0.93, Sharpe -0.20, 2/4 folds, edge:volMult+maxHold, no plateau | REJECT (10) | 0.00
+session-momentum | 125 | 124 | moveMult=0.75 holdBars=12 atrMult=3 | -2.7 | -0.09 | 0.96 | 66 | 16.0 | REJECT: PF 0.96, Sharpe -0.09, 3/4 folds, edge:holdBars, no plateau | REJECT (10) | 0.00
+noise-area-momentum | 112 | 111 | lookbackDays=21 bandMult=1.75 firstHour=0 | 23.9 | 0.55 | 1.13 | 196 | 24.5 | REJECT: 3/4 folds, edge:firstHour, no plateau | REJECT (8) | 0.00
+mtf-trend-pullback | 100 | 99 | maDays=50 entryLen=48 trailMult=1 | 31.7 | 0.99 | 1.38 | 72 | 10.7 | REJECT: 2/4 folds, edge:maDays+entryLen+trailMult, no plateau | REJECT (4) | 0.00
+efficiency-regime-switch | 150 | 149 | erLen=168 erThreshold=0.1 atrMult=1.5 | 16.5 | 0.32 | 1.05 | 203 | 46.3 | REJECT: PF 1.05, Sharpe 0.32, DD 46%, 2/4 folds, edge:erThreshold+atrMult, no plateau | REJECT (10) | 0.00
+volume-conditioned-reversal | 72 | 71 | extremeFrac=0.3 holdDays=3 stopMult=1 | 21.8 | 0.69 | 1.23 | 73 | 11.4 | REJECT: edge:holdDays+stopMult, no plateau | REJECT (6) | 0.00
+ema-cross-control | 20 | 19 | holdBars=120 stopMult=1.5 | 22.1 | 0.88 | 1.28 | 74 | 7.9 | REJECT: no plateau | REJECT (6) | 0.00
+cipher-b-dots | 100 | 99 | tfHours=6 level=47 atrMult=1.5 | 6.5 | 0.25 | 1.07 | 80 | 17.6 | REJECT: PF 1.07, Sharpe 0.25, 2/4 folds, edge:atrMult, no plateau | REJECT (7) | 0.00
+cipher-b-sommi-flag | 40 | 34 | tfHours=2 htfHours=12 atrMult=1.5 | -6.2 | -0.24 | 0.91 | 60 | 20.5 | REJECT: PF 0.91, Sharpe -0.24, 4/4 folds, edge:tfHours+htfHours+atrMult, no plateau | REJECT (10) | 0.00
+cipher-b-divergence | 80 | 79 | tfHours=2 limitScale=0.75 atrMult=1 | -7.6 | -0.18 | 0.92 | 65 | 20.7 | REJECT: PF 0.92, Sharpe -0.18, 3/4 folds, edge:tfHours+atrMult, no plateau | REJECT (10) | 0.00
+cipher-b-confluence | 100 | 99 | tfHours=6 level=47 atrMult=1.5 | 21.8 | 0.73 | 1.32 | 51 | 13.4 | REJECT: edge:atrMult, no plateau | REJECT (6) | 0.00
+squeeze-momentum | 100 | 99 | tfHours=2 kcMult=2 atrMult=3 | 8.9 | 0.41 | 1.12 | 127 | 7.0 | REJECT: Sharpe 0.41, edge:tfHours+kcMult, no plateau | REJECT (8) | 0.00
+dca-grid-long | 144 | 143 | orders=7 overlap=0.2 martingale=0.15 takeProfit=0.01 | 3.7 | 0.76 | 1.49 | 420 | 2.9 | REJECT: edge:orders+overlap, no plateau | REJECT (7) | 0.00
+dca-grid-short | 144 | 143 | orders=3 overlap=0.1 martingale=0 takeProfit=0.015 | 2.0 | 0.17 | 1.04 | 306 | 6.4 | REJECT: PF 1.04, Sharpe 0.17, 3/4 folds, edge:orders+martingale, no plateau | REJECT (9) | 0.00
+dca-rsi-long | 80 | 79 | rsiLevel=30 overlap=0.15 takeProfit=0.02 orders=5 martingale=0.15 | 4.0 | 0.79 | 1.94 | 58 | 3.3 | REJECT: edge:takeProfit, no plateau | REJECT (7) | 0.00
+dca-trend-long | 64 | 63 | maDays=100 overlap=0.2 takeProfit=0.005 orders=5 martingale=0.15 | 2.2 | 0.62 | 1.98 | 352 | 1.4 | REJECT: edge:overlap+takeProfit, no plateau | REJECT (7) | 0.00
+cascade-fade | 100 | 99 | dropAtr=2 volMult=2 holdBars=48 | -23.3 | -0.75 | 0.82 | 70 | 35.4 | REJECT: PF 0.82, Sharpe -0.75, DD 35%, 2/4 folds, edge:holdBars, no plateau | REJECT (10) | 0.00
+round-number-bounce | 100 | 99 | levelStep=2500 freshBars=24 holdBars=24 | 22.1 | 0.57 | 1.17 | 68 | 15.2 | REJECT: 3/4 folds, edge:levelStep, no plateau | REJECT (7) | 0.00
+
+First re-run (artifacts/hunt/grid_rerun_2026-10-28), best points re-checked against the larger registry: strategy | gates (failed) | DSR
+cipher-a-ribbon | REJECT (7) | 0.00
+crowding-filtered-breakout | REJECT (5) | 0.00
+donchian-breakout | REJECT (5) | 0.00
+donchian-ensemble-trend | REJECT (7) | 0.00
+funding-carry-tilt | REJECT (7) | 0.00
+funding-tilt | REJECT (4) | 0.00
+ichimoku-cloud | REJECT (5) | 0.00
+impulse-bar-continuation | REJECT (3) | 0.02
+keltner-breakout | REJECT (5) | 0.00
+max-min-daily | REJECT (6) | 0.00
+nr-compression-breakout | REJECT (7) | 0.00
+supertrend | REJECT (8) | 0.00
+ts-momentum | REJECT (7) | 0.00
+tsmom-vote | REJECT (8) | 0.00
+turmoil-reversal | REJECT (6) | 0.00
+vol-regime-switch | REJECT (3) | 0.00

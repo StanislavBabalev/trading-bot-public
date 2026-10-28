@@ -1,0 +1,23 @@
+[
+  {
+    "interval": 30,
+    "strategy": "funding-crowding-fade",
+    "grid": 150,
+    "newTrials": 149,
+    "params": {
+      "quantile": 0.25,
+      "holdBars": 72,
+      "stopMult": 1.5
+    },
+    "net": 21.264845583816427,
+    "sharpe": 1.0886530467466107,
+    "pf": 1.3140602270726847,
+    "tpy": 127.42054794520548,
+    "dd": 5.711788270834971,
+    "folds": 0,
+    "verdict": "REJECT",
+    "reasons": [
+      "no plateau"
+    ]
+  }
+]

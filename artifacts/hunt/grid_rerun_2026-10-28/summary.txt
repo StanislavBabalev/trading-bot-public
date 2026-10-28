@@ -1,0 +1,20 @@
+Registered 1772 new trials (total 2084). Replayed 2084 registered trials on the dev window in 1.45s: 2084 identical, 0 different.
+Skipped (grid already searched): funding-crowding-fade, funding-fade-wide
+Defaults re-validated: 0 of 18 pass; trials raw/distinct/effective 2084/1976/300; search PBO 0.385
+strategy | grid | new | best params | net% | Sharpe | PF | tr/yr | DD% | hunt rules | gates (failed) | DSR
+donchian-breakout | 168 | 131 | entryLen=96 exitLen=48 atrMult=4 | 58.7 | 0.98 | 1.50 | 58 | 14.4 | REJECT: 3/4 folds | REJECT (5) | 0.05
+keltner-breakout | 100 | 99 | emaLen=72 bandMult=1.5 atrMult=5 | 63.0 | 1.09 | 1.34 | 173 | 15.5 | REJECT: 2/4 folds, edge:atrMult | REJECT (5) | 0.07
+ts-momentum | 180 | 179 | lookback=72 threshold=0.01 atrMult=5 | 50.7 | 0.88 | 1.28 | 157 | 15.4 | REJECT: 3/4 folds, edge:atrMult, no plateau | REJECT (7) | 0.04
+impulse-bar-continuation | 192 | 191 | rangeAtr=2 bodyFrac=0.8 holdBars=18 atrMult=3 | 73.7 | 1.78 | 1.55 | 97 | 8.7 | REJECT: edge:rangeAtr+bodyFrac+holdBars+atrMult | REJECT (3) | 0.44
+vol-regime-switch | 192 | 191 | regimeLen=360 channelLen=96 edgeFrac=0.05 atrMult=2.5 | 59.2 | 1.09 | 1.38 | 85 | 11.3 | REJECT: edge:regimeLen+channelLen+edgeFrac+atrMult | REJECT (3) | 0.07
+donchian-ensemble-trend | 84 | 83 | baseDays=1 minAgree=3 trailMult=3 | 7.5 | 0.59 | 1.24 | 74 | 4.6 | REJECT: 2/4 folds, edge:baseDays+minAgree, no plateau | REJECT (7) | 0.01
+nr-compression-breakout | 120 | 119 | nrLen=5 holdBars=24 stopMult=0.5 | 11.8 | 0.35 | 1.10 | 62 | 20.2 | REJECT: Sharpe 0.35, 2/4 folds, edge:stopMult, no plateau | REJECT (7) | 0.00
+tsmom-vote | 96 | 95 | baseDays=4 unanimous=1 stopMult=1 | 13.0 | 0.45 | 1.18 | 60 | 13.0 | REJECT: Sharpe 0.45, edge:unanimous+stopMult, no plateau | REJECT (8) | 0.01
+max-min-daily | 125 | 124 | lookbackDays=10 holdDays=2 stopMult=1.5 | 14.4 | 0.76 | 1.33 | 53 | 9.6 | REJECT: 2/4 folds, edge:lookbackDays, no plateau | REJECT (6) | 0.03
+crowding-filtered-breakout | 150 | 149 | channelDays=3 maxRank=0.7 trailMult=3 | 12.3 | 1.02 | 1.50 | 54 | 3.0 | REJECT: 2/4 folds, edge:trailMult, no plateau | REJECT (5) | 0.06
+funding-tilt | 100 | 99 | threshold=0.3 holdBars=96 stopMult=1.5 | 21.3 | 0.98 | 1.37 | 66 | 5.5 | REJECT: edge:threshold | REJECT (4) | 0.06
+funding-carry-tilt | 25 | 24 | band=0.2 stopMult=1 | 16.3 | 0.56 | 1.21 | 57 | 14.7 | REJECT: edge:stopMult, no plateau | REJECT (7) | 0.01
+cipher-a-ribbon | 40 | 39 | tfHours=2 atrMult=2.5 diamondExit=1 | 47.5 | 0.72 | 1.20 | 132 | 26.3 | REJECT: 3/4 folds, edge:tfHours+diamondExit | REJECT (7) | 0.02
+supertrend | 72 | 71 | tfHours=2 atrLen=7 mult=4 | 57.4 | 0.74 | 1.25 | 124 | 25.1 | REJECT: 2/4 folds, edge:tfHours+atrLen+mult, no plateau | REJECT (8) | 0.02
+ichimoku-cloud | 40 | 39 | tfHours=6 periodSet=1 atrMult=3 | 28.6 | 1.05 | 1.58 | 59 | 5.9 | REJECT: 2/4 folds, edge:periodSet, no plateau | REJECT (5) | 0.07
+turmoil-reversal | 140 | 139 | zEntry=0.75 volQuantile=0.7 holdPeriods=6 | 14.7 | 0.64 | 1.19 | 66 | 10.1 | REJECT: no plateau | REJECT (6) | 0.02

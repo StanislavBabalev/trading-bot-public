@@ -1,0 +1,1575 @@
+{
+  "schema_version": 1,
+  "cumulative_trial_count": 5883,
+  "champion": null,
+  "runner_ups": [],
+  "rejected": [
+    {
+      "cycle": 3,
+      "strategy": "donchian-breakout",
+      "family": "trend",
+      "stage": "dev-baseline",
+      "reasons": [
+        "Sharpe 0.36 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "entryLen": 72,
+        "exitLen": 24,
+        "atrMult": 3
+      },
+      "report": "artifacts/hunt/cycle_3/report.json"
+    },
+    {
+      "cycle": 3,
+      "strategy": "bollinger-reversion",
+      "family": "mean-reversion",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.85 < 1.10",
+        "Sharpe -1.09 < 0.50",
+        "max DD 38.0% > 30%",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "bbLen": 40,
+        "bbMult": 2,
+        "atrMult": 3
+      },
+      "report": "artifacts/hunt/cycle_3/report.json"
+    },
+    {
+      "cycle": 3,
+      "strategy": "keltner-breakout",
+      "family": "vol-breakout",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.08 < 1.10",
+        "Sharpe 0.41 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "emaLen": 48,
+        "bandMult": 2,
+        "atrMult": 3
+      },
+      "report": "artifacts/hunt/cycle_3/report.json"
+    },
+    {
+      "cycle": 3,
+      "strategy": "ts-momentum",
+      "family": "momentum",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.04 < 1.10",
+        "Sharpe 0.25 < 0.50",
+        "max DD 31.6% > 30%",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "lookback": 96,
+        "threshold": 0.01,
+        "atrMult": 3
+      },
+      "report": "artifacts/hunt/cycle_3/report.json"
+    },
+    {
+      "cycle": 3,
+      "strategy": "trend-pullback-rsi",
+      "family": "regime-filter",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.84 < 1.10",
+        "Sharpe -0.80 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "trendLen": 200,
+        "rsiLen": 4,
+        "level": 20,
+        "atrMult": 3
+      },
+      "report": "artifacts/hunt/cycle_3/report.json"
+    },
+    {
+      "cycle": 4,
+      "strategy": "failed-breakout-fade",
+      "family": "range-structure",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.99 < 1.10",
+        "Sharpe 0.01 < 0.50"
+      ],
+      "parameters": {
+        "breakBars": 6,
+        "excursionAtr": 0.25,
+        "stopBufferAtr": 0.5,
+        "maxHold": 24
+      },
+      "report": "artifacts/hunt/cycle_4/report.json"
+    },
+    {
+      "cycle": 4,
+      "strategy": "volume-climax-reversal",
+      "family": "volume",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.68 < 1.10",
+        "Sharpe -1.52 < 0.50",
+        "max DD 46.9% > 30%",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "volMult": 2,
+        "rangeAtr": 1.5,
+        "maxHold": 12
+      },
+      "report": "artifacts/hunt/cycle_4/report.json"
+    },
+    {
+      "cycle": 4,
+      "strategy": "session-momentum",
+      "family": "time-of-day",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.71 < 1.10",
+        "Sharpe -0.65 < 0.50",
+        "31.7 trades/yr < 50 (95 trades)",
+        "walk-forward: 4 of 4 folds failed"
+      ],
+      "parameters": {
+        "moveMult": 1,
+        "holdBars": 8,
+        "atrMult": 3
+      },
+      "report": "artifacts/hunt/cycle_4/report.json"
+    },
+    {
+      "cycle": 4,
+      "strategy": "impulse-bar-continuation",
+      "family": "vol-state",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.07 < 1.10",
+        "Sharpe 0.43 < 0.50"
+      ],
+      "parameters": {
+        "rangeAtr": 2.5,
+        "bodyFrac": 0.6,
+        "holdBars": 12,
+        "atrMult": 2
+      },
+      "report": "artifacts/hunt/cycle_4/report.json"
+    },
+    {
+      "cycle": 4,
+      "strategy": "vol-regime-switch",
+      "family": "regime-switch",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.01 < 1.10",
+        "Sharpe 0.12 < 0.50",
+        "max DD 30.1% > 30%"
+      ],
+      "parameters": {
+        "regimeLen": 720,
+        "channelLen": 48,
+        "edgeFrac": 0.1,
+        "atrMult": 2
+      },
+      "report": "artifacts/hunt/cycle_4/report.json"
+    },
+    {
+      "cycle": 5,
+      "strategy": "donchian-ensemble-trend",
+      "family": "trend-ensemble",
+      "stage": "dev-baseline",
+      "reasons": [
+        "Sharpe 0.48 < 0.50",
+        "42.4 trades/yr < 50 (127 trades)",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "baseDays": 2,
+        "minAgree": 3,
+        "trailMult": 2
+      },
+      "report": "artifacts/hunt/cycle_5/report.json"
+    },
+    {
+      "cycle": 5,
+      "strategy": "funding-crowding-fade",
+      "family": "funding-carry",
+      "stage": "optimization",
+      "reasons": [
+        "optimum on the search-range edge of quantile"
+      ],
+      "parameters": {
+        "quantile": 0.2,
+        "holdBars": 72,
+        "stopMult": 1.5
+      },
+      "report": "artifacts/hunt/cycle_5/report.json"
+    },
+    {
+      "cycle": 5,
+      "strategy": "noise-area-momentum",
+      "family": "intraday-momentum",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.85 < 1.10",
+        "Sharpe -0.78 < 0.50",
+        "max DD 41.4% > 30%",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "lookbackDays": 14,
+        "bandMult": 1,
+        "firstHour": 2
+      },
+      "report": "artifacts/hunt/cycle_5/report.json"
+    },
+    {
+      "cycle": 5,
+      "strategy": "nr-compression-breakout",
+      "family": "vol-compression",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.06 < 1.10",
+        "Sharpe 0.24 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "nrLen": 4,
+        "holdBars": 24,
+        "stopMult": 1
+      },
+      "report": "artifacts/hunt/cycle_5/report.json"
+    },
+    {
+      "cycle": 5,
+      "strategy": "tsmom-vote",
+      "family": "momentum-daily",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.03 < 1.10",
+        "Sharpe 0.10 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "baseDays": 5,
+        "unanimous": 0,
+        "stopMult": 2
+      },
+      "report": "artifacts/hunt/cycle_5/report.json"
+    },
+    {
+      "cycle": 6,
+      "strategy": "max-min-daily",
+      "family": "daily-extremes",
+      "stage": "dev-baseline",
+      "reasons": [
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "lookbackDays": 10,
+        "holdDays": 1,
+        "stopMult": 2
+      },
+      "report": "artifacts/hunt/cycle_6/report.json"
+    },
+    {
+      "cycle": 6,
+      "strategy": "mtf-trend-pullback",
+      "family": "multi-timeframe-trend",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.93 < 1.10",
+        "Sharpe -0.13 < 0.50",
+        "49.0 trades/yr < 50 (147 trades)",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "maDays": 20,
+        "entryLen": 24,
+        "trailMult": 2
+      },
+      "report": "artifacts/hunt/cycle_6/report.json"
+    },
+    {
+      "cycle": 6,
+      "strategy": "efficiency-regime-switch",
+      "family": "efficiency-regime",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.87 < 1.10",
+        "Sharpe -0.72 < 0.50",
+        "max DD 43.9% > 30%",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "erLen": 168,
+        "erThreshold": 0.2,
+        "atrMult": 2.5
+      },
+      "report": "artifacts/hunt/cycle_6/report.json"
+    },
+    {
+      "cycle": 6,
+      "strategy": "volume-conditioned-reversal",
+      "family": "price-volume",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.98 < 1.10",
+        "Sharpe -0.03 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "extremeFrac": 0.25,
+        "holdDays": 1,
+        "stopMult": 1.5
+      },
+      "report": "artifacts/hunt/cycle_6/report.json"
+    },
+    {
+      "cycle": 6,
+      "strategy": "crowding-filtered-breakout",
+      "family": "funding-filtered-trend",
+      "stage": "dev-baseline",
+      "reasons": [
+        "48.0 trades/yr < 50 (144 trades)",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 2
+      },
+      "report": "artifacts/hunt/cycle_6/report.json"
+    },
+    {
+      "cycle": 7,
+      "strategy": "funding-tilt",
+      "family": "funding-carry",
+      "stage": "dev-baseline",
+      "reasons": [
+        "Sharpe 0.37 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "threshold": 0.4,
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "report": "artifacts/hunt/cycle_7/report.json"
+    },
+    {
+      "cycle": 7,
+      "strategy": "ema-cross-control",
+      "family": "control",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.75 < 1.10",
+        "Sharpe -0.94 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "report": "artifacts/hunt/cycle_7/report.json"
+    },
+    {
+      "cycle": 7,
+      "strategy": "funding-carry-tilt",
+      "family": "funding-carry",
+      "stage": "dev-baseline",
+      "reasons": [
+        "Sharpe 0.26 < 0.50",
+        "36.7 trades/yr < 50 (110 trades)"
+      ],
+      "parameters": {
+        "band": 0.3,
+        "stopMult": 2
+      },
+      "report": "artifacts/hunt/cycle_7/report.json"
+    },
+    {
+      "cycle": 8,
+      "strategy": "funding-fade-wide",
+      "family": "funding-carry",
+      "stage": "locked-oos",
+      "reasons": [
+        "PF 1.00 < 1.10",
+        "Sharpe 0.02 < 0.50"
+      ],
+      "parameters": {
+        "quantile": 0.3,
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "report": "artifacts/hunt/cycle_8/report.json"
+    },
+    {
+      "cycle": 9,
+      "strategy": "cipher-b-dots",
+      "family": "oscillator-reversal",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.93 < 1.10",
+        "Sharpe -0.19 < 0.50",
+        "walk-forward: 4 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 4,
+        "level": 53,
+        "atrMult": 2.5
+      },
+      "report": "artifacts/hunt/cycle_9/report.json"
+    },
+    {
+      "cycle": 9,
+      "strategy": "cipher-b-sommi-flag",
+      "family": "oscillator-continuation",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.87 < 1.10",
+        "Sharpe -0.37 < 0.50",
+        "walk-forward: 4 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 2.5
+      },
+      "report": "artifacts/hunt/cycle_9/report.json"
+    },
+    {
+      "cycle": 9,
+      "strategy": "cipher-b-divergence",
+      "family": "oscillator-divergence",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.88 < 1.10",
+        "Sharpe -0.28 < 0.50",
+        "46.7 trades/yr < 50 (140 trades)",
+        "walk-forward: 4 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 2,
+        "limitScale": 1,
+        "atrMult": 2
+      },
+      "report": "artifacts/hunt/cycle_9/report.json"
+    },
+    {
+      "cycle": 9,
+      "strategy": "cipher-a-ribbon",
+      "family": "ema-ribbon",
+      "stage": "dev-baseline",
+      "reasons": [
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 4,
+        "atrMult": 2.5,
+        "diamondExit": 1
+      },
+      "report": "artifacts/hunt/cycle_9/report.json"
+    },
+    {
+      "cycle": 9,
+      "strategy": "cipher-b-confluence",
+      "family": "oscillator-reversal",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.95 < 1.10",
+        "Sharpe -0.10 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 4,
+        "level": 53,
+        "atrMult": 2.5
+      },
+      "report": "artifacts/hunt/cycle_9/report.json"
+    },
+    {
+      "cycle": 10,
+      "strategy": "supertrend",
+      "family": "atr-trend",
+      "stage": "dev-baseline",
+      "reasons": [
+        "Sharpe 0.46 < 0.50",
+        "max DD 35.3% > 30%",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 4,
+        "atrLen": 10,
+        "mult": 3
+      },
+      "report": "artifacts/hunt/cycle_10/report.json"
+    },
+    {
+      "cycle": 10,
+      "strategy": "squeeze-momentum",
+      "family": "vol-compression",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.99 < 1.10",
+        "Sharpe 0.02 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 4,
+        "kcMult": 1.5,
+        "atrMult": 2.5
+      },
+      "report": "artifacts/hunt/cycle_10/report.json"
+    },
+    {
+      "cycle": 10,
+      "strategy": "ichimoku-cloud",
+      "family": "cloud-trend",
+      "stage": "dev-baseline",
+      "reasons": [
+        "Sharpe 0.34 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "parameters": {
+        "tfHours": 4,
+        "periodSet": 1,
+        "atrMult": 2.5
+      },
+      "report": "artifacts/hunt/cycle_10/report.json"
+    },
+    {
+      "cycle": 11,
+      "strategy": "dca-grid-long",
+      "family": "dca-grid",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.77 < 1.10",
+        "Sharpe -0.83 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.01
+      },
+      "report": "artifacts/hunt/cycle_11/report.json"
+    },
+    {
+      "cycle": 11,
+      "strategy": "dca-grid-short",
+      "family": "dca-grid",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.84 < 1.10",
+        "Sharpe -0.62 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.01
+      },
+      "report": "artifacts/hunt/cycle_11/report.json"
+    },
+    {
+      "cycle": 11,
+      "strategy": "dca-rsi-long",
+      "family": "dca-grid",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.74 < 1.10",
+        "Sharpe -0.46 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "rsiLevel": 30,
+        "overlap": 0.1,
+        "takeProfit": 0.01,
+        "orders": 5,
+        "martingale": 0.15
+      },
+      "report": "artifacts/hunt/cycle_11/report.json"
+    },
+    {
+      "cycle": 11,
+      "strategy": "dca-trend-long",
+      "family": "dca-grid",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.75 < 1.10",
+        "Sharpe -0.67 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "maDays": 200,
+        "overlap": 0.1,
+        "takeProfit": 0.01,
+        "orders": 5,
+        "martingale": 0.15
+      },
+      "report": "artifacts/hunt/cycle_11/report.json"
+    },
+    {
+      "cycle": 12,
+      "strategy": "cascade-fade",
+      "family": "liquidation-cascade",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.75 < 1.10",
+        "Sharpe -1.45 < 0.50",
+        "max DD 49.5% > 30%",
+        "walk-forward: 4 of 4 folds failed"
+      ],
+      "parameters": {
+        "dropAtr": 1.5,
+        "volMult": 1.5,
+        "holdBars": 24
+      },
+      "report": "artifacts/hunt/cycle_12/report.json"
+    },
+    {
+      "cycle": 12,
+      "strategy": "turmoil-reversal",
+      "family": "turmoil-liquidity-provision",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 1.05 < 1.10",
+        "Sharpe 0.16 < 0.50",
+        "41.7 trades/yr < 50 (125 trades)"
+      ],
+      "parameters": {
+        "zEntry": 1,
+        "volQuantile": 0.7,
+        "holdPeriods": 6
+      },
+      "report": "artifacts/hunt/cycle_12/report.json"
+    },
+    {
+      "cycle": 12,
+      "strategy": "round-number-bounce",
+      "family": "price-barrier",
+      "stage": "dev-baseline",
+      "reasons": [
+        "PF 0.87 < 1.10",
+        "Sharpe -0.65 < 0.50",
+        "max DD 43.3% > 30%",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "parameters": {
+        "levelStep": 1000,
+        "freshBars": 24,
+        "holdBars": 24
+      },
+      "report": "artifacts/hunt/cycle_12/report.json"
+    }
+  ],
+  "engine": {
+    "name": "local C# backtester (src/Backtester.Core)",
+    "built_utc": "2026-10-26",
+    "data_audit_artifact": "artifacts/audit/local_data_audit.json",
+    "note": "Replaces trader-dev for the hunt (user decision 2026-10-26); supports funding, next-bar-open fills and configurable costs/sizing. STEP 0 passed against it in cycle 2."
+  },
+  "pre_hunt_trials": [
+    {
+      "timestamp_utc": "2026-10-26T14:38:00Z",
+      "purpose": "engine smoke test, not a hunt cycle; logged because it touched development data",
+      "strategy": "ema-cross-atr",
+      "window": "dev 2021-01-01 -> 2024-01-01",
+      "distinct_parameter_sets": 25,
+      "grid": "fast 40:120:20 x slow 180:340:40, longOnly=1, atrLen=14, atrMult=5",
+      "oos_touched": false,
+      "artifacts": [
+        "artifacts/runs/20261026T143758143Z_ema-cross-atr",
+        "artifacts/walkforward/20261026T143826662Z_ema-cross-atr",
+        "artifacts/optimizations/20261026T143827795Z_ema-cross-atr"
+      ]
+    }
+  ],
+  "cycles": [
+    {
+      "cycle": 1,
+      "timestamp_utc": "2026-10-26T14:20:15Z",
+      "step": "STEP 0 - capability & data audit",
+      "result": "AUDIT FAILED",
+      "trials_run": 0,
+      "checks": {
+        "engine_reachable": {
+          "status": "PASS",
+          "evidence": "mcp__trader-dev__whoami returned the account (tier free; account id redacted)"
+        },
+        "backtester_callable": {
+          "status": "PASS",
+          "evidence": "quick_backtest and run_backtest are exposed; quick_backtest succeeded on BTCUSDT 1h earlier on 2026-10-26 (engine tv_jul26_mc7)"
+        },
+        "optimizer_callable": {
+          "status": "PASS_WITH_CAVEAT",
+          "evidence": "optimize_strategy and start_optimization are exposed and completed runs on 2026-10-26",
+          "caveat": "Their scores do not reproduce on the parity backtester (e.g. EMA 23/20: optimizer Sharpe +0.55 vs quick_backtest -0.62). Free tier: 20 credits per start_optimization, a few per day."
+        },
+        "data_btcusdt_1h": {
+          "status": "FAIL",
+          "market": "BYBIT:BTCUSDT.P (Bybit USDT linear perpetual; all crypto symbols resolve here)",
+          "requested_window": "2021-01-01T00:00:00Z -> 2026-10-26T00:00:00Z",
+          "plan_backtest_window": "applied window unchanged, parityAdjustments []",
+          "first_open_utc": "2020-03-25T11:00:00Z",
+          "last_open_utc": "2026-10-26T00:00:00Z",
+          "stale": false,
+          "bar_count_stored_full_history": 57682,
+          "bar_count_expected_full_history": 57734,
+          "missing_bars_full_history": 52,
+          "bar_count_expected_requested_window": 50977,
+          "bar_count_actual_requested_window": "N/A - no tool returns per-window counts",
+          "gap_locations": "N/A - no tool exposes raw bars",
+          "schema": "N/A - no tool exposes raw OHLCV rows; coverage endpoint only reports open_time min/max and barCount",
+          "artifacts": [
+            "artifacts/audit/market_coverage_data.json",
+            "artifacts/audit/btcusdt_1h_coverage.json",
+            "artifacts/audit/btcusdt_meta.json",
+            "artifacts/audit/market_coverage.html"
+          ]
+        },
+        "funding_rate_data": {
+          "status": "FAIL",
+          "venue": "[SPECIFY] - not provided in the prompt",
+          "evidence": "No trader-dev tool returns funding rates (ToolSearch 'funding rate perpetual' found none). Backtest results contain no funding field; the enforced parity profile covers commission, sizing and margin only."
+        },
+        "state_file_rw": {
+          "status": "PASS",
+          "evidence": "hunt_log.json created and read back in this cycle"
+        }
+      },
+      "constants_enforceable": {
+        "costs_0.04pct_commission_plus_0.02pct_slippage": {
+          "status": "FAIL",
+          "evidence": "Engine hard-forces commission to 0.05% per side (parityAdjustments reason mcp_parity_profile_commission_0_05 on every quick_backtest). quick_backtest has an integer-ticks slippage parameter; whether it is honored is unverified."
+        },
+        "funding_modeled": {
+          "status": "FAIL",
+          "evidence": "Not modeled by the engine."
+        },
+        "fill_next_bar_open": {
+          "status": "FAIL",
+          "evidence": "get_pine_codegen_rules: processOrdersOnCloseRequired=true, so orders fill at the signal bar's close (same-bar fill)."
+        },
+        "position_sizing": {
+          "status": "FAIL",
+          "value": "[SPECIFY] - not provided",
+          "evidence": "Engine forces 100% of equity per trade with margin 100 (parity profile); 1%-risk or vol-target sizing cannot be set."
+        },
+        "risk_limits": {
+          "status": "FAIL",
+          "value": "[SPECIFY] - not provided"
+        },
+        "benchmark_buy_and_hold": {
+          "status": "PASS_WITH_CAVEAT",
+          "evidence": "Engine does not report buy-and-hold; it can only be derived from trade prices, not from a saved engine artifact."
+        }
+      },
+      "unspecified_parameters": [
+        "funding venue",
+        "position sizing",
+        "risk limits",
+        "N hypotheses per cycle",
+        "optimizer evaluation cap"
+      ],
+      "failures": [
+        "Funding-rate data unavailable and venue unspecified",
+        "BTCUSDT 1h has 52 missing bars over its history; gaps, schema and per-window bar count cannot be inspected",
+        "Next-bar-open fills impossible: engine requires process_orders_on_close=true",
+        "Costs not settable: commission forced to 0.05%/side; funding not modeled",
+        "Sizing and risk limits unspecified, and engine forces 100% equity sizing"
+      ]
+    },
+    {
+      "cycle": 2,
+      "timestamp_utc": "2026-10-26T15:01:00Z",
+      "step": "STEP 0 - capability & data audit (re-run against the local engine)",
+      "result": "AUDIT PASSED",
+      "trials_run": 0,
+      "checks": {
+        "backtester_callable": {
+          "status": "PASS",
+          "evidence": "Release build 0 warnings / 0 errors; 54/54 xUnit tests pass, incl. Signal_fills_at_next_bar_open_never_same_bar, Commission_and_slippage_are_charged_on_both_sides, Funding_is_paid_by_longs_and_received_by_shorts; CLI 'backtest' ran on dev data earlier today",
+          "artifacts": [
+            "artifacts/audit/step0_build.txt",
+            "artifacts/audit/step0_dotnet_test.txt",
+            "artifacts/audit/step0_cli_strategies.txt"
+          ]
+        },
+        "optimizer_callable": {
+          "status": "PASS",
+          "evidence": "GridOptimizer tests pass (evaluation cap incl. neighbours, edge rejection, plateau check, max 4 params); CLI 'optimize' ran on dev data earlier today (artifacts/optimizations/20261026T143827795Z_ema-cross-atr)"
+        },
+        "data_btcusdt_1h": {
+          "status": "PASS",
+          "market": "Bybit BTCUSDT USDT linear perpetual, v5 public API",
+          "schema": "open_time_ms,open,high,low,close,volume (UTC Unix ms)",
+          "window": "2021-01-01T00:00:00Z -> 2026-10-26T00:00:00Z (end exclusive)",
+          "bar_count_window": 50976,
+          "bar_count_expected_window": 50976,
+          "gaps_window": 0,
+          "full_history": "57,735 bars 2020-03-25T10:00Z -> 2026-10-26T00:00Z, 0 missing, 0 duplicates, 0 out-of-order, 0 invalid OHLC, 0 misaligned",
+          "file_sha256": "3300870521B4D1D1AAFE15FEA13192DF1D84CDE6998F5C7E30C5C20C354B7ED0",
+          "artifacts": [
+            "artifacts/audit/local_data_audit.json"
+          ]
+        },
+        "funding_rate_data": {
+          "status": "PASS",
+          "venue": "Bybit (BTCUSDT linear perpetual)",
+          "schema": "time_ms,rate",
+          "rows_window": 6372,
+          "interval": "8h, 0 irregular intervals over the full history (7,217 rates)",
+          "window_rate_mean": 0.0001088,
+          "window_rate_min": -0.002147,
+          "window_rate_max": 0.00375,
+          "file_sha256": "5F8E125EDB6E13A208AF80CE208C596D10B711D6115F403BA0542E1992978BFC",
+          "artifacts": [
+            "artifacts/audit/local_data_audit.json"
+          ]
+        },
+        "state_file_rw": {
+          "status": "PASS",
+          "evidence": "hunt_log.json updated with this entry and parsed back"
+        }
+      },
+      "constants_enforceable": {
+        "costs": {
+          "status": "PASS",
+          "value": "commission 0.0004 + slippage 0.0002 per side (config/hunt.json)"
+        },
+        "funding_modeled": {
+          "status": "PASS",
+          "value": "settles every 8h on the position held at the timestamp"
+        },
+        "fill_next_bar_open": {
+          "status": "PASS",
+          "value": "signal on bar close, fill at next bar open; no same-bar fills"
+        },
+        "position_sizing": {
+          "status": "PASS",
+          "value": "RiskPerTrade 1% of equity, max 1x leverage (confirmed by user 2026-10-26)"
+        },
+        "risk_limits": {
+          "status": "PASS",
+          "value": "no max-DD stop, no daily-loss stop (confirmed by user 2026-10-26)"
+        },
+        "benchmark_buy_and_hold": {
+          "status": "PASS",
+          "value": "Benchmark.BuyAndHold: 1x spot-style, same commission/slippage, no funding"
+        },
+        "oos_lock": {
+          "status": "PASS",
+          "value": "optimize/walkforward refuse OOS; backtest needs --unlock-oos and logs to artifacts/oos_access.log (no OOS runs so far)"
+        }
+      },
+      "still_unspecified_before_step_2": [
+        "N hypotheses per cycle",
+        "optimizer evaluation cap"
+      ],
+      "notes": [
+        "RiskPerTrade sizing needs a stop on every entry; strategies without stops will have entries skipped.",
+        "pre_hunt_trials (25 dev-window parameter sets) are included in cumulative_trial_count."
+      ]
+    },
+    {
+      "cycle": 3,
+      "timestamp_utc": "2026-10-26T15:34:19Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "donchian-breakout",
+          "family": "trend",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "Sharpe 0.36 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "bollinger-reversion",
+          "family": "mean-reversion",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.85 < 1.10",
+            "Sharpe -1.09 < 0.50",
+            "max DD 38.0% > 30%",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "keltner-breakout",
+          "family": "vol-breakout",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.08 < 1.10",
+            "Sharpe 0.41 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "ts-momentum",
+          "family": "momentum",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.04 < 1.10",
+            "Sharpe 0.25 < 0.50",
+            "max DD 31.6% > 30%",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "trend-pullback-rsi",
+          "family": "regime-filter",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.84 < 1.10",
+            "Sharpe -0.80 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 5,
+      "cumulative_trial_count": 30,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_3/report.json"
+    },
+    {
+      "cycle": 4,
+      "timestamp_utc": "2026-10-26T19:23:54Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "failed-breakout-fade",
+          "family": "range-structure",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.99 < 1.10",
+            "Sharpe 0.01 < 0.50"
+          ]
+        },
+        {
+          "strategy": "volume-climax-reversal",
+          "family": "volume",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.68 < 1.10",
+            "Sharpe -1.52 < 0.50",
+            "max DD 46.9% > 30%",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "session-momentum",
+          "family": "time-of-day",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.71 < 1.10",
+            "Sharpe -0.65 < 0.50",
+            "31.7 trades/yr < 50 (95 trades)",
+            "walk-forward: 4 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "impulse-bar-continuation",
+          "family": "vol-state",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.07 < 1.10",
+            "Sharpe 0.43 < 0.50"
+          ]
+        },
+        {
+          "strategy": "vol-regime-switch",
+          "family": "regime-switch",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.01 < 1.10",
+            "Sharpe 0.12 < 0.50",
+            "max DD 30.1% > 30%"
+          ]
+        }
+      ],
+      "trials_this_cycle": 5,
+      "cumulative_trial_count": 35,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_4/report.json"
+    },
+    {
+      "cycle": 5,
+      "timestamp_utc": "2026-10-26T20:48:21Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "donchian-ensemble-trend",
+          "family": "trend-ensemble",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "Sharpe 0.48 < 0.50",
+            "42.4 trades/yr < 50 (127 trades)",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "funding-crowding-fade",
+          "family": "funding-carry",
+          "verdict": "REJECTED",
+          "stage": "optimization",
+          "reasons": [
+            "optimum on the search-range edge of quantile"
+          ]
+        },
+        {
+          "strategy": "noise-area-momentum",
+          "family": "intraday-momentum",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.85 < 1.10",
+            "Sharpe -0.78 < 0.50",
+            "max DD 41.4% > 30%",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "nr-compression-breakout",
+          "family": "vol-compression",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.06 < 1.10",
+            "Sharpe 0.24 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "tsmom-vote",
+          "family": "momentum-daily",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.03 < 1.10",
+            "Sharpe 0.10 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 154,
+      "cumulative_trial_count": 189,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_5/report.json"
+    },
+    {
+      "cycle": 6,
+      "timestamp_utc": "2026-10-26T20:48:22Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "max-min-daily",
+          "family": "daily-extremes",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "mtf-trend-pullback",
+          "family": "multi-timeframe-trend",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.93 < 1.10",
+            "Sharpe -0.13 < 0.50",
+            "49.0 trades/yr < 50 (147 trades)",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "efficiency-regime-switch",
+          "family": "efficiency-regime",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.87 < 1.10",
+            "Sharpe -0.72 < 0.50",
+            "max DD 43.9% > 30%",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "volume-conditioned-reversal",
+          "family": "price-volume",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.98 < 1.10",
+            "Sharpe -0.03 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "crowding-filtered-breakout",
+          "family": "funding-filtered-trend",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "48.0 trades/yr < 50 (144 trades)",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 5,
+      "cumulative_trial_count": 194,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_6/report.json"
+    },
+    {
+      "cycle": 7,
+      "timestamp_utc": "2026-10-26T20:50:57Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "funding-tilt",
+          "family": "funding-carry",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "Sharpe 0.37 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "ema-cross-control",
+          "family": "control",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.75 < 1.10",
+            "Sharpe -0.94 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "funding-carry-tilt",
+          "family": "funding-carry",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "Sharpe 0.26 < 0.50",
+            "36.7 trades/yr < 50 (110 trades)"
+          ]
+        }
+      ],
+      "trials_this_cycle": 3,
+      "cumulative_trial_count": 197,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_7/report.json"
+    },
+    {
+      "cycle": 8,
+      "timestamp_utc": "2026-10-26T20:51:54Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "funding-fade-wide",
+          "family": "funding-carry",
+          "verdict": "REJECTED",
+          "stage": "locked-oos",
+          "reasons": [
+            "PF 1.00 < 1.10",
+            "Sharpe 0.02 < 0.50"
+          ]
+        }
+      ],
+      "trials_this_cycle": 100,
+      "cumulative_trial_count": 297,
+      "locked_oos_runs": 1,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_8/report.json"
+    },
+    {
+      "cycle": 9,
+      "timestamp_utc": "2026-10-26T21:58:25Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "cipher-b-dots",
+          "family": "oscillator-reversal",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.93 < 1.10",
+            "Sharpe -0.19 < 0.50",
+            "walk-forward: 4 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "cipher-b-sommi-flag",
+          "family": "oscillator-continuation",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.87 < 1.10",
+            "Sharpe -0.37 < 0.50",
+            "walk-forward: 4 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "cipher-b-divergence",
+          "family": "oscillator-divergence",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.88 < 1.10",
+            "Sharpe -0.28 < 0.50",
+            "46.7 trades/yr < 50 (140 trades)",
+            "walk-forward: 4 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "cipher-a-ribbon",
+          "family": "ema-ribbon",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "cipher-b-confluence",
+          "family": "oscillator-reversal",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.95 < 1.10",
+            "Sharpe -0.10 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 5,
+      "cumulative_trial_count": 302,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_9/report.json"
+    },
+    {
+      "cycle": 10,
+      "timestamp_utc": "2026-10-26T21:58:25Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "supertrend",
+          "family": "atr-trend",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "Sharpe 0.46 < 0.50",
+            "max DD 35.3% > 30%",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "squeeze-momentum",
+          "family": "vol-compression",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.99 < 1.10",
+            "Sharpe 0.02 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "ichimoku-cloud",
+          "family": "cloud-trend",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "Sharpe 0.34 < 0.50",
+            "walk-forward: 2 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 3,
+      "cumulative_trial_count": 305,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_10/report.json"
+    },
+    {
+      "cycle": 11,
+      "timestamp_utc": "2026-10-26T22:42:29Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "dca-grid-long",
+          "family": "dca-grid",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.77 < 1.10",
+            "Sharpe -0.83 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "dca-grid-short",
+          "family": "dca-grid",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.84 < 1.10",
+            "Sharpe -0.62 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "dca-rsi-long",
+          "family": "dca-grid",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.74 < 1.10",
+            "Sharpe -0.46 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "dca-trend-long",
+          "family": "dca-grid",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.75 < 1.10",
+            "Sharpe -0.67 < 0.50",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 4,
+      "cumulative_trial_count": 309,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_11/report.json"
+    },
+    {
+      "cycle": 12,
+      "timestamp_utc": "2026-10-27T18:47:12Z",
+      "step": "hunt cycle (steps 1-9)",
+      "hypotheses": [
+        {
+          "strategy": "cascade-fade",
+          "family": "liquidation-cascade",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.75 < 1.10",
+            "Sharpe -1.45 < 0.50",
+            "max DD 49.5% > 30%",
+            "walk-forward: 4 of 4 folds failed"
+          ]
+        },
+        {
+          "strategy": "turmoil-reversal",
+          "family": "turmoil-liquidity-provision",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 1.05 < 1.10",
+            "Sharpe 0.16 < 0.50",
+            "41.7 trades/yr < 50 (125 trades)"
+          ]
+        },
+        {
+          "strategy": "round-number-bounce",
+          "family": "price-barrier",
+          "verdict": "REJECTED",
+          "stage": "dev-baseline",
+          "reasons": [
+            "PF 0.87 < 1.10",
+            "Sharpe -0.65 < 0.50",
+            "max DD 43.3% > 30%",
+            "walk-forward: 3 of 4 folds failed"
+          ]
+        }
+      ],
+      "trials_this_cycle": 3,
+      "cumulative_trial_count": 312,
+      "locked_oos_runs": 0,
+      "champion": null,
+      "report": "artifacts/hunt/cycle_12/report.json"
+    }
+  ],
+  "tested_strategies": [
+    "donchian-breakout",
+    "bollinger-reversion",
+    "keltner-breakout",
+    "ts-momentum",
+    "trend-pullback-rsi",
+    "failed-breakout-fade",
+    "volume-climax-reversal",
+    "session-momentum",
+    "impulse-bar-continuation",
+    "vol-regime-switch",
+    "donchian-ensemble-trend",
+    "funding-crowding-fade",
+    "noise-area-momentum",
+    "nr-compression-breakout",
+    "tsmom-vote",
+    "max-min-daily",
+    "mtf-trend-pullback",
+    "efficiency-regime-switch",
+    "volume-conditioned-reversal",
+    "crowding-filtered-breakout",
+    "funding-tilt",
+    "ema-cross-control",
+    "funding-carry-tilt",
+    "funding-fade-wide",
+    "cipher-b-dots",
+    "cipher-b-sommi-flag",
+    "cipher-b-divergence",
+    "cipher-a-ribbon",
+    "cipher-b-confluence",
+    "supertrend",
+    "squeeze-momentum",
+    "ichimoku-cloud",
+    "dca-grid-long",
+    "dca-grid-short",
+    "dca-rsi-long",
+    "dca-trend-long",
+    "cascade-fade",
+    "turmoil-reversal",
+    "round-number-bounce"
+  ],
+  "grid_reruns": [
+    {
+      "date": "2026-10-28",
+      "requested_by": "user",
+      "purpose": "full registered grid of every hypothesis with a profitable dev baseline; dev window only; no holdout",
+      "strategies": [
+        "donchian-breakout",
+        "keltner-breakout",
+        "ts-momentum",
+        "impulse-bar-continuation",
+        "vol-regime-switch",
+        "donchian-ensemble-trend",
+        "nr-compression-breakout",
+        "tsmom-vote",
+        "max-min-daily",
+        "crowding-filtered-breakout",
+        "funding-tilt",
+        "funding-carry-tilt",
+        "cipher-a-ribbon",
+        "supertrend",
+        "ichimoku-cloud",
+        "turmoil-reversal"
+      ],
+      "skipped_already_searched": [
+        "funding-crowding-fade",
+        "funding-fade-wide"
+      ],
+      "trials_added": 1772,
+      "cumulative_trial_count": 2084,
+      "artifacts": "artifacts/hunt/grid_rerun_2026-10-28"
+    },
+    {
+      "date": "2026-10-28",
+      "requested_by": "user",
+      "purpose": "full registered grid of every remaining registered hypothesis ('Run All with all parameters'); ema-cross-atr searched exhaustively over its 1,344-point grid, above the 200-evaluation cap; dev window only; no holdout",
+      "strategies": [
+        "ema-cross-atr",
+        "bollinger-reversion",
+        "trend-pullback-rsi",
+        "failed-breakout-fade",
+        "volume-climax-reversal",
+        "session-momentum",
+        "noise-area-momentum",
+        "mtf-trend-pullback",
+        "efficiency-regime-switch",
+        "volume-conditioned-reversal",
+        "ema-cross-control",
+        "cipher-b-dots",
+        "cipher-b-sommi-flag",
+        "cipher-b-divergence",
+        "cipher-b-confluence",
+        "squeeze-momentum",
+        "dca-grid-long",
+        "dca-grid-short",
+        "dca-rsi-long",
+        "dca-trend-long",
+        "cascade-fade",
+        "round-number-bounce"
+      ],
+      "skipped_already_searched": [
+        "donchian-breakout",
+        "keltner-breakout",
+        "ts-momentum",
+        "impulse-bar-continuation",
+        "vol-regime-switch",
+        "donchian-ensemble-trend",
+        "funding-crowding-fade",
+        "nr-compression-breakout",
+        "tsmom-vote",
+        "max-min-daily",
+        "crowding-filtered-breakout",
+        "funding-tilt",
+        "funding-carry-tilt",
+        "funding-fade-wide",
+        "cipher-a-ribbon",
+        "supertrend",
+        "ichimoku-cloud",
+        "turmoil-reversal"
+      ],
+      "trials_added": 3532,
+      "cumulative_trial_count": 5616,
+      "artifacts": "artifacts/hunt/grid_rerun_all_2026-10-28"
+    }
+  ],
+  "interval_screens": [
+    {
+      "date": "2026-10-28",
+      "requested_by": "user",
+      "intervals_minutes": [
+        240,
+        30,
+        15
+      ],
+      "purpose": "every registered strategy at its defaults on 4h/30m/15m bars (dev only, hunt baseline kill rules); registered grid only for survivors; no holdout",
+      "screened": 118,
+      "not_applicable": 2,
+      "survivors": [
+        "funding-crowding-fade@30m"
+      ],
+      "trials_added": 267,
+      "cumulative_trial_count": 5883,
+      "artifacts": "artifacts/hunt/interval_screen_2026-10-28"
+    }
+  ]
+}

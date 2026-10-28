@@ -1,0 +1,190 @@
+{
+  "candidate": {
+    "id": "d475490aac9ca410186103d9c5f949fc",
+    "identity": {
+      "strategy": "volume-climax-reversal",
+      "strategyVersion": 1,
+      "parameters": {
+        "maxHold": 24,
+        "rangeAtr": 2,
+        "volMult": 1.5
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "volume-climax-reversal",
+    "family": "volume",
+    "description": "Long when volume >= volMult x mean volume of the previous 48 bars, range >= rangeAtr x previous ATR(14), lower wick >= 50% of the range and the low is the lowest of the last 24 bars (short: the mirror with the upper wick and 24-bar high); exit after maxHold bars; stop 0.25 ATR beyond the wick.",
+    "version": 1
+  },
+  "parameters": {
+    "volMult": 1.5,
+    "rangeAtr": 2,
+    "maxHold": 24
+  },
+  "searchSpace": [
+    {
+      "name": "volMult",
+      "min": 1.5,
+      "max": 3.5,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5
+      ]
+    },
+    {
+      "name": "rangeAtr",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.25,
+      "values": [
+        1,
+        1.25,
+        1.5,
+        1.75,
+        2,
+        2.25,
+        2.5
+      ]
+    },
+    {
+      "name": "maxHold",
+      "min": 6,
+      "max": 24,
+      "step": 6,
+      "values": [
+        6,
+        12,
+        18,
+        24
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 9049.442128339117,
+    "netProfit": -950.5578716608834,
+    "netProfitPct": -9.50557871660883,
+    "cagrPct": -3.2767905750207604,
+    "maxDrawdownPct": 29.88965597574565,
+    "profitFactor": 0.926950244435778,
+    "sharpe": -0.20156833990799006,
+    "sortino": -0.3600603001674235,
+    "calmar": -0.10962958481956951,
+    "trades": 264,
+    "tradesPerYear": 88.06027397260274,
+    "winRatePct": 40.15151515151515,
+    "avgTradeNetPnl": -3.6005979987155663,
+    "timeInMarketPct": 15.361491628614916,
+    "turnoverPerYear": 111.01373751146285,
+    "feesPaid": 1231.934575779459,
+    "fundingReceived": -100.07086251032786,
+    "slippageCost": 615.967327786325,
+    "dailyReturnCount": 1095,
+    "dailySharpe": -0.010550569114463768,
+    "dailySkewness": 3.5580353757086867,
+    "dailyKurtosis": 33.55413799629215
+  },
+  "attribution": {
+    "grossPnl": 997.4148944152033,
+    "slippageCost": 615.967327786325,
+    "commission": 1231.934575779459,
+    "fundingReceived": -100.07086251032786,
+    "netPnl": -950.5578716608834
+  },
+  "maxBarsHeld": 25,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 140,
+  "lookAheadAudit": {
+    "strategy": "volume-climax-reversal",
+    "parameters": {
+      "volMult": 1.5,
+      "rangeAtr": 2,
+      "maxHold": 24
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 686,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 470,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:41.6007006Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

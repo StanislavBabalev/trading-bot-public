@@ -1,0 +1,189 @@
+{
+  "candidate": {
+    "id": "8c7fbebbf9dab1fc42a2659c26bee069",
+    "identity": {
+      "strategy": "donchian-ensemble-trend",
+      "strategyVersion": 1,
+      "parameters": {
+        "baseDays": 1,
+        "minAgree": 3,
+        "trailMult": 3
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "donchian-ensemble-trend",
+    "family": "trend-ensemble",
+    "description": "Four Donchian models with lookbacks baseDays x 1, 2, 4, 8 days; each turns long on a close above the high of its previous bars (short below the low) and keeps that state. Long on a fresh breakout of the fastest channel when >= minAgree models are long (short: mirror); exit when long models no longer outnumber short ones; stop trails the best close by trailMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "baseDays": 1,
+    "minAgree": 3,
+    "trailMult": 3
+  },
+  "searchSpace": [
+    {
+      "name": "baseDays",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "minAgree",
+      "min": 3,
+      "max": 4,
+      "step": 1,
+      "values": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "trailMult",
+      "min": 1,
+      "max": 4,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5,
+        4
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 10745.515154857865,
+    "netProfit": 745.5151548578651,
+    "netProfitPct": 7.4551515485786535,
+    "cagrPct": 2.427414396985239,
+    "maxDrawdownPct": 4.612381478522206,
+    "profitFactor": 1.2374800381213311,
+    "sharpe": 0.586330114153574,
+    "sortino": 0.9968710010338787,
+    "calmar": 0.5262822271506857,
+    "trades": 221,
+    "tradesPerYear": 73.71712328767124,
+    "winRatePct": 31.67420814479638,
+    "avgTradeNetPnl": 3.3733717414384436,
+    "timeInMarketPct": 77.59132420091325,
+    "turnoverPerYear": 11.104587379861858,
+    "feesPaid": 136.32406596225238,
+    "fundingReceived": -109.40915815652431,
+    "slippageCost": 68.16207535754437,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.030689920828303147,
+    "dailySkewness": 1.3737275918381566,
+    "dailyKurtosis": 11.121201365292274
+  },
+  "attribution": {
+    "grossPnl": 1059.4104543342173,
+    "slippageCost": 68.16207535754437,
+    "commission": 136.32406596225238,
+    "fundingReceived": -109.40915815652431,
+    "netPnl": 745.5151548578651
+  },
+  "maxBarsHeld": 1852,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 84,
+  "lookAheadAudit": {
+    "strategy": "donchian-ensemble-trend",
+    "parameters": {
+      "baseDays": 1,
+      "minAgree": 3,
+      "trailMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 453,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 321,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:50:03.4754596Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

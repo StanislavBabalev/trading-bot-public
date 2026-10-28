@@ -1,0 +1,171 @@
+{
+  "exportedUtc": "2026-10-28T07:59:49.1631215Z",
+  "codeFingerprint": "a7e8044f07714b99",
+  "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F",
+  "selection": "profitable",
+  "candidates": [
+    {
+      "strategy": "donchian-breakout",
+      "parameters": {
+        "entryLen": 72,
+        "exitLen": 24,
+        "atrMult": 3
+      },
+      "bundle": "artifacts/validation/donchian-breakout/fe467f10be06"
+    },
+    {
+      "strategy": "keltner-breakout",
+      "parameters": {
+        "emaLen": 48,
+        "bandMult": 2,
+        "atrMult": 3
+      },
+      "bundle": "artifacts/validation/keltner-breakout/a6adfc44db88"
+    },
+    {
+      "strategy": "ts-momentum",
+      "parameters": {
+        "lookback": 96,
+        "threshold": 0.01,
+        "atrMult": 3
+      },
+      "bundle": "artifacts/validation/ts-momentum/7cba435f99fc"
+    },
+    {
+      "strategy": "impulse-bar-continuation",
+      "parameters": {
+        "rangeAtr": 2.5,
+        "bodyFrac": 0.6,
+        "holdBars": 12,
+        "atrMult": 2
+      },
+      "bundle": "artifacts/validation/impulse-bar-continuation/edd013a39ec6"
+    },
+    {
+      "strategy": "vol-regime-switch",
+      "parameters": {
+        "regimeLen": 720,
+        "channelLen": 48,
+        "edgeFrac": 0.1,
+        "atrMult": 2
+      },
+      "bundle": "artifacts/validation/vol-regime-switch/2a02e6fc8913"
+    },
+    {
+      "strategy": "donchian-ensemble-trend",
+      "parameters": {
+        "baseDays": 2,
+        "minAgree": 3,
+        "trailMult": 2
+      },
+      "bundle": "artifacts/validation/donchian-ensemble-trend/25a1c91bf361"
+    },
+    {
+      "strategy": "funding-crowding-fade",
+      "parameters": {
+        "quantile": 0.2,
+        "holdBars": 72,
+        "stopMult": 1.5
+      },
+      "bundle": "artifacts/validation/funding-crowding-fade/90a097fd052a"
+    },
+    {
+      "strategy": "nr-compression-breakout",
+      "parameters": {
+        "nrLen": 4,
+        "holdBars": 24,
+        "stopMult": 1
+      },
+      "bundle": "artifacts/validation/nr-compression-breakout/17632fdb6378"
+    },
+    {
+      "strategy": "tsmom-vote",
+      "parameters": {
+        "baseDays": 5,
+        "unanimous": 0,
+        "stopMult": 2
+      },
+      "bundle": "artifacts/validation/tsmom-vote/56f9b3bc433d"
+    },
+    {
+      "strategy": "max-min-daily",
+      "parameters": {
+        "lookbackDays": 10,
+        "holdDays": 1,
+        "stopMult": 2
+      },
+      "bundle": "artifacts/validation/max-min-daily/80fdce567177"
+    },
+    {
+      "strategy": "crowding-filtered-breakout",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 2
+      },
+      "bundle": "artifacts/validation/crowding-filtered-breakout/481b9f31ccb5"
+    },
+    {
+      "strategy": "funding-tilt",
+      "parameters": {
+        "threshold": 0.4,
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "bundle": "artifacts/validation/funding-tilt/e0bc0efd75e7"
+    },
+    {
+      "strategy": "funding-carry-tilt",
+      "parameters": {
+        "band": 0.3,
+        "stopMult": 2
+      },
+      "bundle": "artifacts/validation/funding-carry-tilt/1a8b4b326099"
+    },
+    {
+      "strategy": "funding-fade-wide",
+      "parameters": {
+        "quantile": 0.3,
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "bundle": "artifacts/validation/funding-fade-wide/d70202d83472"
+    },
+    {
+      "strategy": "cipher-a-ribbon",
+      "parameters": {
+        "tfHours": 4,
+        "atrMult": 2.5,
+        "diamondExit": 1
+      },
+      "bundle": "artifacts/validation/cipher-a-ribbon/68b48bcf8f82"
+    },
+    {
+      "strategy": "supertrend",
+      "parameters": {
+        "tfHours": 4,
+        "atrLen": 10,
+        "mult": 3
+      },
+      "bundle": "artifacts/validation/supertrend/7f2b7d6d6a7e"
+    },
+    {
+      "strategy": "ichimoku-cloud",
+      "parameters": {
+        "tfHours": 4,
+        "periodSet": 1,
+        "atrMult": 2.5
+      },
+      "bundle": "artifacts/validation/ichimoku-cloud/0e53c358684f"
+    },
+    {
+      "strategy": "turmoil-reversal",
+      "parameters": {
+        "zEntry": 1,
+        "volQuantile": 0.7,
+        "holdPeriods": 6
+      },
+      "bundle": "artifacts/validation/turmoil-reversal/03a7105c5276"
+    }
+  ]
+}

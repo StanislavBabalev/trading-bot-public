@@ -1,0 +1,189 @@
+{
+  "candidate": {
+    "id": "e0bc0efd75e741bbd9c81d9adba9e9f1",
+    "identity": {
+      "strategy": "funding-tilt",
+      "strategyVersion": 1,
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 1.5,
+        "threshold": 0.4
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "funding-tilt",
+    "family": "funding-carry",
+    "description": "funding-crowding-fade with the crowding threshold widened up to the median split: short on a close crossing below EMA(24) when the 3-day funding rank >= 1 - threshold, long on a cross above when <= threshold (0.5 = take every cross, on the side opposite the funding tilt). Exit after holdBars; stop stopMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "threshold": 0.4,
+    "holdBars": 96,
+    "stopMult": 1.5
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "threshold",
+      "min": 0.3,
+      "max": 0.5,
+      "step": 0.05,
+      "values": [
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5
+      ]
+    },
+    {
+      "name": "holdBars",
+      "min": 48,
+      "max": 144,
+      "step": 24,
+      "values": [
+        48,
+        72,
+        96,
+        120,
+        144
+      ]
+    },
+    {
+      "name": "stopMult",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 10773.783046739834,
+    "netProfit": 773.7830467398344,
+    "netProfitPct": 7.7378304673983545,
+    "cagrPct": 2.51721477954292,
+    "maxDrawdownPct": 8.220136137025923,
+    "profitFactor": 1.1165656670798643,
+    "sharpe": 0.3747284663479837,
+    "sortino": 0.5739379463859596,
+    "calmar": 0.3062254368519082,
+    "trades": 224,
+    "tradesPerYear": 74.71780821917808,
+    "winRatePct": 48.214285714285715,
+    "avgTradeNetPnl": 3.454388601517359,
+    "timeInMarketPct": 74.27701674277017,
+    "turnoverPerYear": 22.650223162529045,
+    "feesPaid": 285.07148932732525,
+    "fundingReceived": 295.77637145056417,
+    "slippageCost": 142.5357808882203,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.01961418437620765,
+    "dailySkewness": 0.8235284541502151,
+    "dailyKurtosis": 9.80700112513413
+  },
+  "attribution": {
+    "grossPnl": 905.6139455048689,
+    "slippageCost": 142.5357808882203,
+    "commission": 285.07148932732525,
+    "fundingReceived": 295.77637145056417,
+    "netPnl": 773.7830467398344
+  },
+  "maxBarsHeld": 145,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 100,
+  "lookAheadAudit": {
+    "strategy": "funding-tilt",
+    "parameters": {
+      "threshold": 0.4,
+      "holdBars": 96,
+      "stopMult": 1.5
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 487,
+    "featureSeriesChecked": 16,
+    "fundingTradesChecked": 344,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:47.8900875Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

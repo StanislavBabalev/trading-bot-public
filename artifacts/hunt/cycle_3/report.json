@@ -1,0 +1,644 @@
+{
+  "cycle": 3,
+  "timestampUtc": "2026-10-26T15:34:19.7973661Z",
+  "rules": {
+    "hypothesesPerCycle": 5,
+    "optimizerMaxEvaluations": 200,
+    "minProfitFactor": 1.1,
+    "minSharpe": 0.5,
+    "maxDrawdownPct": 30,
+    "minTradesPerYear": 50,
+    "plateauMinProfitFactor": 1.05,
+    "plateauMinSharpe": 0.3,
+    "walkForward": {
+      "trainMonths": 12,
+      "testMonths": 3,
+      "stepMonths": 6,
+      "maxFoldFailures": 1,
+      "foldMinProfitFactor": 1
+    }
+  },
+  "constants": {
+    "symbol": "BTCUSDT",
+    "intervalMinutes": 60,
+    "initialCapital": 10000,
+    "costs": {
+      "commissionRate": 0.0004,
+      "slippageRate": 0.0002
+    },
+    "fundingEnabled": true,
+    "sizing": {
+      "mode": "RiskPerTrade",
+      "fraction": 1,
+      "riskPerTrade": 0.01,
+      "volTargetAnnual": 0.2,
+      "volLookbackBars": 720
+    },
+    "risk": {
+      "maxLeverage": 1,
+      "maxDrawdownStop": null,
+      "dailyLossStop": null
+    },
+    "split": {
+      "devFrom": "2021-01-01T00:00:00Z",
+      "devTo": "2024-01-01T00:00:00Z",
+      "oosFrom": "2024-01-01T00:00:00Z",
+      "oosTo": "2026-10-26T00:00:00Z"
+    }
+  },
+  "walkForwardFolds": [
+    {
+      "index": 1,
+      "trainFrom": "2021-01-01T00:00:00Z",
+      "trainTo": "2022-01-01T00:00:00Z",
+      "testFrom": "2022-01-01T00:00:00Z",
+      "testTo": "2022-04-01T00:00:00Z"
+    },
+    {
+      "index": 2,
+      "trainFrom": "2021-07-01T00:00:00Z",
+      "trainTo": "2022-07-01T00:00:00Z",
+      "testFrom": "2022-07-01T00:00:00Z",
+      "testTo": "2022-10-01T00:00:00Z"
+    },
+    {
+      "index": 3,
+      "trainFrom": "2022-01-01T00:00:00Z",
+      "trainTo": "2023-01-01T00:00:00Z",
+      "testFrom": "2023-01-01T00:00:00Z",
+      "testTo": "2023-04-01T00:00:00Z"
+    },
+    {
+      "index": 4,
+      "trainFrom": "2022-07-01T00:00:00Z",
+      "trainTo": "2023-07-01T00:00:00Z",
+      "testFrom": "2023-07-01T00:00:00Z",
+      "testTo": "2023-10-01T00:00:00Z"
+    }
+  ],
+  "minDevTrades": 150,
+  "trials": {
+    "before": 25,
+    "thisCycle": 5,
+    "cumulative": 30,
+    "dailySharpeVariance": 0.0005054339907676697,
+    "registry": "artifacts/hunt/trials.jsonl"
+  },
+  "buyAndHold": {
+    "dev": {
+      "from": "2021-01-01T00:00:00Z",
+      "to": "2024-01-01T00:00:00Z",
+      "years": 2.9979466119096507,
+      "initialCapital": 10000,
+      "finalEquity": 14616.82163775771,
+      "netProfit": 4616.82163775771,
+      "netProfitPct": 46.16821637757711,
+      "cagrPct": 13.498107531692561,
+      "maxDrawdownPct": 77.23383649722204,
+      "profitFactor": "Infinity",
+      "sharpe": 0.5192430963884562,
+      "sortino": 0.7599604255284997,
+      "calmar": 0.17476935167111712,
+      "trades": 1,
+      "tradesPerYear": 0.3335616438356165,
+      "winRatePct": 100,
+      "avgTradeNetPnl": 4616.821637757711,
+      "timeInMarketPct": 100,
+      "turnoverPerYear": 0.6829383971635966,
+      "feesPaid": 9.847468922160154,
+      "fundingReceived": 0,
+      "slippageCost": 4.923919724801133,
+      "dailyReturnCount": 1095,
+      "dailySharpe": 0.02717842582895342,
+      "dailySkewness": 0.102089637300224,
+      "dailyKurtosis": 6.479592530583917
+    },
+    "oos": null
+  },
+  "hypotheses": [
+    {
+      "strategy": "donchian-breakout",
+      "family": "trend",
+      "rules": "Long when close > highest high of the previous entryLen bars, short when close < lowest low of the previous entryLen bars; exit long when close < lowest low of the previous exitLen bars (short: close > highest high of previous exitLen bars); stop at entry-bar close -/+ ATR(14) x atrMult.",
+      "defaultParameters": {
+        "entryLen": 72,
+        "exitLen": 24,
+        "atrMult": 3
+      },
+      "verdict": "REJECTED",
+      "stage": "dev-baseline",
+      "killReasons": [
+        "Sharpe 0.36 < 0.50",
+        "walk-forward: 3 of 4 folds failed"
+      ],
+      "baselineDev": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 11664.092149567075,
+        "netProfit": 1664.0921495670755,
+        "netProfitPct": 16.640921495670757,
+        "cagrPct": 5.268615261233078,
+        "maxDrawdownPct": 20.754057793680154,
+        "profitFactor": 1.1006533914672518,
+        "sharpe": 0.3639847687667663,
+        "sortino": 0.6904090550557168,
+        "calmar": 0.2538595253809803,
+        "trades": 272,
+        "tradesPerYear": 90.72876712328768,
+        "winRatePct": 30.514705882352942,
+        "avgTradeNetPnl": 6.117985843996461,
+        "timeInMarketPct": 48.31430745814308,
+        "turnoverPerYear": 75.50196025665203,
+        "feesPaid": 908.0933418555765,
+        "fundingReceived": -264.12862116799204,
+        "slippageCost": 454.04680254222416,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.01905183354309927,
+        "dailySkewness": 2.357260376637777,
+        "dailyKurtosis": 15.106219408075887
+      },
+      "baselineWalkForward": [
+        {
+          "fold": 1,
+          "testFrom": "2022-01-01",
+          "testTo": "2022-04-01",
+          "netProfitPct": -1.4703851295967962,
+          "profitFactor": 0.9069566820964164,
+          "sharpe": -0.3201462268369245,
+          "maxDrawdownPct": 8.54281789648722,
+          "trades": 25,
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "testFrom": "2022-07-01",
+          "testTo": "2022-10-01",
+          "netProfitPct": -5.1517250066663305,
+          "profitFactor": 0.6357052781435041,
+          "sharpe": -1.4432084666717584,
+          "maxDrawdownPct": 8.556425958387717,
+          "trades": 25,
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "testFrom": "2023-01-01",
+          "testTo": "2023-04-01",
+          "netProfitPct": 37.00016047318078,
+          "profitFactor": 4.2290919568809064,
+          "sharpe": 4.398146739505886,
+          "maxDrawdownPct": 8.482655126585428,
+          "trades": 16,
+          "pass": true
+        },
+        {
+          "fold": 4,
+          "testFrom": "2023-07-01",
+          "testTo": "2023-10-01",
+          "netProfitPct": -12.031083571754419,
+          "profitFactor": 0.3652023942474171,
+          "sharpe": -3.032039106590682,
+          "maxDrawdownPct": 12.677102898500973,
+          "trades": 25,
+          "pass": false
+        }
+      ],
+      "optimization": null,
+      "optimizedParameters": null,
+      "optimizedDev": null,
+      "optimizedWalkForward": null,
+      "devSlippageSensitivity": null,
+      "devTradeDistribution": null,
+      "lockedOos": null,
+      "oosTradeDistribution": null,
+      "dsr": null,
+      "artifacts": {
+        "baselineDev": "artifacts/runs/hunt_cycle_3/donchian-breakout/baseline_dev"
+      }
+    },
+    {
+      "strategy": "bollinger-reversion",
+      "family": "mean-reversion",
+      "rules": "Long when close < SMA(bbLen) - bbMult x stdev(bbLen), short when close > SMA + bbMult x stdev; exit when close returns to the SMA or after 48 bars; stop at entry-bar close -/+ ATR(14) x atrMult.",
+      "defaultParameters": {
+        "bbLen": 40,
+        "bbMult": 2,
+        "atrMult": 3
+      },
+      "verdict": "REJECTED",
+      "stage": "dev-baseline",
+      "killReasons": [
+        "PF 0.85 < 1.10",
+        "Sharpe -1.09 < 0.50",
+        "max DD 38.0% > 30%",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "baselineDev": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 6437.613706413517,
+        "netProfit": -3562.3862935864827,
+        "netProfitPct": -35.62386293586483,
+        "cagrPct": -13.662798489808791,
+        "maxDrawdownPct": 38.023418248661365,
+        "profitFactor": 0.8489555348533457,
+        "sharpe": -1.094882390432204,
+        "sortino": -1.4436972794819547,
+        "calmar": -0.3593258870220012,
+        "trades": 691,
+        "tradesPerYear": 230.49109589041097,
+        "winRatePct": 56.58465991316932,
+        "avgTradeNetPnl": -5.15540708189066,
+        "timeInMarketPct": 36.6248097412481,
+        "turnoverPerYear": 207.21156557507044,
+        "feesPaid": 2044.0877877533553,
+        "fundingReceived": -43.9242007656864,
+        "slippageCost": 1022.0438757834587,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.057308763557497415,
+        "dailySkewness": -0.10149404031986572,
+        "dailyKurtosis": 3.227822905860787
+      },
+      "baselineWalkForward": [
+        {
+          "fold": 1,
+          "testFrom": "2022-01-01",
+          "testTo": "2022-04-01",
+          "netProfitPct": -4.210201813639269,
+          "profitFactor": 0.8356206102686016,
+          "sharpe": -1.169666890278737,
+          "maxDrawdownPct": 6.572799396039536,
+          "trades": 60,
+          "pass": false
+        },
+        {
+          "fold": 2,
+          "testFrom": "2022-07-01",
+          "testTo": "2022-10-01",
+          "netProfitPct": 10.407294407618473,
+          "profitFactor": 1.4972525291750012,
+          "sharpe": 2.964923783202131,
+          "maxDrawdownPct": 6.292913186459229,
+          "trades": 59,
+          "pass": true
+        },
+        {
+          "fold": 3,
+          "testFrom": "2023-01-01",
+          "testTo": "2023-04-01",
+          "netProfitPct": 0.4550501891631642,
+          "profitFactor": 1.0212666860643278,
+          "sharpe": 0.2068520758845751,
+          "maxDrawdownPct": 6.304467241416492,
+          "trades": 60,
+          "pass": true
+        },
+        {
+          "fold": 4,
+          "testFrom": "2023-07-01",
+          "testTo": "2023-10-01",
+          "netProfitPct": -1.2683947226209025,
+          "profitFactor": 0.9468095855664214,
+          "sharpe": -0.35479343235153754,
+          "maxDrawdownPct": 8.236077197996266,
+          "trades": 66,
+          "pass": false
+        }
+      ],
+      "optimization": null,
+      "optimizedParameters": null,
+      "optimizedDev": null,
+      "optimizedWalkForward": null,
+      "devSlippageSensitivity": null,
+      "devTradeDistribution": null,
+      "lockedOos": null,
+      "oosTradeDistribution": null,
+      "dsr": null,
+      "artifacts": {
+        "baselineDev": "artifacts/runs/hunt_cycle_3/bollinger-reversion/baseline_dev"
+      }
+    },
+    {
+      "strategy": "keltner-breakout",
+      "family": "vol-breakout",
+      "rules": "Long when close > EMA(emaLen) + bandMult x ATR(14), short when close < EMA - bandMult x ATR(14); exit when close crosses back over the EMA; stop at entry-bar close -/+ ATR(14) x atrMult.",
+      "defaultParameters": {
+        "emaLen": 48,
+        "bandMult": 2,
+        "atrMult": 3
+      },
+      "verdict": "REJECTED",
+      "stage": "dev-baseline",
+      "killReasons": [
+        "PF 1.08 < 1.10",
+        "Sharpe 0.41 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "baselineDev": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 12077.810380297677,
+        "netProfit": 2077.8103802976766,
+        "netProfitPct": 20.778103802976755,
+        "cagrPct": 6.499635428516504,
+        "maxDrawdownPct": 25.01732892542991,
+        "profitFactor": 1.0777426239321708,
+        "sharpe": 0.411871910145701,
+        "sortino": 0.7787182486997917,
+        "calmar": 0.2598053312521976,
+        "trades": 499,
+        "tradesPerYear": 166.4472602739726,
+        "winRatePct": 29.65931863727455,
+        "avgTradeNetPnl": 4.1639486579111695,
+        "timeInMarketPct": 59.82876712328767,
+        "turnoverPerYear": 147.48674002744923,
+        "feesPaid": 2002.186081083214,
+        "fundingReceived": -34.85891696737549,
+        "slippageCost": 1001.0932451795519,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.021558361081318686,
+        "dailySkewness": 1.966008814661409,
+        "dailyKurtosis": 9.971038509464835
+      },
+      "baselineWalkForward": [
+        {
+          "fold": 1,
+          "testFrom": "2022-01-01",
+          "testTo": "2022-04-01",
+          "netProfitPct": 2.6238380830382546,
+          "profitFactor": 1.1364852937760561,
+          "sharpe": 0.6722424187814645,
+          "maxDrawdownPct": 5.670044089875116,
+          "trades": 44,
+          "pass": true
+        },
+        {
+          "fold": 2,
+          "testFrom": "2022-07-01",
+          "testTo": "2022-10-01",
+          "netProfitPct": -8.82847538092838,
+          "profitFactor": 0.6089634423966455,
+          "sharpe": -2.2150809891608945,
+          "maxDrawdownPct": 12.067611339760852,
+          "trades": 42,
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "testFrom": "2023-01-01",
+          "testTo": "2023-04-01",
+          "netProfitPct": 28.077908272890383,
+          "profitFactor": 2.276179692202716,
+          "sharpe": 3.5578256730751856,
+          "maxDrawdownPct": 8.348181197040182,
+          "trades": 33,
+          "pass": true
+        },
+        {
+          "fold": 4,
+          "testFrom": "2023-07-01",
+          "testTo": "2023-10-01",
+          "netProfitPct": -14.399855619358314,
+          "profitFactor": 0.41136441237195215,
+          "sharpe": -2.999132559698462,
+          "maxDrawdownPct": 15.114120668484126,
+          "trades": 42,
+          "pass": false
+        }
+      ],
+      "optimization": null,
+      "optimizedParameters": null,
+      "optimizedDev": null,
+      "optimizedWalkForward": null,
+      "devSlippageSensitivity": null,
+      "devTradeDistribution": null,
+      "lockedOos": null,
+      "oosTradeDistribution": null,
+      "dsr": null,
+      "artifacts": {
+        "baselineDev": "artifacts/runs/hunt_cycle_3/keltner-breakout/baseline_dev"
+      }
+    },
+    {
+      "strategy": "ts-momentum",
+      "family": "momentum",
+      "rules": "Long when close / close[lookback] - 1 > threshold, short when < -threshold, otherwise keep the position; reversals flip directly; stop at entry-bar close -/+ ATR(14) x atrMult.",
+      "defaultParameters": {
+        "lookback": 96,
+        "threshold": 0.01,
+        "atrMult": 3
+      },
+      "verdict": "REJECTED",
+      "stage": "dev-baseline",
+      "killReasons": [
+        "PF 1.04 < 1.10",
+        "Sharpe 0.25 < 0.50",
+        "max DD 31.6% > 30%",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "baselineDev": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 10991.894406244948,
+        "netProfit": 991.8944062449482,
+        "netProfitPct": 9.918944062449487,
+        "cagrPct": 3.204878410088985,
+        "maxDrawdownPct": 31.555069690235843,
+        "profitFactor": 1.0406745009889387,
+        "sharpe": 0.25023564889518785,
+        "sortino": 0.4190328021254228,
+        "calmar": 0.10156461201163747,
+        "trades": 465,
+        "tradesPerYear": 155.10616438356166,
+        "winRatePct": 27.311827956989248,
+        "avgTradeNetPnl": 2.1331062499890616,
+        "timeInMarketPct": 89.77168949771689,
+        "turnoverPerYear": 132.97610785553573,
+        "feesPaid": 1584.0914328339495,
+        "fundingReceived": -362.57058809274645,
+        "slippageCost": 792.0458656410674,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.013097932491662672,
+        "dailySkewness": 1.5360118906977298,
+        "dailyKurtosis": 10.768806878571523
+      },
+      "baselineWalkForward": [
+        {
+          "fold": 1,
+          "testFrom": "2022-01-01",
+          "testTo": "2022-04-01",
+          "netProfitPct": 27.591814507905575,
+          "profitFactor": 4.535753035519041,
+          "sharpe": 4.43464201401887,
+          "maxDrawdownPct": 5.037481207976135,
+          "trades": 25,
+          "pass": true
+        },
+        {
+          "fold": 2,
+          "testFrom": "2022-07-01",
+          "testTo": "2022-10-01",
+          "netProfitPct": -9.993714348485227,
+          "profitFactor": 0.47742908827345787,
+          "sharpe": -2.277625671408858,
+          "maxDrawdownPct": 16.24453487030059,
+          "trades": 39,
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "testFrom": "2023-01-01",
+          "testTo": "2023-04-01",
+          "netProfitPct": 23.53754068027587,
+          "profitFactor": 2.029142580918472,
+          "sharpe": 2.871303700287861,
+          "maxDrawdownPct": 8.327762908605726,
+          "trades": 34,
+          "pass": true
+        },
+        {
+          "fold": 4,
+          "testFrom": "2023-07-01",
+          "testTo": "2023-10-01",
+          "netProfitPct": -12.552994811405371,
+          "profitFactor": 0.4173133628923886,
+          "sharpe": -2.432560122019507,
+          "maxDrawdownPct": 13.591647202900633,
+          "trades": 30,
+          "pass": false
+        }
+      ],
+      "optimization": null,
+      "optimizedParameters": null,
+      "optimizedDev": null,
+      "optimizedWalkForward": null,
+      "devSlippageSensitivity": null,
+      "devTradeDistribution": null,
+      "lockedOos": null,
+      "oosTradeDistribution": null,
+      "dsr": null,
+      "artifacts": {
+        "baselineDev": "artifacts/runs/hunt_cycle_3/ts-momentum/baseline_dev"
+      }
+    },
+    {
+      "strategy": "trend-pullback-rsi",
+      "family": "regime-filter",
+      "rules": "Long when close > EMA(trendLen) and RSI(rsiLen) < level; short when close < EMA(trendLen) and RSI > 100 - level; exit long when RSI > 55 (short: RSI < 45) or after 48 bars; stop at entry-bar close -/+ ATR(14) x atrMult.",
+      "defaultParameters": {
+        "trendLen": 200,
+        "rsiLen": 4,
+        "level": 20,
+        "atrMult": 3
+      },
+      "verdict": "REJECTED",
+      "stage": "dev-baseline",
+      "killReasons": [
+        "PF 0.84 < 1.10",
+        "Sharpe -0.80 < 0.50",
+        "walk-forward: 2 of 4 folds failed"
+      ],
+      "baselineDev": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 8398.12806054971,
+        "netProfit": -1601.8719394502896,
+        "netProfitPct": -16.018719394502902,
+        "cagrPct": -5.656890197321784,
+        "maxDrawdownPct": 16.859859198568746,
+        "profitFactor": 0.838958986840662,
+        "sharpe": -0.7976558302359803,
+        "sortino": -0.9822588016541388,
+        "calmar": -0.335524166050094,
+        "trades": 485,
+        "tradesPerYear": 161.77739726027397,
+        "winRatePct": 63.71134020618557,
+        "avgTradeNetPnl": -3.3028287411346433,
+        "timeInMarketPct": 11.019786910197869,
+        "turnoverPerYear": 145.5978911930619,
+        "feesPaid": 1587.675665326952,
+        "fundingReceived": -121.57158742419062,
+        "slippageCost": 793.8378687120022,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.041751214353907044,
+        "dailySkewness": -0.9576136702042756,
+        "dailyKurtosis": 7.164999931924728
+      },
+      "baselineWalkForward": [
+        {
+          "fold": 1,
+          "testFrom": "2022-01-01",
+          "testTo": "2022-04-01",
+          "netProfitPct": 2.6776507320394716,
+          "profitFactor": 1.3141742098775393,
+          "sharpe": 1.4316022710897338,
+          "maxDrawdownPct": 2.4684953348803207,
+          "trades": 49,
+          "pass": true
+        },
+        {
+          "fold": 2,
+          "testFrom": "2022-07-01",
+          "testTo": "2022-10-01",
+          "netProfitPct": -3.037647800407761,
+          "profitFactor": 0.7284387510388413,
+          "sharpe": -1.632687335601888,
+          "maxDrawdownPct": 4.381327719792439,
+          "trades": 43,
+          "pass": false
+        },
+        {
+          "fold": 3,
+          "testFrom": "2023-01-01",
+          "testTo": "2023-04-01",
+          "netProfitPct": 7.038580855536347,
+          "profitFactor": 3.3029369756516442,
+          "sharpe": 4.4876523634974435,
+          "maxDrawdownPct": 1.107320609726067,
+          "trades": 38,
+          "pass": true
+        },
+        {
+          "fold": 4,
+          "testFrom": "2023-07-01",
+          "testTo": "2023-10-01",
+          "netProfitPct": -3.519212329530852,
+          "profitFactor": 0.6416739080352193,
+          "sharpe": -2.0972086373767467,
+          "maxDrawdownPct": 3.5280549080396657,
+          "trades": 40,
+          "pass": false
+        }
+      ],
+      "optimization": null,
+      "optimizedParameters": null,
+      "optimizedDev": null,
+      "optimizedWalkForward": null,
+      "devSlippageSensitivity": null,
+      "devTradeDistribution": null,
+      "lockedOos": null,
+      "oosTradeDistribution": null,
+      "dsr": null,
+      "artifacts": {
+        "baselineDev": "artifacts/runs/hunt_cycle_3/trend-pullback-rsi/baseline_dev"
+      }
+    }
+  ],
+  "champion": null,
+  "runnerUps": [],
+  "warnings": [
+    "30 parameter sets have been evaluated on development data so far; the best of that many lucky trials would show a daily Sharpe near 0.0466 (annualized 0.89) with no real edge.",
+    "Walk-forward folds use fixed parameters (no per-fold re-optimization, to stay within the optimizer cap); for optimized candidates the test folds lie inside the window the parameters were tuned on, so only the locked OOS run is truly out of sample.",
+    "Max drawdown is measured on hourly bar-close equity; intrabar drawdowns are deeper."
+  ]
+}

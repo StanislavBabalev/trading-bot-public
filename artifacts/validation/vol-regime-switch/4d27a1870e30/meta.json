@@ -1,0 +1,200 @@
+{
+  "candidate": {
+    "id": "4d27a1870e30c5751d3fc0637a0eaf12",
+    "identity": {
+      "strategy": "vol-regime-switch",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 2.5,
+        "channelLen": 96,
+        "edgeFrac": 0.05,
+        "regimeLen": 360
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "vol-regime-switch",
+    "family": "regime-switch",
+    "description": "Quiet when ATR(14) < its median over regimeLen bars, else expanding; HH/LL = previous channelLen bars. Quiet: long on a green close in the bottom edgeFrac of the channel (short: red close in the top edge), exit at the channel midpoint or after 24 bars, stop 0.5 ATR beyond the channel. Expanding: long on close > HH (short: < LL), exit on the opposite channelLen/2 channel, stop atrMult x ATR trailed on every close.",
+    "version": 1
+  },
+  "parameters": {
+    "regimeLen": 360,
+    "channelLen": 96,
+    "edgeFrac": 0.05,
+    "atrMult": 2.5
+  },
+  "searchSpace": [
+    {
+      "name": "regimeLen",
+      "min": 360,
+      "max": 1440,
+      "step": 360,
+      "values": [
+        360,
+        720,
+        1080,
+        1440
+      ]
+    },
+    {
+      "name": "channelLen",
+      "min": 24,
+      "max": 96,
+      "step": 24,
+      "values": [
+        24,
+        48,
+        72,
+        96
+      ]
+    },
+    {
+      "name": "edgeFrac",
+      "min": 0.05,
+      "max": 0.2,
+      "step": 0.05,
+      "values": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 1.5,
+      "max": 2.5,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 15916.686348973697,
+    "netProfit": 5916.686348973697,
+    "netProfitPct": 59.16686348973697,
+    "cagrPct": 16.769737657688854,
+    "maxDrawdownPct": 11.283496276073459,
+    "profitFactor": 1.378431051954296,
+    "sharpe": 1.0901759464914913,
+    "sortino": 2.3631398425133483,
+    "calmar": 1.4862182117477998,
+    "trades": 254,
+    "tradesPerYear": 84.72465753424657,
+    "winRatePct": 40.15748031496063,
+    "avgTradeNetPnl": 23.294040743990948,
+    "timeInMarketPct": 20.962709284627092,
+    "turnoverPerYear": 85.68979870930528,
+    "feesPaid": 1358.919555702911,
+    "fundingReceived": 184.9429296489057,
+    "slippageCost": 679.4600886563777,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.05706241702260754,
+    "dailySkewness": 3.2937487445287044,
+    "dailyKurtosis": 22.084054606865603
+  },
+  "attribution": {
+    "grossPnl": 7770.123063684086,
+    "slippageCost": 679.4600886563777,
+    "commission": 1358.919555702911,
+    "fundingReceived": 184.9429296489057,
+    "netPnl": 5916.686348973697
+  },
+  "maxBarsHeld": 105,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 192,
+  "lookAheadAudit": {
+    "strategy": "vol-regime-switch",
+    "parameters": {
+      "regimeLen": 360,
+      "channelLen": 96,
+      "edgeFrac": 0.05,
+      "atrMult": 2.5
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 703,
+    "featureSeriesChecked": 16,
+    "fundingTradesChecked": 526,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:50:16.3918484Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

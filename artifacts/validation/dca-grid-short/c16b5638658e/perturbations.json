@@ -1,0 +1,2789 @@
+{
+  "steps": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "runs": [
+    {
+      "id": "p001",
+      "kind": "1d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.006876018201174006,
+        "profitFactor": 1.0001407776195306,
+        "sharpe": 0.022021959740869953,
+        "dailySharpe": 0.0011526820550689918,
+        "maxDrawdownPct": 6.546313640353758,
+        "cagrPct": 0.002293523385343832,
+        "calmar": 0.0003503534219939837,
+        "trades": 1078,
+        "tradesPerYear": 359.57945205479456,
+        "feesPaid": 308.82045375354176,
+        "fundingReceived": 260.59077985143165,
+        "slippageCost": 154.4102350098708
+      }
+    },
+    {
+      "id": "p002",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.659141803631158,
+        "profitFactor": 1.008716627259764,
+        "sharpe": 0.06758892269649633,
+        "dailySharpe": 0.003537765904144683,
+        "maxDrawdownPct": 7.770215884164471,
+        "cagrPct": 0.21938327658428403,
+        "calmar": 0.028233871472140477,
+        "trades": 1083,
+        "tradesPerYear": 361.24726027397264,
+        "feesPaid": 496.7547309784559,
+        "fundingReceived": 321.1152829585951,
+        "slippageCost": 248.37738508646825
+      }
+    },
+    {
+      "id": "p003",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.725426123755604,
+        "profitFactor": 0.9467781782979042,
+        "sharpe": -0.22951271444998322,
+        "dailySharpe": -0.012013244528173785,
+        "maxDrawdownPct": 9.19567016866442,
+        "cagrPct": -1.2584128075123213,
+        "calmar": -0.13684840630762785,
+        "trades": 1034,
+        "tradesPerYear": 344.90273972602745,
+        "feesPaid": 431.4387276047948,
+        "fundingReceived": 315.8449051992926,
+        "slippageCost": 215.71936215322017
+      }
+    },
+    {
+      "id": "p004",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.7518183125099109,
+        "profitFactor": 0.9875286266461467,
+        "sharpe": -0.03091165811719934,
+        "dailySharpe": -0.0016179901345472099,
+        "maxDrawdownPct": 7.424733576689293,
+        "cagrPct": -0.2514086382275904,
+        "calmar": -0.03386096425290107,
+        "trades": 976,
+        "tradesPerYear": 325.5561643835617,
+        "feesPaid": 381.18960966271294,
+        "fundingReceived": 319.205111400332,
+        "slippageCost": 190.59481192725534
+      }
+    },
+    {
+      "id": "p005",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.9417881136898352,
+        "profitFactor": 1.0410107603393963,
+        "sharpe": 0.17645492350575553,
+        "dailySharpe": 0.009236072822173867,
+        "maxDrawdownPct": 6.558422148988459,
+        "cagrPct": 0.6435597386837077,
+        "calmar": 0.09812722085646278,
+        "trades": 885,
+        "tradesPerYear": 295.20205479452056,
+        "feesPaid": 306.11864443072983,
+        "fundingReceived": 272.0558400297003,
+        "slippageCost": 153.05933746740283
+      }
+    },
+    {
+      "id": "p006",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 3.331790476114227,
+        "profitFactor": 1.0813715073058605,
+        "sharpe": 0.30035808749623727,
+        "dailySharpe": 0.015721460833897513,
+        "maxDrawdownPct": 5.26791009500979,
+        "cagrPct": 1.099242436148229,
+        "calmar": 0.20866765307736068,
+        "trades": 836,
+        "tradesPerYear": 278.85753424657537,
+        "feesPaid": 271.4598729946816,
+        "fundingReceived": 262.5643330894232,
+        "slippageCost": 135.72995560952268
+      }
+    },
+    {
+      "id": "p007",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.18352275077259117,
+        "profitFactor": 0.9951979365261021,
+        "sharpe": 0.0019351090635695504,
+        "dailySharpe": 0.00010128823766934494,
+        "maxDrawdownPct": 6.341091706418421,
+        "cagrPct": -0.061253624335033674,
+        "calmar": -0.009659791589677384,
+        "trades": 797,
+        "tradesPerYear": 265.84863013698634,
+        "feesPaid": 238.18717676838588,
+        "fundingReceived": 244.90524534195487,
+        "slippageCost": 119.09359214512308
+      }
+    },
+    {
+      "id": "p008",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.04864522099414792,
+        "profitFactor": 0.9990579074572054,
+        "sharpe": 0.017918987814453665,
+        "dailySharpe": 0.0009379226890687578,
+        "maxDrawdownPct": 6.711695975316358,
+        "cagrPct": -0.016228810776464098,
+        "calmar": -0.0024179895567601525,
+        "trades": 948,
+        "tradesPerYear": 316.2164383561644,
+        "feesPaid": 329.04547273383275,
+        "fundingReceived": 278.29030528039294,
+        "slippageCost": 164.52274478345188
+      }
+    },
+    {
+      "id": "p009",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.4517328527293918,
+        "profitFactor": 1.0093073380661102,
+        "sharpe": 0.05661913169845478,
+        "dailySharpe": 0.0029635808007257114,
+        "maxDrawdownPct": 6.633470896346297,
+        "cagrPct": 0.15045450657744652,
+        "calmar": 0.022681113541979447,
+        "trades": 1262,
+        "tradesPerYear": 420.954794520548,
+        "feesPaid": 434.83782427503047,
+        "fundingReceived": 277.1134473974647,
+        "slippageCost": 217.4189289501785
+      }
+    },
+    {
+      "id": "p010",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.5172891060390548,
+        "profitFactor": 1.0303261485765205,
+        "sharpe": 0.1386796819335139,
+        "dailySharpe": 0.007258826310120304,
+        "maxDrawdownPct": 6.011535518442628,
+        "cagrPct": 0.5035719612296319,
+        "calmar": 0.08376760973710246,
+        "trades": 1128,
+        "tradesPerYear": 376.25753424657535,
+        "feesPaid": 400.5583399581043,
+        "fundingReceived": 280.7505410092582,
+        "slippageCost": 200.27918885168808
+      }
+    },
+    {
+      "id": "p011",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.4726198875819163,
+        "profitFactor": 1.0283276848236609,
+        "sharpe": 0.13383345985394998,
+        "dailySharpe": 0.00700516345305744,
+        "maxDrawdownPct": 6.425289852942864,
+        "cagrPct": 0.4888186456399879,
+        "calmar": 0.07607729095927132,
+        "trades": 1027,
+        "tradesPerYear": 342.5678082191781,
+        "feesPaid": 371.7493309611884,
+        "fundingReceived": 284.3625229005541,
+        "slippageCost": 185.87468230153303
+      }
+    },
+    {
+      "id": "p012",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.21761881216622037,
+        "profitFactor": 0.9960510762143594,
+        "sharpe": 0.0059369776312337,
+        "dailySharpe": 0.0003107556120070699,
+        "maxDrawdownPct": 7.745780306494779,
+        "cagrPct": -0.07264199038813368,
+        "calmar": -0.009378266296453556,
+        "trades": 842,
+        "tradesPerYear": 280.85890410958905,
+        "feesPaid": 317.1038175565307,
+        "fundingReceived": 295.63205900011235,
+        "slippageCost": 158.55191510873647
+      }
+    },
+    {
+      "id": "p013",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.7656093669864417,
+        "profitFactor": 0.9862328483879377,
+        "sharpe": -0.034434412652409076,
+        "dailySharpe": -0.0018023795342614044,
+        "maxDrawdownPct": 7.907880915361763,
+        "cagrPct": -0.25603221317579417,
+        "calmar": -0.032376842281277754,
+        "trades": 773,
+        "tradesPerYear": 257.8431506849315,
+        "feesPaid": 294.8386742302643,
+        "fundingReceived": 297.28712942052744,
+        "slippageCost": 147.41933985153034
+      }
+    },
+    {
+      "id": "p014",
+      "kind": "1d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.7751167133335235,
+        "profitFactor": 0.9860066854082108,
+        "sharpe": -0.03462695645057234,
+        "dailySharpe": -0.0018124577372719075,
+        "maxDrawdownPct": 7.93746957278994,
+        "cagrPct": -0.2592198858470618,
+        "calmar": -0.032657748602360766,
+        "trades": 708,
+        "tradesPerYear": 236.16164383561645,
+        "feesPaid": 273.49847220917195,
+        "fundingReceived": 298.3382378562336,
+        "slippageCost": 136.74923748049775
+      }
+    },
+    {
+      "id": "p015",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 4.582650150867251,
+        "profitFactor": 1.063365792005915,
+        "sharpe": 0.3077514953850788,
+        "dailySharpe": 0.0161084494897462,
+        "maxDrawdownPct": 6.197639432848146,
+        "cagrPct": 1.5058308661809905,
+        "calmar": 0.24296845315006987,
+        "trades": 1235,
+        "tradesPerYear": 411.9486301369863,
+        "feesPaid": 495.21383909865705,
+        "fundingReceived": 335.21616253575274,
+        "slippageCost": 247.60695418411177
+      }
+    },
+    {
+      "id": "p016",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.888990313003904,
+        "profitFactor": 0.9417928955353972,
+        "sharpe": -0.24423682897427593,
+        "dailySharpe": -0.012783939906271068,
+        "maxDrawdownPct": 9.3635033342498,
+        "cagrPct": -1.31440131028141,
+        "calmar": -0.1403749497769276,
+        "trades": 1193,
+        "tradesPerYear": 397.93904109589045,
+        "feesPaid": 409.24303741971113,
+        "fundingReceived": 301.4119315206687,
+        "slippageCost": 204.62151565199983
+      }
+    },
+    {
+      "id": "p017",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.2433530447846564,
+        "profitFactor": 0.977578419711286,
+        "sharpe": -0.06853403430498865,
+        "dailySharpe": -0.0035872353066849433,
+        "maxDrawdownPct": 6.901632589738105,
+        "cagrPct": -0.4164651364919947,
+        "calmar": -0.06034298857218626,
+        "trades": 1112,
+        "tradesPerYear": 370.9205479452055,
+        "feesPaid": 346.2363858748582,
+        "fundingReceived": 300.1444324243118,
+        "slippageCost": 173.11819673242368
+      }
+    },
+    {
+      "id": "p018",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.927551880835121,
+        "profitFactor": 0.957239801094624,
+        "sharpe": -0.14185905666000223,
+        "dailySharpe": -0.007425242389192575,
+        "maxDrawdownPct": 6.9569610747659505,
+        "cagrPct": -0.6471318651257718,
+        "calmar": -0.09301933102271137,
+        "trades": 1025,
+        "tradesPerYear": 341.9006849315069,
+        "feesPaid": 269.9819767196823,
+        "fundingReceived": 250.4394840525144,
+        "slippageCost": 134.99098683097355
+      }
+    },
+    {
+      "id": "p019",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.48267865631879125,
+        "profitFactor": 1.0123573019107142,
+        "sharpe": 0.061298010813023995,
+        "dailySharpe": 0.0032084845266730356,
+        "maxDrawdownPct": 5.634659322899984,
+        "cagrPct": 0.16074482432431036,
+        "calmar": 0.028527869230890786,
+        "trades": 989,
+        "tradesPerYear": 329.8924657534247,
+        "feesPaid": 244.28617851781038,
+        "fundingReceived": 238.633827576818,
+        "slippageCost": 122.14309630143799
+      }
+    },
+    {
+      "id": "p020",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.5643613579035764,
+        "profitFactor": 0.9570567061631385,
+        "sharpe": -0.12897710406653992,
+        "dailySharpe": -0.006750970173483453,
+        "maxDrawdownPct": 5.960940319102865,
+        "cagrPct": -0.5245549031460017,
+        "calmar": -0.08799868394336624,
+        "trades": 949,
+        "tradesPerYear": 316.55,
+        "feesPaid": 217.52344589514772,
+        "fundingReceived": 214.3064677602668,
+        "slippageCost": 108.76172116927638
+      }
+    },
+    {
+      "id": "p021",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.5788910362418251,
+        "profitFactor": 0.9659640470113818,
+        "sharpe": -0.10492687667566752,
+        "dailySharpe": -0.00549212373747175,
+        "maxDrawdownPct": 6.791699029315616,
+        "cagrPct": -0.5294528830069534,
+        "calmar": -0.07795588124880515,
+        "trades": 1133,
+        "tradesPerYear": 377.92534246575343,
+        "feesPaid": 287.74841579195083,
+        "fundingReceived": 235.36789958318505,
+        "slippageCost": 143.8742094306005
+      }
+    },
+    {
+      "id": "p022",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -4.873433156813334,
+        "profitFactor": 0.8962934895932204,
+        "sharpe": -0.382370972846234,
+        "dailySharpe": -0.02001421144918119,
+        "maxDrawdownPct": 8.360371702962452,
+        "cagrPct": -1.6527273895641348,
+        "calmar": -0.1976858742989262,
+        "trades": 1491,
+        "tradesPerYear": 497.34041095890416,
+        "feesPaid": 377.63814992553176,
+        "fundingReceived": 246.22689520007006,
+        "slippageCost": 188.81906827824596
+      }
+    },
+    {
+      "id": "p023",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -2.7547534196636136,
+        "profitFactor": 0.9420144180863601,
+        "sharpe": -0.20016596174205903,
+        "dailySharpe": -0.010477165286407119,
+        "maxDrawdownPct": 7.626940977087479,
+        "cagrPct": -0.9274463044084302,
+        "calmar": -0.12160134806269297,
+        "trades": 1329,
+        "tradesPerYear": 443.30342465753426,
+        "feesPaid": 351.2385314500763,
+        "fundingReceived": 247.19915552299273,
+        "slippageCost": 175.6192658923702
+      }
+    },
+    {
+      "id": "p024",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.3248749377045121,
+        "profitFactor": 0.9726990760065612,
+        "sharpe": -0.08275362496419474,
+        "dailySharpe": -0.004331522698731824,
+        "maxDrawdownPct": 6.84372668809826,
+        "cagrPct": -0.4438929419936066,
+        "calmar": -0.06486129008710544,
+        "trades": 1198,
+        "tradesPerYear": 399.60684931506853,
+        "feesPaid": 330.4001402719951,
+        "fundingReceived": 255.4940783104333,
+        "slippageCost": 165.2000744407444
+      }
+    },
+    {
+      "id": "p025",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.9700301046588589,
+        "profitFactor": 0.9804124240518496,
+        "sharpe": -0.053048739075541175,
+        "dailySharpe": -0.002776697909538451,
+        "maxDrawdownPct": 7.737893808025524,
+        "cagrPct": -0.32461637559018097,
+        "calmar": -0.041951515960777085,
+        "trades": 939,
+        "tradesPerYear": 313.21438356164384,
+        "feesPaid": 281.6196328293899,
+        "fundingReceived": 267.13271829905807,
+        "slippageCost": 140.8098187464439
+      }
+    },
+    {
+      "id": "p026",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.4271935062343246,
+        "profitFactor": 0.991418943805695,
+        "sharpe": -0.010008229833773986,
+        "dailySharpe": -0.0005238546917778383,
+        "maxDrawdownPct": 6.914121218122125,
+        "cagrPct": -0.14269869171608107,
+        "calmar": -0.02063873154871271,
+        "trades": 846,
+        "tradesPerYear": 282.19315068493154,
+        "feesPaid": 263.9023767163299,
+        "fundingReceived": 291.33802972435996,
+        "slippageCost": 131.9511908300125
+      }
+    },
+    {
+      "id": "p027",
+      "kind": "2d",
+      "parameters": {
+        "orders": 5,
+        "overlap": 0.1,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "orders": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.0854425124326328,
+        "profitFactor": 1.0217139814601726,
+        "sharpe": 0.10234790288492306,
+        "dailySharpe": 0.005357134079690868,
+        "maxDrawdownPct": 6.524955004517885,
+        "cagrPct": 0.36076028487230793,
+        "calmar": 0.05528931381481055,
+        "trades": 787,
+        "tradesPerYear": 262.5130136986302,
+        "feesPaid": 253.39071826721081,
+        "fundingReceived": 291.5500284288641,
+        "slippageCost": 126.6953670168174
+      }
+    },
+    {
+      "id": "p028",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -2.1176833642910564,
+        "profitFactor": 0.9717987045715454,
+        "sharpe": -0.10879675219323241,
+        "dailySharpe": -0.005694682279805715,
+        "maxDrawdownPct": 8.695817249323934,
+        "cagrPct": -0.7114219950555389,
+        "calmar": -0.08181197633964182,
+        "trades": 1110,
+        "tradesPerYear": 370.25342465753425,
+        "feesPaid": 481.19275860705307,
+        "fundingReceived": 305.74306729042314,
+        "slippageCost": 240.5963874746364
+      }
+    },
+    {
+      "id": "p029",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.9311313814906823,
+        "profitFactor": 0.9425953060558978,
+        "sharpe": -0.2459625703653326,
+        "dailySharpe": -0.012874269339099385,
+        "maxDrawdownPct": 9.697096846637164,
+        "cagrPct": -1.3288366082159886,
+        "calmar": -0.1370344783837869,
+        "trades": 1053,
+        "tradesPerYear": 351.24041095890414,
+        "feesPaid": 422.09657839166096,
+        "fundingReceived": 316.70536028575106,
+        "slippageCost": 211.04828612888508
+      }
+    },
+    {
+      "id": "p030",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.5066464049279462,
+        "profitFactor": 1.0086965486923254,
+        "sharpe": 0.05984312208578946,
+        "dailySharpe": 0.003132332170218897,
+        "maxDrawdownPct": 6.66150716456136,
+        "cagrPct": 0.1687132985567663,
+        "calmar": 0.02532659567707236,
+        "trades": 996,
+        "tradesPerYear": 332.227397260274,
+        "feesPaid": 375.55901167561467,
+        "fundingReceived": 299.8108360348061,
+        "slippageCost": 187.77951840550074
+      }
+    },
+    {
+      "id": "p031",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.1372790157113233,
+        "profitFactor": 1.0245641590745775,
+        "sharpe": 0.1132252298191357,
+        "dailySharpe": 0.005926479392811044,
+        "maxDrawdownPct": 5.754391432241548,
+        "cagrPct": 0.3779240646739179,
+        "calmar": 0.06567576591269575,
+        "trades": 905,
+        "tradesPerYear": 301.8732876712329,
+        "feesPaid": 296.79819081256204,
+        "fundingReceived": 257.5237418182828,
+        "slippageCost": 148.39910746233951
+      }
+    },
+    {
+      "id": "p032",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.7347684960241416,
+        "profitFactor": 1.0426555225335272,
+        "sharpe": 0.1696199200424721,
+        "dailySharpe": 0.008878312389806915,
+        "maxDrawdownPct": 5.511825237967177,
+        "cagrPct": 0.5753391497082205,
+        "calmar": 0.10438269082718815,
+        "trades": 863,
+        "tradesPerYear": 287.863698630137,
+        "feesPaid": 263.796328161758,
+        "fundingReceived": 237.52155326493627,
+        "slippageCost": 131.8981773468712
+      }
+    },
+    {
+      "id": "p033",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0.15,
+        "takeProfit": 0.015
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.5402635295925551,
+        "profitFactor": 1.01467463818296,
+        "sharpe": 0.06763219522101611,
+        "dailySharpe": 0.003540030891597136,
+        "maxDrawdownPct": 4.732723205288556,
+        "cagrPct": 0.17988773386237167,
+        "calmar": 0.03800935023230539,
+        "trades": 815,
+        "tradesPerYear": 271.85273972602744,
+        "feesPaid": 233.7683067192875,
+        "fundingReceived": 229.9002596016562,
+        "slippageCost": 116.88416035078603
+      }
+    },
+    {
+      "id": "p034",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.5614257716837656,
+        "profitFactor": 0.9920959603134776,
+        "sharpe": -0.010382066987332681,
+        "dailySharpe": -0.0005434222227104035,
+        "maxDrawdownPct": 6.315359075915819,
+        "cagrPct": -0.18762154082840876,
+        "calmar": -0.029708768507545377,
+        "trades": 1486,
+        "tradesPerYear": 495.6726027397261,
+        "feesPaid": 640.2381981216372,
+        "fundingReceived": 318.0720088251238,
+        "slippageCost": 320.11912250652847
+      }
+    },
+    {
+      "id": "p035",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.4237115973838144,
+        "profitFactor": 1.0197442336352591,
+        "sharpe": 0.1160042478690832,
+        "dailySharpe": 0.006071939845676297,
+        "maxDrawdownPct": 6.096859501843284,
+        "cagrPct": 0.4726602879837394,
+        "calmar": 0.07752520586063012,
+        "trades": 1325,
+        "tradesPerYear": 441.96917808219183,
+        "feesPaid": 586.5953993022971,
+        "fundingReceived": 325.60650794166173,
+        "slippageCost": 293.2977275174587
+      }
+    },
+    {
+      "id": "p036",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.9462480321914768,
+        "profitFactor": 1.0126057865500586,
+        "sharpe": 0.08561857809705209,
+        "dailySharpe": 0.004481481199415556,
+        "maxDrawdownPct": 7.631301701766419,
+        "cagrPct": 0.3146420343025591,
+        "calmar": 0.04123045406915689,
+        "trades": 1208,
+        "tradesPerYear": 402.9424657534247,
+        "feesPaid": 544.7303367036063,
+        "fundingReceived": 316.66469799113787,
+        "slippageCost": 272.36519215402745
+      }
+    },
+    {
+      "id": "p037",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.2532582541428194,
+        "profitFactor": 1.0165047961827862,
+        "sharpe": 0.10351568561390721,
+        "dailySharpe": 0.005418258621364667,
+        "maxDrawdownPct": 7.491055001641998,
+        "cagrPct": 0.41630516527229044,
+        "calmar": 0.05557363618089023,
+        "trades": 968,
+        "tradesPerYear": 322.88767123287676,
+        "feesPaid": 459.86107525119303,
+        "fundingReceived": 332.482361928819,
+        "slippageCost": 229.9305569310001
+      }
+    },
+    {
+      "id": "p038",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.7093669120791679,
+        "profitFactor": 1.0091371746305338,
+        "sharpe": 0.0704272539779151,
+        "dailySharpe": 0.003686330953437756,
+        "maxDrawdownPct": 8.05742865442573,
+        "cagrPct": 0.23606048275253144,
+        "calmar": 0.02929724765516475,
+        "trades": 897,
+        "tradesPerYear": 299.204794520548,
+        "feesPaid": 433.12752260980835,
+        "fundingReceived": 335.98942699817195,
+        "slippageCost": 216.5637766904456
+      }
+    },
+    {
+      "id": "p039",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.07,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.07,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.511549549796265,
+        "profitFactor": 1.0195865093090364,
+        "sharpe": 0.11863429569271355,
+        "dailySharpe": 0.006209602840520742,
+        "maxDrawdownPct": 7.97021705425798,
+        "cagrPct": 0.501676547209895,
+        "calmar": 0.0629439002469677,
+        "trades": 815,
+        "tradesPerYear": 271.85273972602744,
+        "feesPaid": 405.03290302616637,
+        "fundingReceived": 345.4180580043984,
+        "slippageCost": 202.51646804453412
+      }
+    },
+    {
+      "id": "p040",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.5737090873400805,
+        "profitFactor": 0.9746792330574321,
+        "sharpe": -0.08582203370058347,
+        "dailySharpe": -0.004492130552422892,
+        "maxDrawdownPct": 8.261099846533005,
+        "cagrPct": -0.5277059837305975,
+        "calmar": -0.06387841734561091,
+        "trades": 1390,
+        "tradesPerYear": 463.6506849315069,
+        "feesPaid": 548.3340961264607,
+        "fundingReceived": 309.56315027761923,
+        "slippageCost": 274.16706228591426
+      }
+    },
+    {
+      "id": "p041",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.0578390792046273,
+        "profitFactor": 0.9535444357612313,
+        "sharpe": -0.18873114484371048,
+        "dailySharpe": -0.009878639614903673,
+        "maxDrawdownPct": 9.011456525455502,
+        "cagrPct": -1.0305509071034225,
+        "calmar": -0.1143600819903341,
+        "trades": 1252,
+        "tradesPerYear": 417.6191780821918,
+        "feesPaid": 501.37635568424895,
+        "fundingReceived": 307.83104335614945,
+        "slippageCost": 250.68818338010763
+      }
+    },
+    {
+      "id": "p042",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.5642396627382222,
+        "profitFactor": 0.9476131913476726,
+        "sharpe": -0.2207513277621504,
+        "dailySharpe": -0.01155465258942627,
+        "maxDrawdownPct": 9.402791576180988,
+        "cagrPct": -1.2033001904494744,
+        "calmar": -0.1279726537273948,
+        "trades": 1127,
+        "tradesPerYear": 375.92397260273975,
+        "feesPaid": 461.4228250420851,
+        "fundingReceived": 318.3837549424757,
+        "slippageCost": 230.7114132141038
+      }
+    },
+    {
+      "id": "p043",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -4.3692557536195835,
+        "profitFactor": 0.9381374107764736,
+        "sharpe": -0.2683383665759641,
+        "dailySharpe": -0.014045472041464183,
+        "maxDrawdownPct": 9.471931615044085,
+        "cagrPct": -1.4791654259298959,
+        "calmar": -0.15616301785588974,
+        "trades": 926,
+        "tradesPerYear": 308.87808219178083,
+        "feesPaid": 396.4176231542125,
+        "fundingReceived": 321.59337539904215,
+        "slippageCost": 198.20880502140554
+      }
+    },
+    {
+      "id": "p044",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.681098744430511,
+        "profitFactor": 0.94801974987332,
+        "sharpe": -0.21785453326634832,
+        "dailySharpe": -0.011403027435633225,
+        "maxDrawdownPct": 9.275817860988148,
+        "cagrPct": -1.2432503344748103,
+        "calmar": -0.13403134398570082,
+        "trades": 846,
+        "tradesPerYear": 282.19315068493154,
+        "feesPaid": 371.13102146172355,
+        "fundingReceived": 324.4923410338379,
+        "slippageCost": 185.56550529463405
+      }
+    },
+    {
+      "id": "p045",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.08,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.08,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.795330839337006,
+        "profitFactor": 0.9742099870905018,
+        "sharpe": -0.09040078923157961,
+        "dailySharpe": -0.0047317935704844554,
+        "maxDrawdownPct": 9.522083524689737,
+        "cagrPct": -0.6024722404288751,
+        "calmar": -0.06327105185191134,
+        "trades": 767,
+        "tradesPerYear": 255.84178082191784,
+        "feesPaid": 347.6577131972003,
+        "fundingReceived": 334.82222622017645,
+        "slippageCost": 173.828856883851
+      }
+    },
+    {
+      "id": "p046",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.9752878427827794,
+        "profitFactor": 1.0178172213769376,
+        "sharpe": 0.09474947338889111,
+        "dailySharpe": 0.004959414102457046,
+        "maxDrawdownPct": 5.500342123294409,
+        "cagrPct": 0.3242670712299889,
+        "calmar": 0.058953982127164545,
+        "trades": 1347,
+        "tradesPerYear": 449.30753424657536,
+        "feesPaid": 497.85566510191006,
+        "fundingReceived": 285.12863696917907,
+        "slippageCost": 248.9278549183024
+      }
+    },
+    {
+      "id": "p047",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.42636990591240487,
+        "profitFactor": 1.00751950272491,
+        "sharpe": 0.05402112259948653,
+        "dailySharpe": 0.002827594789375008,
+        "maxDrawdownPct": 6.174492971450906,
+        "cagrPct": 0.14201906444228918,
+        "calmar": 0.023000927379615593,
+        "trades": 1186,
+        "tradesPerYear": 395.6041095890411,
+        "feesPaid": 447.45256655391813,
+        "fundingReceived": 303.83445305800217,
+        "slippageCost": 223.7262996762161
+      }
+    },
+    {
+      "id": "p048",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.08562468011714675,
+        "profitFactor": 0.9985376439376382,
+        "sharpe": 0.016637175072396003,
+        "dailySharpe": 0.000870829543721364,
+        "maxDrawdownPct": 6.399489044767022,
+        "cagrPct": -0.02856926192525977,
+        "calmar": -0.004464303591334588,
+        "trades": 1067,
+        "tradesPerYear": 355.91027397260274,
+        "feesPaid": 411.0970606367349,
+        "fundingReceived": 310.5017468477739,
+        "slippageCost": 205.5485422216234
+      }
+    },
+    {
+      "id": "p049",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.24290458606089915,
+        "profitFactor": 0.995994674244484,
+        "sharpe": 0.006241159833651754,
+        "dailySharpe": 0.0003266772361642487,
+        "maxDrawdownPct": 7.246991648915209,
+        "cagrPct": -0.08108932257532286,
+        "calmar": -0.011189377124156201,
+        "trades": 881,
+        "tradesPerYear": 293.8678082191781,
+        "feesPaid": 353.97291014895103,
+        "fundingReceived": 313.39808222416366,
+        "slippageCost": 176.98646280530843
+      }
+    },
+    {
+      "id": "p050",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.941543630881315,
+        "profitFactor": 0.969248982545833,
+        "sharpe": -0.11337735588098953,
+        "dailySharpe": -0.005934442034813418,
+        "maxDrawdownPct": 8.157207680173956,
+        "cagrPct": -0.6518601342014096,
+        "calmar": -0.079912165995939,
+        "trades": 821,
+        "tradesPerYear": 273.8541095890411,
+        "feesPaid": 333.70347312542856,
+        "fundingReceived": 315.98412133553734,
+        "slippageCost": 166.85173617938295
+      }
+    },
+    {
+      "id": "p051",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.09,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.09,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.0034632666064293716,
+        "profitFactor": 1.0000560716525435,
+        "sharpe": 0.024363185967081594,
+        "dailySharpe": 0.0012752274365684698,
+        "maxDrawdownPct": 8.197955232970976,
+        "cagrPct": 0.0011551995710679108,
+        "calmar": 0.00014091313482926415,
+        "trades": 744,
+        "tradesPerYear": 248.16986301369866,
+        "feesPaid": 312.08033441417757,
+        "fundingReceived": 319.3709673095785,
+        "slippageCost": 156.04017317092377
+      }
+    },
+    {
+      "id": "p052",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -3.106564652868382,
+        "profitFactor": 0.9330817233071513,
+        "sharpe": -0.2430717322135949,
+        "dailySharpe": -0.012722955954603786,
+        "maxDrawdownPct": 6.899267050962463,
+        "cagrPct": -1.0471465573934302,
+        "calmar": -0.15177649301853752,
+        "trades": 1226,
+        "tradesPerYear": 408.9465753424658,
+        "feesPaid": 386.0363501717126,
+        "fundingReceived": 243.81386998315014,
+        "slippageCost": 193.01817606922415
+      }
+    },
+    {
+      "id": "p053",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.30053779054146634,
+        "profitFactor": 1.0065773721583648,
+        "sharpe": 0.04496363312526592,
+        "dailySharpe": 0.0023535041224333956,
+        "maxDrawdownPct": 6.716075661587554,
+        "cagrPct": 0.10014765351737953,
+        "calmar": 0.014911632709883217,
+        "trades": 1075,
+        "tradesPerYear": 358.5787671232877,
+        "feesPaid": 354.7393274248412,
+        "fundingReceived": 262.78371233105685,
+        "slippageCost": 177.36967568758357
+      }
+    },
+    {
+      "id": "p054",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.6202694195210023,
+        "profitFactor": 1.0132001922741243,
+        "sharpe": 0.07082523620636215,
+        "dailySharpe": 0.0037071622953512504,
+        "maxDrawdownPct": 6.7013040528120085,
+        "cagrPct": 0.20647192582352591,
+        "calmar": 0.03081070851230604,
+        "trades": 969,
+        "tradesPerYear": 323.22123287671235,
+        "feesPaid": 327.5915610420211,
+        "fundingReceived": 268.1646719379588,
+        "slippageCost": 163.79579193099545
+      }
+    },
+    {
+      "id": "p055",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.2244711555711607,
+        "profitFactor": 1.0258897127880222,
+        "sharpe": 0.11916655513957235,
+        "dailySharpe": 0.0062374625732717955,
+        "maxDrawdownPct": 6.607979349309071,
+        "cagrPct": 0.4067813628176209,
+        "calmar": 0.0615591153232272,
+        "trades": 779,
+        "tradesPerYear": 259.8445205479452,
+        "feesPaid": 276.69951908261004,
+        "fundingReceived": 275.51886043281087,
+        "slippageCost": 138.34977002040725
+      }
+    },
+    {
+      "id": "p056",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.6467375678302023,
+        "profitFactor": 1.0135112342990655,
+        "sharpe": 0.07205884386315363,
+        "dailySharpe": 0.003771732271216762,
+        "maxDrawdownPct": 5.8737913085493885,
+        "cagrPct": 0.2152636063319946,
+        "calmar": 0.03664815364118832,
+        "trades": 714,
+        "tradesPerYear": 238.16301369863015,
+        "feesPaid": 255.5354325912912,
+        "fundingReceived": 278.08180402529797,
+        "slippageCost": 127.76772309144991
+      }
+    },
+    {
+      "id": "p057",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.11,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.11,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.7310335662779943,
+        "profitFactor": 1.0152951461489568,
+        "sharpe": 0.07839272681515133,
+        "dailySharpe": 0.004103262857212954,
+        "maxDrawdownPct": 6.443923440845525,
+        "cagrPct": 0.24325316623832194,
+        "calmar": 0.037749232819315436,
+        "trades": 652,
+        "tradesPerYear": 217.48219178082192,
+        "feesPaid": 238.1498756971317,
+        "fundingReceived": 283.8300956912145,
+        "slippageCost": 119.07494370848873
+      }
+    },
+    {
+      "id": "p058",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -2.412198837754753,
+        "profitFactor": 0.9422867919168716,
+        "sharpe": -0.2000614205572386,
+        "dailySharpe": -0.010471693350704026,
+        "maxDrawdownPct": 6.411944625684371,
+        "cagrPct": -0.8111725255336544,
+        "calmar": -0.1265095962127207,
+        "trades": 1164,
+        "tradesPerYear": 388.26575342465753,
+        "feesPaid": 347.6126065364483,
+        "fundingReceived": 243.1434592995521,
+        "slippageCost": 173.80630475044632
+      }
+    },
+    {
+      "id": "p059",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.8368660937071448,
+        "profitFactor": 0.9801430689816079,
+        "sharpe": -0.05545409849887706,
+        "dailySharpe": -0.0029026001759986314,
+        "maxDrawdownPct": 6.464381475549306,
+        "cagrPct": -0.27992849607592074,
+        "calmar": -0.04330321425718986,
+        "trades": 1036,
+        "tradesPerYear": 345.56986301369864,
+        "feesPaid": 318.25875882254286,
+        "fundingReceived": 249.684076533929,
+        "slippageCost": 159.1293851719693
+      }
+    },
+    {
+      "id": "p060",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.8740729122982627,
+        "profitFactor": 1.0205859362294156,
+        "sharpe": 0.09489434244992362,
+        "dailySharpe": 0.004966996895675806,
+        "maxDrawdownPct": 6.298082644605968,
+        "cagrPct": 0.29071211337690084,
+        "calmar": 0.04615882797693724,
+        "trades": 944,
+        "tradesPerYear": 314.8821917808219,
+        "feesPaid": 296.78114355466676,
+        "fundingReceived": 254.07637261796427,
+        "slippageCost": 148.39058291743927
+      }
+    },
+    {
+      "id": "p061",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.59709161283057,
+        "profitFactor": 1.037383275008629,
+        "sharpe": 0.15526412705126927,
+        "dailySharpe": 0.008126895841872067,
+        "maxDrawdownPct": 6.517076556069927,
+        "cagrPct": 0.5299183077067449,
+        "calmar": 0.08131227294133675,
+        "trades": 759,
+        "tradesPerYear": 253.17328767123288,
+        "feesPaid": 250.289918102489,
+        "fundingReceived": 266.38676359684376,
+        "slippageCost": 125.14496980153586
+      }
+    },
+    {
+      "id": "p062",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.230070921185833,
+        "profitFactor": 1.0283332092305393,
+        "sharpe": 0.12420982778326647,
+        "dailySharpe": 0.006501439528257225,
+        "maxDrawdownPct": 6.413515742577822,
+        "cagrPct": 0.40863410708606995,
+        "calmar": 0.0637145246831226,
+        "trades": 700,
+        "tradesPerYear": 233.49315068493152,
+        "feesPaid": 233.70654505007917,
+        "fundingReceived": 263.77833641027416,
+        "slippageCost": 116.85328091658303
+      }
+    },
+    {
+      "id": "p063",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.12,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.12,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.286430130695737,
+        "profitFactor": 1.030370393723845,
+        "sharpe": 0.127691499580298,
+        "dailySharpe": 0.00668367855917462,
+        "maxDrawdownPct": 6.359005662254738,
+        "cagrPct": 0.4272773717433065,
+        "calmar": 0.06719248172391233,
+        "trades": 621,
+        "tradesPerYear": 207.14178082191782,
+        "feesPaid": 212.01792356972055,
+        "fundingReceived": 270.9447696386034,
+        "slippageCost": 106.0089688138657
+      }
+    },
+    {
+      "id": "p064",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -2.95694023743992,
+        "profitFactor": 0.9208358774372625,
+        "sharpe": -0.2613952683309367,
+        "dailySharpe": -0.013682053669630035,
+        "maxDrawdownPct": 6.293760268532261,
+        "cagrPct": -0.996203007721097,
+        "calmar": -0.15828423155898452,
+        "trades": 1077,
+        "tradesPerYear": 359.2458904109589,
+        "feesPaid": 303.0546974568493,
+        "fundingReceived": 225.87264359613235,
+        "slippageCost": 151.5273460490397
+      }
+    },
+    {
+      "id": "p065",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.24893627240460958,
+        "profitFactor": 0.9932114726378918,
+        "sharpe": -0.004959888112189621,
+        "dailySharpe": -0.0002596124091290862,
+        "maxDrawdownPct": 4.77555853170604,
+        "cagrPct": -0.08310456594230464,
+        "calmar": -0.01740206206050123,
+        "trades": 969,
+        "tradesPerYear": 323.22123287671235,
+        "feesPaid": 280.676464606631,
+        "fundingReceived": 232.84869643773703,
+        "slippageCost": 140.3382388342104
+      }
+    },
+    {
+      "id": "p066",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.6264896260108954,
+        "profitFactor": 0.9835859128201504,
+        "sharpe": -0.039110998819655705,
+        "dailySharpe": -0.002047163241860541,
+        "maxDrawdownPct": 6.461348872628024,
+        "cagrPct": -0.20941068243637284,
+        "calmar": -0.0324097470302976,
+        "trades": 886,
+        "tradesPerYear": 295.53561643835616,
+        "feesPaid": 259.8261178665404,
+        "fundingReceived": 246.258759127617,
+        "slippageCost": 129.9130621665283
+      }
+    },
+    {
+      "id": "p067",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.3843182930894695,
+        "profitFactor": 1.0100243415185748,
+        "sharpe": 0.05297827360643923,
+        "dailySharpe": 0.002773009578314001,
+        "maxDrawdownPct": 6.135587943809908,
+        "cagrPct": 0.12803002328396484,
+        "calmar": 0.020866789695864797,
+        "trades": 722,
+        "tradesPerYear": 240.83150684931508,
+        "feesPaid": 221.43370039289735,
+        "fundingReceived": 246.37462634456148,
+        "slippageCost": 110.71685516475907
+      }
+    },
+    {
+      "id": "p068",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.2882949673691293,
+        "profitFactor": 1.0075210702671524,
+        "sharpe": 0.044322588232874785,
+        "dailySharpe": 0.002319950299220217,
+        "maxDrawdownPct": 6.061728209512614,
+        "cagrPct": 0.09607191040090779,
+        "calmar": 0.015848930714205074,
+        "trades": 651,
+        "tradesPerYear": 217.14863013698633,
+        "feesPaid": 203.28936674236192,
+        "fundingReceived": 257.0142876229851,
+        "slippageCost": 101.64468644115178
+      }
+    },
+    {
+      "id": "p069",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.13,
+        "martingale": 0,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "overlap": {
+          "value": 0.13,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -0.5163925650328749,
+        "profitFactor": 0.98648608654168,
+        "sharpe": -0.026678292876894986,
+        "dailySharpe": -0.0013964056705634933,
+        "maxDrawdownPct": 6.19374802870066,
+        "cagrPct": -0.17254599769301882,
+        "calmar": -0.027858091238693147,
+        "trades": 585,
+        "tradesPerYear": 195.13356164383563,
+        "feesPaid": 184.74531110711138,
+        "fundingReceived": 263.95470181893194,
+        "slippageCost": 92.37265401451596
+      }
+    },
+    {
+      "id": "p070",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.0105
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0105,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.4030486076210047,
+        "profitFactor": 0.9707920565190523,
+        "sharpe": -0.09208482982719744,
+        "dailySharpe": -0.0048199402839204,
+        "maxDrawdownPct": 7.0304085874315705,
+        "cagrPct": -0.4702084349682445,
+        "calmar": -0.06688209214594545,
+        "trades": 1306,
+        "tradesPerYear": 435.6315068493151,
+        "feesPaid": 418.82714361380437,
+        "fundingReceived": 253.04679529914472,
+        "slippageCost": 209.41358120246534
+      }
+    },
+    {
+      "id": "p071",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.012
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.012,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 0.5636988254192232,
+        "profitFactor": 1.0116011872226391,
+        "sharpe": 0.06534861194648817,
+        "dailySharpe": 0.003420502680085654,
+        "maxDrawdownPct": 6.381680803909351,
+        "cagrPct": 0.1876762251378894,
+        "calmar": 0.029408588568535253,
+        "trades": 1160,
+        "tradesPerYear": 386.9315068493151,
+        "feesPaid": 385.1425753440871,
+        "fundingReceived": 263.9721518309326,
+        "slippageCost": 192.5713024765077
+      }
+    },
+    {
+      "id": "p072",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.0135
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0135,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.9722451809006891,
+        "profitFactor": 1.0392985232527638,
+        "sharpe": 0.17259865902347915,
+        "dailySharpe": 0.009034226713988024,
+        "maxDrawdownPct": 6.326214916790442,
+        "cagrPct": 0.6535886709428729,
+        "calmar": 0.10331433243094218,
+        "trades": 1060,
+        "tradesPerYear": 353.57534246575347,
+        "feesPaid": 364.2026345564424,
+        "fundingReceived": 272.28352301034766,
+        "slippageCost": 182.10133612801982
+      }
+    },
+    {
+      "id": "p073",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.0165
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0165,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.1138995592746115,
+        "profitFactor": 1.0212437490995785,
+        "sharpe": 0.10622056138762098,
+        "dailySharpe": 0.005559838290124317,
+        "maxDrawdownPct": 7.1406227312324155,
+        "cagrPct": 0.3701835307943435,
+        "calmar": 0.05184191137492748,
+        "trades": 856,
+        "tradesPerYear": 285.5287671232877,
+        "feesPaid": 310.6438730372137,
+        "fundingReceived": 288.05010451629323,
+        "slippageCost": 155.32194809083398
+      }
+    },
+    {
+      "id": "p074",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.018
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.018,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.2334466864001303,
+        "profitFactor": 1.0230836007481072,
+        "sharpe": 0.113851243817706,
+        "dailySharpe": 0.0059592464630838496,
+        "maxDrawdownPct": 6.984176566774608,
+        "cagrPct": 0.4097509832730939,
+        "calmar": 0.058668474279756466,
+        "trades": 792,
+        "tradesPerYear": 264.18082191780826,
+        "feesPaid": 292.9274772030784,
+        "fundingReceived": 295.58696379489345,
+        "slippageCost": 146.46374928749594
+      }
+    },
+    {
+      "id": "p075",
+      "kind": "2d",
+      "parameters": {
+        "orders": 3,
+        "overlap": 0.1,
+        "martingale": 0.15,
+        "takeProfit": 0.0195
+      },
+      "steps": {
+        "martingale": {
+          "value": 0.15,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "takeProfit": {
+          "value": 0.0195,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.3300065898100732,
+        "profitFactor": 0.9757171900241602,
+        "sharpe": -0.07797631234676293,
+        "dailySharpe": -0.004081466727766237,
+        "maxDrawdownPct": 8.586460289219053,
+        "cagrPct": -0.44561997667266207,
+        "calmar": -0.051897983763131296,
+        "trades": 724,
+        "tradesPerYear": 241.49863013698632,
+        "feesPaid": 270.10505959259024,
+        "fundingReceived": 288.4097442003875,
+        "slippageCost": 135.05252914618225
+      }
+    }
+  ]
+}

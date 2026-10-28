@@ -1,0 +1,199 @@
+{
+  "candidate": {
+    "id": "4ad4e10794c9a517aaa593523a31e7f1",
+    "identity": {
+      "strategy": "dca-grid-long",
+      "strategyVersion": 1,
+      "parameters": {
+        "martingale": 0.15,
+        "orders": 7,
+        "overlap": 0.2,
+        "takeProfit": 0.01
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "dca-grid-long",
+    "family": "dca-grid",
+    "description": "Veles DCA bot, long, no entry filter: market base order, then orders - 1 averaging limits spread evenly over overlap below it, each (1 + martingale) times the previous notional; take-profit limit takeProfit above the running average entry; stop 5% below the last order; the next deal starts at the next open.",
+    "version": 1
+  },
+  "parameters": {
+    "orders": 7,
+    "overlap": 0.2,
+    "martingale": 0.15,
+    "takeProfit": 0.01
+  },
+  "searchSpace": [
+    {
+      "name": "orders",
+      "min": 3,
+      "max": 7,
+      "step": 2,
+      "values": [
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "overlap",
+      "min": 0.05,
+      "max": 0.2,
+      "step": 0.05,
+      "values": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    {
+      "name": "martingale",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.15,
+      "values": [
+        0,
+        0.15,
+        0.3
+      ]
+    },
+    {
+      "name": "takeProfit",
+      "min": 0.005,
+      "max": 0.02,
+      "step": 0.005,
+      "values": [
+        0.005,
+        0.01,
+        0.015,
+        0.02
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 10367.136321830276,
+    "netProfit": 367.13632183027585,
+    "netProfitPct": 3.671363218302748,
+    "cagrPct": 1.209942510313966,
+    "maxDrawdownPct": 2.9023803484283572,
+    "profitFactor": 1.494368388628329,
+    "sharpe": 0.7613072594393475,
+    "sortino": 1.0214630219594478,
+    "calmar": 0.41687937660174396,
+    "trades": 1259,
+    "tradesPerYear": 419.95410958904114,
+    "winRatePct": 99.04686258935664,
+    "avgTradeNetPnl": 0.2916094692853744,
+    "timeInMarketPct": 95.20928462709284,
+    "turnoverPerYear": 8.347518432691558,
+    "feesPaid": 102.44226391838471,
+    "fundingReceived": -75.22395983402157,
+    "slippageCost": 51.2211558001404,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.03984864320321488,
+    "dailySkewness": -1.4007295874836792,
+    "dailyKurtosis": 22.716849699594004
+  },
+  "attribution": {
+    "grossPnl": 596.0237013828339,
+    "slippageCost": 51.2211558001404,
+    "commission": 102.44226391838471,
+    "fundingReceived": -75.22395983402157,
+    "netPnl": 367.13632183027585
+  },
+  "maxBarsHeld": 2416,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 144,
+  "lookAheadAudit": {
+    "strategy": "dca-grid-long",
+    "parameters": {
+      "orders": 7,
+      "overlap": 0.2,
+      "martingale": 0.15,
+      "takeProfit": 0.01
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 4869,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 0,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:53.9678144Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

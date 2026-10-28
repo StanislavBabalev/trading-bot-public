@@ -1,0 +1,188 @@
+{
+  "candidate": {
+    "id": "69c8f21ae9859e86930fa7a5746f6e3f",
+    "identity": {
+      "strategy": "squeeze-momentum",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 3,
+        "kcMult": 2,
+        "tfHours": 2
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "squeeze-momentum",
+    "family": "vol-compression",
+    "description": "LazyBear Squeeze Momentum (20): when Bollinger(2 sd) leaves the Keltner channel (kcMult x SMA of true range) after a squeeze, enter in the direction of linreg momentum; exit when momentum turns back toward zero; stop atrMult x ATR(14) of the period bars.",
+    "version": 1
+  },
+  "parameters": {
+    "tfHours": 2,
+    "kcMult": 2,
+    "atrMult": 3
+  },
+  "searchSpace": [
+    {
+      "name": "tfHours",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "kcMult",
+      "min": 1,
+      "max": 2,
+      "step": 0.25,
+      "values": [
+        1,
+        1.25,
+        1.5,
+        1.75,
+        2
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 1.5,
+      "max": 3.5,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 10886.034458187807,
+    "netProfit": 886.0344581878071,
+    "netProfitPct": 8.860344581878078,
+    "cagrPct": 2.8722690837899467,
+    "maxDrawdownPct": 7.041559020272642,
+    "profitFactor": 1.1200511280014356,
+    "sharpe": 0.4105797732953109,
+    "sortino": 0.8947439421907282,
+    "calmar": 0.4079024368780673,
+    "trades": 382,
+    "tradesPerYear": 127.42054794520548,
+    "winRatePct": 32.98429319371728,
+    "avgTradeNetPnl": 2.3194619324288874,
+    "timeInMarketPct": 15.795281582952816,
+    "turnoverPerYear": 76.13078449818174,
+    "feesPaid": 943.2289231222707,
+    "fundingReceived": 25.009896460226425,
+    "slippageCost": 471.614552595857,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.021490727547443234,
+    "dailySkewness": 4.45483505908456,
+    "dailyKurtosis": 39.10743144470176
+  },
+  "attribution": {
+    "grossPnl": 2275.8680374457367,
+    "slippageCost": 471.614552595857,
+    "commission": 943.2289231222707,
+    "fundingReceived": 25.009896460226425,
+    "netPnl": 886.0344581878071
+  },
+  "maxBarsHeld": 169,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 100,
+  "lookAheadAudit": {
+    "strategy": "squeeze-momentum",
+    "parameters": {
+      "tfHours": 2,
+      "kcMult": 2,
+      "atrMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 746,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 534,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:52.771135Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

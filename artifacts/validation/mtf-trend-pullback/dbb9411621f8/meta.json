@@ -1,0 +1,188 @@
+{
+  "candidate": {
+    "id": "dbb9411621f85350ac36913338b85ecb",
+    "identity": {
+      "strategy": "mtf-trend-pullback",
+      "strategyVersion": 1,
+      "parameters": {
+        "entryLen": 48,
+        "maDays": 50,
+        "trailMult": 1
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "mtf-trend-pullback",
+    "family": "multi-timeframe-trend",
+    "description": "Daily regime = sign(daily close - SMA of the last maDays daily closes). Up regime: long when the hourly close crosses back above EMA(entryLen); down regime: short on a cross below. Exit when the daily regime no longer matches; stop trails the best close by trailMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "maDays": 50,
+    "entryLen": 48,
+    "trailMult": 1
+  },
+  "searchSpace": [
+    {
+      "name": "maDays",
+      "min": 10,
+      "max": 50,
+      "step": 10,
+      "values": [
+        10,
+        20,
+        30,
+        40,
+        50
+      ]
+    },
+    {
+      "name": "entryLen",
+      "min": 12,
+      "max": 48,
+      "step": 12,
+      "values": [
+        12,
+        24,
+        36,
+        48
+      ]
+    },
+    {
+      "name": "trailMult",
+      "min": 1,
+      "max": 3,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 13174.589143346693,
+    "netProfit": 3174.589143346693,
+    "netProfitPct": 31.745891433466934,
+    "cagrPct": 9.632595857242144,
+    "maxDrawdownPct": 10.675074591482211,
+    "profitFactor": 1.3763763073523794,
+    "sharpe": 0.9851671883787789,
+    "sortino": 1.7055495053324206,
+    "calmar": 0.902344594849775,
+    "trades": 216,
+    "tradesPerYear": 72.04931506849316,
+    "winRatePct": 39.351851851851855,
+    "avgTradeNetPnl": 14.697171959938514,
+    "timeInMarketPct": 70.81811263318113,
+    "turnoverPerYear": 31.968443451026822,
+    "feesPaid": 442.87996748768126,
+    "fundingReceived": -446.7185526501458,
+    "slippageCost": 221.4401551689535,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.05156600741483925,
+    "dailySkewness": 1.4091776858516156,
+    "dailyKurtosis": 9.018374716335499
+  },
+  "attribution": {
+    "grossPnl": 4285.6278186535,
+    "slippageCost": 221.4401551689535,
+    "commission": 442.87996748768126,
+    "fundingReceived": -446.7185526501458,
+    "netPnl": 3174.589143346693
+  },
+  "maxBarsHeld": 1899,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 100,
+  "lookAheadAudit": {
+    "strategy": "mtf-trend-pullback",
+    "parameters": {
+      "maDays": 50,
+      "entryLen": 48,
+      "trailMult": 1
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 574,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 402,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:44.7568035Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

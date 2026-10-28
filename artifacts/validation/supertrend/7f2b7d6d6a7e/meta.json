@@ -1,0 +1,188 @@
+{
+  "candidate": {
+    "id": "7f2b7d6d6a7e8e18c8eaca9c01f68671",
+    "identity": {
+      "strategy": "supertrend",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrLen": 10,
+        "mult": 3,
+        "tfHours": 4
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "supertrend",
+    "family": "atr-trend",
+    "description": "SuperTrend(atrLen, mult) on tfHours bars: hold its direction and flip with it; the SuperTrend line is the trailing stop; a stop-out is re-entered on the next period close if the direction still holds.",
+    "version": 1
+  },
+  "parameters": {
+    "tfHours": 4,
+    "atrLen": 10,
+    "mult": 3
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "tfHours",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "atrLen",
+      "min": 7,
+      "max": 13,
+      "step": 3,
+      "values": [
+        7,
+        10,
+        13
+      ]
+    },
+    {
+      "name": "mult",
+      "min": 1.5,
+      "max": 4,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5,
+        4
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 12858.42439533946,
+    "netProfit": 2858.42439533946,
+    "netProfitPct": 28.584243953394605,
+    "cagrPct": 8.747892010501769,
+    "maxDrawdownPct": 35.31277330650319,
+    "profitFactor": 1.1402035118899845,
+    "sharpe": 0.4592400565169252,
+    "sortino": 0.7638413680512913,
+    "calmar": 0.24772599802833264,
+    "trades": 328,
+    "tradesPerYear": 109.4082191780822,
+    "winRatePct": 22.25609756097561,
+    "avgTradeNetPnl": 8.714708522376402,
+    "timeInMarketPct": 96.03881278538813,
+    "turnoverPerYear": 120.20375718177687,
+    "feesPaid": 1841.41782231232,
+    "fundingReceived": -1662.5257895192508,
+    "slippageCost": 920.7092024792485,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.02403772317926404,
+    "dailySkewness": 2.3023921223326203,
+    "dailyKurtosis": 43.24970033178985
+  },
+  "attribution": {
+    "grossPnl": 7283.077209650281,
+    "slippageCost": 920.7092024792485,
+    "commission": 1841.41782231232,
+    "fundingReceived": -1662.5257895192508,
+    "netPnl": 2858.42439533946
+  },
+  "maxBarsHeld": 1419,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 72,
+  "lookAheadAudit": {
+    "strategy": "supertrend",
+    "parameters": {
+      "tfHours": 4,
+      "atrLen": 10,
+      "mult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 765,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 524,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:48.5253259Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

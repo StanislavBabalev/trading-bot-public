@@ -1,0 +1,893 @@
+[
+  {
+    "interval": 30,
+    "strategy": "ema-cross-atr",
+    "params": {
+      "fast": 80,
+      "slow": 260,
+      "longOnly": 1,
+      "atrLen": 14,
+      "atrMult": 5
+    },
+    "sharpe1h": 0.6804895557238789,
+    "net": 10.137692350883022,
+    "sharpe": 0.28922108023793136,
+    "pf": 1.1331015243888978,
+    "tpy": 38.02602739726028,
+    "dd": 31.677993045132997,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "Sharpe 0.29",
+      "DD 32%",
+      "38 tr/yr",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "donchian-breakout",
+    "params": {
+      "entryLen": 72,
+      "exitLen": 24,
+      "atrMult": 3
+    },
+    "sharpe1h": 0.3639847687667663,
+    "net": -19.832984626401917,
+    "sharpe": -0.17958474030676522,
+    "pf": 0.9246160106223456,
+    "tpy": 187.79520547945208,
+    "dd": 44.36853783612034,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.92",
+      "Sharpe -0.18",
+      "DD 44%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "bollinger-reversion",
+    "params": {
+      "bbLen": 40,
+      "bbMult": 2,
+      "atrMult": 3
+    },
+    "sharpe1h": -1.094882390432204,
+    "net": -74.68679308885132,
+    "sharpe": -2.385650928796971,
+    "pf": 0.8094297497454195,
+    "tpy": 480.6623287671233,
+    "dd": 75.26187709495255,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.81",
+      "Sharpe -2.39",
+      "DD 75%",
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "keltner-breakout",
+    "params": {
+      "emaLen": 48,
+      "bandMult": 2,
+      "atrMult": 3
+    },
+    "sharpe1h": 0.411871910145701,
+    "net": 16.089136933749625,
+    "sharpe": 0.3133403118130548,
+    "pf": 1.0269209940079884,
+    "tpy": 336.563698630137,
+    "dd": 37.496806452848816,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 1.03",
+      "Sharpe 0.31",
+      "DD 37%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "ts-momentum",
+    "params": {
+      "lookback": 96,
+      "threshold": 0.01,
+      "atrMult": 3
+    },
+    "sharpe1h": 0.25023564889518785,
+    "net": -44.259590647968594,
+    "sharpe": -0.3999905525524009,
+    "pf": 0.8930209265109771,
+    "tpy": 268.85068493150686,
+    "dd": 61.96201449159299,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.89",
+      "Sharpe -0.40",
+      "DD 62%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "trend-pullback-rsi",
+    "params": {
+      "trendLen": 200,
+      "rsiLen": 4,
+      "level": 20,
+      "atrMult": 3
+    },
+    "sharpe1h": -0.7976558302359803,
+    "net": -43.8516114673158,
+    "sharpe": -1.9240269277351698,
+    "pf": 0.7623951267287222,
+    "tpy": 330.2260273972603,
+    "dd": 45.26722623188296,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.76",
+      "Sharpe -1.92",
+      "DD 45%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "failed-breakout-fade",
+    "params": {
+      "breakBars": 6,
+      "excursionAtr": 0.25,
+      "stopBufferAtr": 0.5,
+      "maxHold": 24
+    },
+    "sharpe1h": 0.012398852846392897,
+    "net": -41.3704082504931,
+    "sharpe": -1.3084878539511982,
+    "pf": 0.7933783005801661,
+    "tpy": 177.78835616438357,
+    "dd": 43.50865541545936,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.79",
+      "Sharpe -1.31",
+      "DD 44%",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "volume-climax-reversal",
+    "params": {
+      "volMult": 2,
+      "rangeAtr": 1.5,
+      "maxHold": 12
+    },
+    "sharpe1h": -1.520046606784165,
+    "net": -70.28422642806197,
+    "sharpe": -2.440789942114967,
+    "pf": 0.6591517373267396,
+    "tpy": 280.52534246575345,
+    "dd": 70.66594867960202,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.66",
+      "Sharpe -2.44",
+      "DD 71%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "session-momentum",
+    "params": {
+      "moveMult": 1,
+      "holdBars": 8,
+      "atrMult": 3
+    },
+    "sharpe1h": -0.6503195471437017,
+    "net": -7.156597839441581,
+    "sharpe": -0.5495924250790547,
+    "pf": 0.741146774215792,
+    "tpy": 34.356849315068494,
+    "dd": 10.531419462442472,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.74",
+      "Sharpe -0.55",
+      "34 tr/yr",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "impulse-bar-continuation",
+    "params": {
+      "rangeAtr": 2.5,
+      "bodyFrac": 0.6,
+      "holdBars": 12,
+      "atrMult": 2
+    },
+    "sharpe1h": 0.4316946599315036,
+    "net": -18.00260647243016,
+    "sharpe": -0.22285126991475254,
+    "pf": 0.9542164722876598,
+    "tpy": 292.53356164383564,
+    "dd": 33.062913910447065,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.95",
+      "Sharpe -0.22",
+      "DD 33%",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "vol-regime-switch",
+    "params": {
+      "regimeLen": 720,
+      "channelLen": 48,
+      "edgeFrac": 0.1,
+      "atrMult": 2
+    },
+    "sharpe1h": 0.11934085126457301,
+    "net": -40.56523355271446,
+    "sharpe": -0.6195023909446209,
+    "pf": 0.8814256171442488,
+    "tpy": 289.53150684931506,
+    "dd": 48.2528468276039,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.88",
+      "Sharpe -0.62",
+      "DD 48%",
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "donchian-ensemble-trend",
+    "params": {
+      "baseDays": 2,
+      "minAgree": 3,
+      "trailMult": 2
+    },
+    "sharpe1h": 0.48323996088628995,
+    "net": 3.9711372124161093,
+    "sharpe": 0.2446557036922639,
+    "pf": 1.1012558662793954,
+    "tpy": 46.6986301369863,
+    "dd": 8.0700613337475,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "Sharpe 0.24",
+      "47 tr/yr",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "funding-crowding-fade",
+    "params": {
+      "quantile": 0.2,
+      "holdBars": 72,
+      "stopMult": 1.5
+    },
+    "sharpe1h": 0.6057769594309661,
+    "net": 10.443778674651227,
+    "sharpe": 0.6769522476413083,
+    "pf": 1.1948693011728473,
+    "tpy": 103.07054794520549,
+    "dd": 5.520815489909416,
+    "folds": 0,
+    "verdict": "SURVIVES",
+    "reasons": []
+  },
+  {
+    "interval": 30,
+    "strategy": "noise-area-momentum",
+    "params": {
+      "lookbackDays": 14,
+      "bandMult": 1,
+      "firstHour": 2
+    },
+    "sharpe1h": -0.782156116881821,
+    "net": -30.196346854639977,
+    "sharpe": -0.6594834251798343,
+    "pf": 0.8669600854822042,
+    "tpy": 313.8815068493151,
+    "dd": 34.49956107060761,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.87",
+      "Sharpe -0.66",
+      "DD 34%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "nr-compression-breakout",
+    "params": {
+      "nrLen": 4,
+      "holdBars": 24,
+      "stopMult": 1
+    },
+    "sharpe1h": 0.240404492379695,
+    "net": -9.139847779366972,
+    "sharpe": -0.4515830625091628,
+    "pf": 0.8686558954303737,
+    "tpy": 75.38493150684933,
+    "dd": 19.184562243871493,
+    "folds": 1,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.87",
+      "Sharpe -0.45"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "tsmom-vote",
+    "params": {
+      "baseDays": 5,
+      "unanimous": 0,
+      "stopMult": 2
+    },
+    "sharpe1h": 0.09663030927600731,
+    "net": 1.3054276946033783,
+    "sharpe": 0.0966302970628863,
+    "pf": 1.0300639217487868,
+    "tpy": 57.372602739726034,
+    "dd": 10.424887793543066,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 1.03",
+      "Sharpe 0.10",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "max-min-daily",
+    "params": {
+      "lookbackDays": 10,
+      "holdDays": 1,
+      "stopMult": 2
+    },
+    "sharpe1h": 0.6037208802608196,
+    "net": 7.325416777185723,
+    "sharpe": 0.6037197195348608,
+    "pf": 1.2364225093288066,
+    "tpy": 68.71369863013699,
+    "dd": 4.9467206224490035,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "mtf-trend-pullback",
+    "params": {
+      "maDays": 20,
+      "entryLen": 24,
+      "trailMult": 2
+    },
+    "sharpe1h": -0.13246917028078697,
+    "net": -0.2545106419408194,
+    "sharpe": 0.017511527691456603,
+    "pf": 0.9941131075672348,
+    "tpy": 57.372602739726034,
+    "dd": 9.706610211734459,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.99",
+      "Sharpe 0.02",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "efficiency-regime-switch",
+    "params": {
+      "erLen": 168,
+      "erThreshold": 0.2,
+      "atrMult": 2.5
+    },
+    "sharpe1h": -0.7169019373139711,
+    "net": -62.57792377456476,
+    "sharpe": -1.3796212237706231,
+    "pf": 0.840728593082183,
+    "tpy": 427.6260273972603,
+    "dd": 63.81941083407471,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.84",
+      "Sharpe -1.38",
+      "DD 64%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "volume-conditioned-reversal",
+    "params": {
+      "extremeFrac": 0.25,
+      "holdDays": 1,
+      "stopMult": 1.5
+    },
+    "sharpe1h": -0.032896345074825084,
+    "net": -0.8416240644034789,
+    "sharpe": -0.032896345074825084,
+    "pf": 0.9787651938468452,
+    "tpy": 75.71849315068494,
+    "dd": 10.185159547149913,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.98",
+      "Sharpe -0.03",
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "crowding-filtered-breakout",
+    "params": {
+      "channelDays": 4,
+      "maxRank": 0.8,
+      "trailMult": 2
+    },
+    "sharpe1h": 0.8464304579235811,
+    "net": 9.07851461769853,
+    "sharpe": 0.5498230105707016,
+    "pf": 1.2356852385380561,
+    "tpy": 51.368493150684934,
+    "dd": 5.917888530600137,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "funding-tilt",
+    "params": {
+      "threshold": 0.4,
+      "holdBars": 96,
+      "stopMult": 1.5
+    },
+    "sharpe1h": 0.3747284663479837,
+    "net": -8.544210677910701,
+    "sharpe": -0.3706642305422215,
+    "pf": 0.9124002363371454,
+    "tpy": 147.10068493150686,
+    "dd": 13.032066526791727,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.91",
+      "Sharpe -0.37",
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "ema-cross-control",
+    "params": {
+      "holdBars": 96,
+      "stopMult": 1.5
+    },
+    "sharpe1h": -0.9444410729141941,
+    "net": -11.215711755884328,
+    "sharpe": -0.48378330655923935,
+    "pf": 0.8941346551255419,
+    "tpy": 165.7801369863014,
+    "dd": 12.197468759369293,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.89",
+      "Sharpe -0.48",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "funding-carry-tilt",
+    "params": {
+      "band": 0.3,
+      "stopMult": 2
+    },
+    "sharpe1h": 0.25564119917656586,
+    "net": 3.0493324681825307,
+    "sharpe": 0.2637480418815513,
+    "pf": 1.113653420302563,
+    "tpy": 37.025342465753425,
+    "dd": 4.744173573832211,
+    "folds": 1,
+    "verdict": "REJECT",
+    "reasons": [
+      "Sharpe 0.26",
+      "37 tr/yr"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "funding-fade-wide",
+    "params": {
+      "quantile": 0.3,
+      "holdBars": 96,
+      "stopMult": 1.5
+    },
+    "sharpe1h": 0.9807741478776408,
+    "net": 1.6968758652776028,
+    "sharpe": 0.11724064531759132,
+    "pf": 1.0215560597814326,
+    "tpy": 120.41575342465754,
+    "dd": 8.68163252706631,
+    "folds": 1,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 1.02",
+      "Sharpe 0.12"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "cipher-b-dots",
+    "params": {
+      "tfHours": 4,
+      "level": 53,
+      "atrMult": 2.5
+    },
+    "sharpe1h": -0.19334691204320395,
+    "net": -5.504991170572415,
+    "sharpe": -0.19325073699899928,
+    "pf": 0.9341710636693726,
+    "tpy": 100.06849315068494,
+    "dd": 11.10529246849477,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.93",
+      "Sharpe -0.19",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "cipher-b-sommi-flag",
+    "params": {
+      "tfHours": 2,
+      "htfHours": 12,
+      "atrMult": 2.5
+    },
+    "sharpe1h": -0.3652740290106735,
+    "net": -5.9200646631731075,
+    "sharpe": -0.3813279499799358,
+    "pf": 0.8659199847726085,
+    "tpy": 60.041095890410965,
+    "dd": 15.125753338954832,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.87",
+      "Sharpe -0.38",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "cipher-b-divergence",
+    "params": {
+      "tfHours": 2,
+      "limitScale": 1,
+      "atrMult": 2
+    },
+    "sharpe1h": -0.2805104828223503,
+    "net": -5.157331648695928,
+    "sharpe": -0.28051043989462454,
+    "pf": 0.8815027745487638,
+    "tpy": 46.6986301369863,
+    "dd": 14.381992072522785,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.88",
+      "Sharpe -0.28",
+      "47 tr/yr",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "cipher-a-ribbon",
+    "params": {
+      "tfHours": 4,
+      "atrMult": 2.5,
+      "diamondExit": 1
+    },
+    "sharpe1h": 0.5669869804379919,
+    "net": 23.72495921185953,
+    "sharpe": 0.5669867990837458,
+    "pf": 1.223311476056923,
+    "tpy": 73.05000000000001,
+    "dd": 12.315515564463277,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "cipher-b-confluence",
+    "params": {
+      "tfHours": 4,
+      "level": 53,
+      "atrMult": 2.5
+    },
+    "sharpe1h": -0.09690263973625562,
+    "net": -2.4474698192757938,
+    "sharpe": -0.0967812469778968,
+    "pf": 0.9550227562194497,
+    "tpy": 61.04178082191781,
+    "dd": 11.965814557940176,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.96",
+      "Sharpe -0.10",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "supertrend",
+    "params": {
+      "tfHours": 4,
+      "atrLen": 10,
+      "mult": 3
+    },
+    "sharpe1h": 0.4592400565169252,
+    "net": 22.47795184226138,
+    "sharpe": 0.39267697630212284,
+    "pf": 1.1108345599213045,
+    "tpy": 113.07739726027398,
+    "dd": 36.772375029535915,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "Sharpe 0.39",
+      "DD 37%",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "squeeze-momentum",
+    "params": {
+      "tfHours": 4,
+      "kcMult": 1.5,
+      "atrMult": 2.5
+    },
+    "sharpe1h": 0.015896495468694365,
+    "net": -0.37699865735605353,
+    "sharpe": 0.01569379091609203,
+    "pf": 0.992745970378034,
+    "tpy": 74.38424657534247,
+    "dd": 13.429035355218158,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.99",
+      "Sharpe 0.02",
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "ichimoku-cloud",
+    "params": {
+      "tfHours": 4,
+      "periodSet": 1,
+      "atrMult": 2.5
+    },
+    "sharpe1h": 0.3375599765501092,
+    "net": 10.182489877527768,
+    "sharpe": 0.3375598133616587,
+    "pf": 1.100604110112134,
+    "tpy": 94.06438356164384,
+    "dd": 15.21605614717785,
+    "folds": 2,
+    "verdict": "REJECT",
+    "reasons": [
+      "Sharpe 0.34",
+      "2/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "dca-grid-long",
+    "params": {
+      "orders": 5,
+      "overlap": 0.1,
+      "martingale": 0.15,
+      "takeProfit": 0.01
+    },
+    "sharpe1h": -0.828637340021285,
+    "net": -7.698923368642685,
+    "sharpe": -0.6754216322939418,
+    "pf": 0.811882052440349,
+    "tpy": 579.0630136986301,
+    "dd": 12.868948328582944,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.81",
+      "Sharpe -0.68",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "dca-grid-short",
+    "params": {
+      "orders": 5,
+      "overlap": 0.1,
+      "martingale": 0.15,
+      "takeProfit": 0.01
+    },
+    "sharpe1h": -0.6201986777262419,
+    "net": -8.191103727416227,
+    "sharpe": -0.6701251648624811,
+    "pf": 0.8325945796406462,
+    "tpy": 610.7513698630138,
+    "dd": 9.246204310262646,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.83",
+      "Sharpe -0.67",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "dca-rsi-long",
+    "params": {
+      "rsiLevel": 30,
+      "overlap": 0.1,
+      "takeProfit": 0.01,
+      "orders": 5,
+      "martingale": 0.15
+    },
+    "sharpe1h": -0.4608104501183657,
+    "net": -6.826760842051494,
+    "sharpe": -1.0266928376964946,
+    "pf": 0.539000022389816,
+    "tpy": 129.42191780821918,
+    "dd": 9.299369872743435,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.54",
+      "Sharpe -1.03",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "dca-trend-long",
+    "params": {
+      "maDays": 200,
+      "overlap": 0.1,
+      "takeProfit": 0.01,
+      "orders": 5,
+      "martingale": 0.15
+    },
+    "sharpe1h": -0.6674005015352574,
+    "net": -4.030657752971633,
+    "sharpe": -0.4583836702400398,
+    "pf": 0.8182313753391323,
+    "tpy": 306.87671232876716,
+    "dd": 8.019196199823778,
+    "folds": 3,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.82",
+      "Sharpe -0.46",
+      "3/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "cascade-fade",
+    "params": {
+      "dropAtr": 1.5,
+      "volMult": 1.5,
+      "holdBars": 24
+    },
+    "sharpe1h": -1.4503847026811252,
+    "net": -69.18795507172774,
+    "sharpe": -2.285391851644983,
+    "pf": 0.7460865784601648,
+    "tpy": 279.19109589041096,
+    "dd": 72.26493316888057,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.75",
+      "Sharpe -2.29",
+      "DD 72%",
+      "4/4 folds"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "turmoil-reversal",
+    "params": {
+      "zEntry": 1,
+      "volQuantile": 0.7,
+      "holdPeriods": 6
+    },
+    "sharpe1h": 0.15679430901095537,
+    "net": 7.289281884027887,
+    "sharpe": 0.4039486127618821,
+    "pf": 1.144962155167864,
+    "tpy": 41.36164383561644,
+    "dd": 8.776245003312958,
+    "folds": 1,
+    "verdict": "REJECT",
+    "reasons": [
+      "Sharpe 0.40",
+      "41 tr/yr"
+    ]
+  },
+  {
+    "interval": 30,
+    "strategy": "round-number-bounce",
+    "params": {
+      "levelStep": 1000,
+      "freshBars": 24,
+      "holdBars": 24
+    },
+    "sharpe1h": -0.6546630064064306,
+    "net": -78.58524425619667,
+    "sharpe": -2.664483573891291,
+    "pf": 0.6490285633869483,
+    "tpy": 199.46986301369864,
+    "dd": 79.72624352211957,
+    "folds": 4,
+    "verdict": "REJECT",
+    "reasons": [
+      "PF 0.65",
+      "Sharpe -2.66",
+      "DD 80%",
+      "4/4 folds"
+    ]
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "candidate": {
+    "id": "248e6fe70e3a3dcc1a98d153b794bdca",
+    "identity": {
+      "strategy": "ema-cross-control",
+      "strategyVersion": 1,
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 1.5
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "ema-cross-control",
+    "family": "control",
+    "description": "Ablation control for funding-tilt, funding ignored: long when the close crosses above EMA(24), short when it crosses below; exit after holdBars; stop stopMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "holdBars": 120,
+    "stopMult": 1.5
+  },
+  "searchSpace": [
+    {
+      "name": "holdBars",
+      "min": 48,
+      "max": 144,
+      "step": 24,
+      "values": [
+        48,
+        72,
+        96,
+        120,
+        144
+      ]
+    },
+    {
+      "name": "stopMult",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 12213.770385580092,
+    "netProfit": 2213.770385580092,
+    "netProfitPct": 22.137703855800915,
+    "cagrPct": 6.898040829534757,
+    "maxDrawdownPct": 7.89657246291071,
+    "profitFactor": 1.2797741482824894,
+    "sharpe": 0.8805671449054283,
+    "sortino": 1.3607306096774472,
+    "calmar": 0.8735487278732715,
+    "trades": 221,
+    "tradesPerYear": 73.71712328767124,
+    "winRatePct": 50.678733031674206,
+    "avgTradeNetPnl": 10.017060568235658,
+    "timeInMarketPct": 87.08904109589041,
+    "turnoverPerYear": 22.61196374490073,
+    "feesPaid": 295.20781772978916,
+    "fundingReceived": 198.90754542234353,
+    "slippageCost": 147.60400717188114,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.04609099090904644,
+    "dailySkewness": 0.6878146109111236,
+    "dailyKurtosis": 8.14529789927742
+  },
+  "attribution": {
+    "grossPnl": 2457.674665059407,
+    "slippageCost": 147.60400717188114,
+    "commission": 295.20781772978916,
+    "fundingReceived": 198.90754542234353,
+    "netPnl": 2213.770385580092
+  },
+  "maxBarsHeld": 145,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 20,
+  "lookAheadAudit": {
+    "strategy": "ema-cross-control",
+    "parameters": {
+      "holdBars": 120,
+      "stopMult": 1.5
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 454,
+    "featureSeriesChecked": 16,
+    "fundingTradesChecked": 324,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:47.9297209Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

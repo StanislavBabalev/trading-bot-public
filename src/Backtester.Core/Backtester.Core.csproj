@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- The module version id is the code fingerprint of experiments and validation bundles. Without this the SDK puts
+         the git commit SHA in the informational version and in the SourceLink data of the PDB (whose hash is in the
+         DLL), so every commit would change it. -->
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+  </PropertyGroup>
+
+</Project>

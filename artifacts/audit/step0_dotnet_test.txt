@@ -1,0 +1,66 @@
+﻿Test run for S:\Personal\trading-bot\tests\Backtester.Tests\bin\Release\net10.0\Backtester.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.12)
+[xUnit.net 00:00:00.32]   Discovering: Backtester.Tests
+[xUnit.net 00:00:00.37]   Discovered:  Backtester.Tests
+[xUnit.net 00:00:00.40]   Starting:    Backtester.Tests
+  Passed Backtester.Tests.EngineTests.Run_starts_flat_and_ignores_a_direction_held_during_warmup [102 ms]
+  Passed Backtester.Tests.OptimizerTests.Skips_invalid_combinations_without_counting_them [102 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Parses_bybit_kline_and_funding_responses [104 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Vol_target_without_enough_history_skips_the_entry [102 ms]
+  Passed Backtester.Tests.EngineTests.Funding_is_paid_by_longs_and_received_by_shorts(dir: -1, expected: 10) [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Funding_is_paid_by_longs_and_received_by_shorts(dir: 1, expected: -10) [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Buy_and_hold_pays_costs_but_no_funding [107 ms]
+  Passed Backtester.Tests.EngineTests.After_a_stop_the_same_direction_waits_for_a_new_signal [1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Max_drawdown_stop_goes_flat_and_halts_for_good [2 ms]
+  Passed Backtester.Tests.EngineTests.Open_position_is_closed_at_the_last_close_when_data_ends [< 1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Risk_per_trade_is_capped_by_max_leverage [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Moments_of_a_known_sample [< 1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Risk_per_trade_sizes_so_the_stop_loses_the_risk_amount [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Commission_and_slippage_are_charged_on_both_sides [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Normal_inverse_cdf_is_accurate(p: 0.01, z: -2.3263478740000001) [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Normal_inverse_cdf_is_accurate(p: 0.97499999999999998, z: 1.9599639849999999) [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Entry_is_skipped_when_the_stop_is_already_breached_at_the_open [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Normal_inverse_cdf_is_accurate(p: 0.999, z: 3.0902323059999999) [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Normal_inverse_cdf_is_accurate(p: 0.5, z: 0) [< 1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Vol_target_scales_notional_by_target_over_realized_vol [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Probabilistic_sharpe_matches_the_closed_form [< 1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Risk_per_trade_without_a_stop_skips_the_entry [< 1 ms]
+  Passed Backtester.Tests.OptimizerTests.Flags_an_optimum_on_the_edge_of_the_range [4 ms]
+  Passed Backtester.Tests.EngineTests.Open_position_is_closed_at_the_open_of_the_first_bar_after_the_window [< 1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Fixed_fraction_uses_that_share_of_equity [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Long_stop_fills_at_stop_price_when_touched [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Funding_can_be_disabled [< 1 ms]
+  Passed Backtester.Tests.OptimizerTests.Ignores_trials_below_the_minimum_trade_count [< 1 ms]
+  Passed Backtester.Tests.SizingAndRiskTests.Daily_loss_stop_blocks_entries_until_the_next_utc_day [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Short_profits_when_price_falls [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Walk_forward_folds_on_the_development_window [1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Deflated_sharpe_penalizes_more_trials [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Short_stop_fills_when_high_reaches_it [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Daily_returns_use_end_of_day_equity [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Signal_fills_at_next_bar_open_never_same_bar [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Normal_cdf_round_trips_the_inverse [< 1 ms]
+  Passed Backtester.Tests.OptimizerTests.Rejects_more_than_four_parameters [1 ms]
+  Passed Backtester.Tests.EngineTests.Long_stop_fills_at_open_when_price_gaps_through_it [< 1 ms]
+  Passed Backtester.Tests.AnalyticsTests.Metrics_for_a_simple_run [< 1 ms]
+  Passed Backtester.Tests.EngineTests.Rejects_unsorted_bars [< 1 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Csv_round_trips_exactly [13 ms]
+  Passed Backtester.Tests.EngineTests.Strategy_sees_every_bar_in_order_including_warmup [6 ms]
+  Passed Backtester.Tests.OptimizerTests.Parses_range_syntax [7 ms]
+  Passed Backtester.Tests.EngineTests.Funding_at_the_entry_bar_open_is_not_charged [< 1 ms]
+  Passed Backtester.Tests.OptimizerTests.Finds_an_interior_optimum_on_a_plateau [< 1 ms]
+  Passed Backtester.Tests.OptimizerTests.Fails_the_plateau_when_a_neighbour_is_weak [< 1 ms]
+  Passed Backtester.Tests.OptimizerTests.Respects_the_evaluation_cap_including_neighbours [1 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Ema_cross_goes_long_on_uptrend_and_flat_on_downtrend_in_long_only_mode [8 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Atr_uses_true_range_with_previous_close [< 1 ms]
+[xUnit.net 00:00:00.58]   Finished:    Backtester.Tests
+  Passed Backtester.Tests.DataAndIndicatorTests.Ema_is_seeded_with_the_first_value [< 1 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Rma_is_seeded_with_the_sma [< 1 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Funding_audit_reports_irregular_intervals [10 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Strategy_context_blocks_look_ahead [< 1 ms]
+  Passed Backtester.Tests.DataAndIndicatorTests.Audit_finds_gaps_duplicates_and_bad_rows [8 ms]
+
+Test Run Successful.
+Total tests: 54
+     Passed: 54
+ Total time: 1.8948 Seconds

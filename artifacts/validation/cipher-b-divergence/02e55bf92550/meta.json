@@ -1,0 +1,187 @@
+{
+  "candidate": {
+    "id": "02e55bf9255011f8227c84940586f184",
+    "identity": {
+      "strategy": "cipher-b-divergence",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 1,
+        "limitScale": 0.75,
+        "tfHours": 2
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "cipher-b-divergence",
+    "family": "oscillator-divergence",
+    "description": "Market Cipher B divergences: a 5-bar WT2 bottom fractal <= -65 x limitScale with a lower price low but higher WT2 than the previous such fractal goes long when confirmed; a top fractal >= 45 x limitScale with a higher high and lower WT2 goes short. Exit on the opposite WT cross; stop atrMult x ATR(14) of the period bars.",
+    "version": 1
+  },
+  "parameters": {
+    "tfHours": 2,
+    "limitScale": 0.75,
+    "atrMult": 1
+  },
+  "searchSpace": [
+    {
+      "name": "tfHours",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "limitScale",
+      "min": 0.5,
+      "max": 1.25,
+      "step": 0.25,
+      "values": [
+        0.5,
+        0.75,
+        1,
+        1.25
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 1,
+      "max": 3,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 9236.257656134523,
+    "netProfit": -763.7423438654769,
+    "netProfitPct": -7.637423438654767,
+    "cagrPct": -2.615283963852111,
+    "maxDrawdownPct": 20.69887522913788,
+    "profitFactor": 0.9227014221647873,
+    "sharpe": -0.17698389570523454,
+    "sortino": -0.338898409560255,
+    "calmar": -0.12634908587547627,
+    "trades": 195,
+    "tradesPerYear": 65.04452054794521,
+    "winRatePct": 32.30769230769231,
+    "avgTradeNetPnl": -3.9166274044382536,
+    "timeInMarketPct": 8.61111111111111,
+    "turnoverPerYear": 93.64111704064288,
+    "feesPaid": 1156.967342346521,
+    "fundingReceived": 196.69280435955133,
+    "slippageCost": 578.4837021738962,
+    "dailyReturnCount": 1095,
+    "dailySharpe": -0.009263760492533114,
+    "dailySkewness": 4.513916312042328,
+    "dailyKurtosis": 44.873172541125605
+  },
+  "attribution": {
+    "grossPnl": 775.0158962954068,
+    "slippageCost": 578.4837021738962,
+    "commission": 1156.967342346521,
+    "fundingReceived": 196.69280435955133,
+    "netPnl": -763.7423438654769
+  },
+  "maxBarsHeld": 185,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 80,
+  "lookAheadAudit": {
+    "strategy": "cipher-b-divergence",
+    "parameters": {
+      "tfHours": 2,
+      "limitScale": 0.75,
+      "atrMult": 1
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 474,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 343,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:50.5977126Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

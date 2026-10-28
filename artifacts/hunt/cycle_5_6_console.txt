@@ -1,0 +1,27 @@
+Hunt cycle 5: 5 hypotheses, 4 walk-forward folds, optimizer cap 200, min 150 dev trades. Trials so far: 35.
+  donchian-ensemble-trend REJECTED at dev-baseline   Sharpe 0.48 < 0.50; 42.4 trades/yr < 50 (127 trades); walk-forward: 2 of 4 folds failed
+  funding-crowding-fade REJECTED at optimization   optimum on the search-range edge of quantile
+  noise-area-momentum  REJECTED at dev-baseline   PF 0.85 < 1.10; Sharpe -0.78 < 0.50; max DD 41.4% > 30%; walk-forward: 3 of 4 folds failed
+  nr-compression-breakout REJECTED at dev-baseline   PF 1.06 < 1.10; Sharpe 0.24 < 0.50; walk-forward: 2 of 4 folds failed
+  tsmom-vote           REJECTED at dev-baseline   PF 1.03 < 1.10; Sharpe 0.10 < 0.50; walk-forward: 3 of 4 folds failed
+
+Trials: 35 -> 189. Locked OOS runs this cycle: 0.
+No champion: every hypothesis so far has been rejected.
+Report: artifacts\hunt\cycle_5\report.json
+HTML:   S:\Personal\trading-bot\artifacts\hunt\cycle_5\report.html
+Hunt cycle 6: 5 hypotheses, 4 walk-forward folds, optimizer cap 200, min 150 dev trades. Trials so far: 189.
+  max-min-daily        REJECTED at dev-baseline   walk-forward: 3 of 4 folds failed
+  mtf-trend-pullback   REJECTED at dev-baseline   PF 0.93 < 1.10; Sharpe -0.13 < 0.50; 49.0 trades/yr < 50 (147 trades); walk-forward: 3 of 4 folds failed
+  efficiency-regime-switch REJECTED at dev-baseline   PF 0.87 < 1.10; Sharpe -0.72 < 0.50; max DD 43.9% > 30%; walk-forward: 2 of 4 folds failed
+  volume-conditioned-reversal REJECTED at dev-baseline   PF 0.98 < 1.10; Sharpe -0.03 < 0.50; walk-forward: 2 of 4 folds failed
+  crowding-filtered-breakout REJECTED at dev-baseline   48.0 trades/yr < 50 (144 trades); walk-forward: 2 of 4 folds failed
+
+Trials: 189 -> 194. Locked OOS runs this cycle: 0.
+No champion: every hypothesis so far has been rejected.
+Report: artifacts\hunt\cycle_6\report.json
+HTML:   S:\Personal\trading-bot\artifacts\hunt\cycle_6\report.html
+
+Research run idle: hypothesis queue empty: every registered strategy has been tested.
+Cycles completed this run: 2 (5, 6); trials 35 -> 194
+Experiments: 199 new, 151 reused from the store (219 stored in artifacts/cache/experiments.jsonl); 15 workers; 2.1s.
+Brief: artifacts\research\brief.md (~3917 tokens, estimated). Model calls made by this run: 0.

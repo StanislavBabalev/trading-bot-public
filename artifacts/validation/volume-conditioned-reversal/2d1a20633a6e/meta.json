@@ -1,0 +1,187 @@
+{
+  "candidate": {
+    "id": "2d1a20633a6e723cc2e5bb6b819070b6",
+    "identity": {
+      "strategy": "volume-conditioned-reversal",
+      "strategyVersion": 1,
+      "parameters": {
+        "extremeFrac": 0.3,
+        "holdDays": 3,
+        "stopMult": 1
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "volume-conditioned-reversal",
+    "family": "price-volume",
+    "description": "A day is extreme when its |return| is in the top extremeFrac of the previous 90 days. Volume below the previous 30 days' median: fade it; above: follow it. Hold holdDays days (a new extreme day renews or flips). Stop stopMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "extremeFrac": 0.3,
+    "holdDays": 3,
+    "stopMult": 1
+  },
+  "searchSpace": [
+    {
+      "name": "extremeFrac",
+      "min": 0.1,
+      "max": 0.35,
+      "step": 0.05,
+      "values": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35
+      ]
+    },
+    {
+      "name": "holdDays",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "values": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "stopMult",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 12182.7526882908,
+    "netProfit": 2182.7526882908005,
+    "netProfitPct": 21.82752688290801,
+    "cagrPct": 6.807410505876943,
+    "maxDrawdownPct": 11.394806591094865,
+    "profitFactor": 1.2311342103670404,
+    "sharpe": 0.6860917257330726,
+    "sortino": 1.185971165265114,
+    "calmar": 0.5974134314133063,
+    "trades": 219,
+    "tradesPerYear": 73.05000000000001,
+    "winRatePct": 39.726027397260275,
+    "avgTradeNetPnl": 9.966907252469527,
+    "timeInMarketPct": 60.74581430745814,
+    "turnoverPerYear": 33.04210816835132,
+    "feesPaid": 424.98348644281583,
+    "fundingReceived": -67.1799511820644,
+    "slippageCost": 212.49185871772747,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.0359116822339894,
+    "dailySkewness": 1.8133812814584378,
+    "dailyKurtosis": 13.509069438650224
+  },
+  "attribution": {
+    "grossPnl": 2887.4079846334357,
+    "slippageCost": 212.49185871772747,
+    "commission": 424.98348644281583,
+    "fundingReceived": -67.1799511820644,
+    "netPnl": 2182.7526882908005
+  },
+  "maxBarsHeld": 289,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 72,
+  "lookAheadAudit": {
+    "strategy": "volume-conditioned-reversal",
+    "parameters": {
+      "extremeFrac": 0.3,
+      "holdDays": 3,
+      "stopMult": 1
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 499,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 351,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:47.1526859Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

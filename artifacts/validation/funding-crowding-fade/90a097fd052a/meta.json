@@ -1,0 +1,191 @@
+{
+  "candidate": {
+    "id": "90a097fd052a9ad3e59d582f5612cc8c",
+    "identity": {
+      "strategy": "funding-crowding-fade",
+      "strategyVersion": 1,
+      "parameters": {
+        "holdBars": 72,
+        "quantile": 0.2,
+        "stopMult": 1.5
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "funding-crowding-fade",
+    "family": "funding-carry",
+    "description": "Rank = percentile of the mean of the last 9 settled funding rates (3 days) among the previous 270 such means (90 days). Rank >= 1 - quantile (crowded longs): short when the close crosses below EMA(24); rank <= quantile (crowded shorts): long when it crosses above. Exit after holdBars; stop stopMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "quantile": 0.2,
+    "holdBars": 72,
+    "stopMult": 1.5
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "quantile",
+      "min": 0.1,
+      "max": 0.3,
+      "step": 0.05,
+      "values": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ]
+    },
+    {
+      "name": "holdBars",
+      "min": 24,
+      "max": 120,
+      "step": 24,
+      "values": [
+        24,
+        48,
+        72,
+        96,
+        120
+      ]
+    },
+    {
+      "name": "stopMult",
+      "min": 0.5,
+      "max": 3,
+      "step": 0.5,
+      "values": [
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 11048.23956495836,
+    "netProfit": 1048.2395649583596,
+    "netProfitPct": 10.482395649583598,
+    "cagrPct": 3.3810435793911076,
+    "maxDrawdownPct": 6.3121796461807556,
+    "profitFactor": 1.2323670698931102,
+    "sharpe": 0.6057769594309661,
+    "sortino": 0.9830711746398264,
+    "calmar": 0.5356380472214285,
+    "trades": 173,
+    "tradesPerYear": 57.70616438356165,
+    "winRatePct": 45.664739884393065,
+    "avgTradeNetPnl": 6.0591882367536005,
+    "timeInMarketPct": 44.49391171993912,
+    "turnoverPerYear": 18.375137474424495,
+    "feesPaid": 235.8086341863755,
+    "fundingReceived": 248.85966671586814,
+    "slippageCost": 117.9043632169036,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.0317078152320129,
+    "dailySkewness": 1.526650645166987,
+    "dailyKurtosis": 17.5255045899005
+  },
+  "attribution": {
+    "grossPnl": 1153.0928956457835,
+    "slippageCost": 117.9043632169036,
+    "commission": 235.8086341863755,
+    "fundingReceived": 248.85966671586814,
+    "netPnl": 1048.2395649583596
+  },
+  "maxBarsHeld": 121,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 150,
+  "lookAheadAudit": {
+    "strategy": "funding-crowding-fade",
+    "parameters": {
+      "quantile": 0.2,
+      "holdBars": 72,
+      "stopMult": 1.5
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 404,
+    "featureSeriesChecked": 16,
+    "fundingTradesChecked": 290,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:46.8086187Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

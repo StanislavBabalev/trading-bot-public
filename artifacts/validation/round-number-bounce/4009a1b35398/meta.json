@@ -1,0 +1,188 @@
+{
+  "candidate": {
+    "id": "4009a1b353982391df8e10b5c49e0722",
+    "identity": {
+      "strategy": "round-number-bounce",
+      "strategyVersion": 1,
+      "parameters": {
+        "freshBars": 24,
+        "holdBars": 24,
+        "levelStep": 2500
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "round-number-bounce",
+    "family": "price-barrier",
+    "description": "Levels = multiples of levelStep USD. Long when a bar opens above the nearest level below it, trades down to it and closes back at or above it, with no bar at or below that level in the previous freshBars hours (first test); short on the mirror at the nearest level above. Skip bars reaching both levels. Exit after holdBars; stop 1 ATR(14) beyond the level.",
+    "version": 1
+  },
+  "parameters": {
+    "levelStep": 2500,
+    "freshBars": 24,
+    "holdBars": 24
+  },
+  "searchSpace": [
+    {
+      "name": "levelStep",
+      "min": 500,
+      "max": 2500,
+      "step": 500,
+      "values": [
+        500,
+        1000,
+        1500,
+        2000,
+        2500
+      ]
+    },
+    {
+      "name": "freshBars",
+      "min": 12,
+      "max": 60,
+      "step": 12,
+      "values": [
+        12,
+        24,
+        36,
+        48,
+        60
+      ]
+    },
+    {
+      "name": "holdBars",
+      "min": 12,
+      "max": 48,
+      "step": 12,
+      "values": [
+        12,
+        24,
+        36,
+        48
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 12211.657721209542,
+    "netProfit": 2211.6577212095417,
+    "netProfitPct": 22.11657721209541,
+    "cagrPct": 6.89187272618661,
+    "maxDrawdownPct": 15.153952721245053,
+    "profitFactor": 1.1663708644014956,
+    "sharpe": 0.5692128379681157,
+    "sortino": 1.072490150009306,
+    "calmar": 0.45479043342431463,
+    "trades": 205,
+    "tradesPerYear": 68.38013698630138,
+    "winRatePct": 41.46341463414634,
+    "avgTradeNetPnl": 10.788574249802652,
+    "timeInMarketPct": 10.993150684931507,
+    "turnoverPerYear": 82.59829420866693,
+    "feesPaid": 1118.4959609137659,
+    "fundingReceived": 64.49723242526296,
+    "slippageCost": 559.2481334530664,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.029793961643797887,
+    "dailySkewness": 2.9534292908170037,
+    "dailyKurtosis": 21.89394525616965
+  },
+  "attribution": {
+    "grossPnl": 3824.904583151114,
+    "slippageCost": 559.2481334530664,
+    "commission": 1118.4959609137659,
+    "fundingReceived": 64.49723242526296,
+    "netPnl": 2211.6577212095417
+  },
+  "maxBarsHeld": 49,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 100,
+  "lookAheadAudit": {
+    "strategy": "round-number-bounce",
+    "parameters": {
+      "levelStep": 2500,
+      "freshBars": 24,
+      "holdBars": 24
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 79,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 47,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:58.924435Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

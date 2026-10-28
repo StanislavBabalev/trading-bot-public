@@ -1,0 +1,11 @@
+Hunt cycle 4: 5 hypotheses, 4 walk-forward folds, optimizer cap 200, min 150 dev trades. Trials so far: 30.
+  failed-breakout-fade REJECTED at dev-baseline   PF 0.99 < 1.10; Sharpe 0.01 < 0.50
+  volume-climax-reversal REJECTED at dev-baseline   PF 0.68 < 1.10; Sharpe -1.52 < 0.50; max DD 46.9% > 30%; walk-forward: 3 of 4 folds failed
+  session-momentum     REJECTED at dev-baseline   PF 0.71 < 1.10; Sharpe -0.65 < 0.50; 31.7 trades/yr < 50 (95 trades); walk-forward: 4 of 4 folds failed
+  impulse-bar-continuation REJECTED at dev-baseline   PF 1.07 < 1.10; Sharpe 0.43 < 0.50
+  vol-regime-switch    REJECTED at dev-baseline   PF 1.01 < 1.10; Sharpe 0.12 < 0.50; max DD 30.1% > 30%
+
+Trials: 30 -> 35. Locked OOS runs this cycle: 0.
+No champion: every hypothesis so far has been rejected.
+Report: artifacts\hunt\cycle_4\report.json
+HTML:   S:\Personal\trading-bot\artifacts\hunt\cycle_4\report.html

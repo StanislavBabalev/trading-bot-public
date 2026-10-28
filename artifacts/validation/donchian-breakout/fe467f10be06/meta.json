@@ -1,0 +1,192 @@
+{
+  "candidate": {
+    "id": "fe467f10be0672dfc8c376752aa9a9fa",
+    "identity": {
+      "strategy": "donchian-breakout",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 3,
+        "entryLen": 72,
+        "exitLen": 24
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "donchian-breakout",
+    "family": "trend",
+    "description": "Long when close > highest high of the previous entryLen bars, short when close < lowest low of the previous entryLen bars; exit long when close < lowest low of the previous exitLen bars (short: close > highest high of previous exitLen bars); stop at entry-bar close -/+ ATR(14) x atrMult.",
+    "version": 1
+  },
+  "parameters": {
+    "entryLen": 72,
+    "exitLen": 24,
+    "atrMult": 3
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "entryLen",
+      "min": 24,
+      "max": 168,
+      "step": 24,
+      "values": [
+        24,
+        48,
+        72,
+        96,
+        120,
+        144,
+        168
+      ]
+    },
+    {
+      "name": "exitLen",
+      "min": 12,
+      "max": 72,
+      "step": 12,
+      "values": [
+        12,
+        24,
+        36,
+        48,
+        60,
+        72
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "values": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 11664.092149567075,
+    "netProfit": 1664.0921495670755,
+    "netProfitPct": 16.640921495670757,
+    "cagrPct": 5.268615261233078,
+    "maxDrawdownPct": 20.754057793680154,
+    "profitFactor": 1.1006533914672518,
+    "sharpe": 0.3639847687667663,
+    "sortino": 0.6904090550557168,
+    "calmar": 0.2538595253809803,
+    "trades": 272,
+    "tradesPerYear": 90.72876712328768,
+    "winRatePct": 30.514705882352942,
+    "avgTradeNetPnl": 6.117985843996461,
+    "timeInMarketPct": 48.31430745814308,
+    "turnoverPerYear": 75.50196025665203,
+    "feesPaid": 908.0933418555765,
+    "fundingReceived": -264.12862116799204,
+    "slippageCost": 454.04680254222416,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.01905183354309927,
+    "dailySkewness": 2.357260376637777,
+    "dailyKurtosis": 15.106219408075887
+  },
+  "attribution": {
+    "grossPnl": 3290.3609151328296,
+    "slippageCost": 454.04680254222416,
+    "commission": 908.0933418555765,
+    "fundingReceived": -264.12862116799204,
+    "netPnl": 1664.0921495670755
+  },
+  "maxBarsHeld": 689,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 132,
+  "lookAheadAudit": {
+    "strategy": "donchian-breakout",
+    "parameters": {
+      "entryLen": 72,
+      "exitLen": 24,
+      "atrMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 540,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 391,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:44.5976305Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

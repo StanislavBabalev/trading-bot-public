@@ -1,0 +1,190 @@
+{
+  "candidate": {
+    "id": "3e96f79ba8da680b4939ddd6f3811e5a",
+    "identity": {
+      "strategy": "tsmom-vote",
+      "strategyVersion": 1,
+      "parameters": {
+        "baseDays": 4,
+        "stopMult": 1,
+        "unanimous": 1
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "tsmom-vote",
+    "family": "momentum-daily",
+    "description": "On each daily close, vote = signs of the returns over baseDays, 2 x baseDays and 4 x baseDays days; hold the majority direction (unanimous = 1: only when all three agree, else flat), re-evaluated daily (a stopped-out position is re-entered next day if the vote still holds). Stop stopMult x dATR from the signal close.",
+    "version": 1
+  },
+  "parameters": {
+    "baseDays": 4,
+    "unanimous": 1,
+    "stopMult": 1
+  },
+  "searchSpace": [
+    {
+      "name": "baseDays",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "values": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "unanimous",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "values": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "stopMult",
+      "min": 1,
+      "max": 3.5,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 11303.703642814906,
+    "netProfit": 1303.7036428149058,
+    "netProfitPct": 13.037036428149062,
+    "cagrPct": 4.172336495463491,
+    "maxDrawdownPct": 13.027584810169854,
+    "profitFactor": 1.1825812509807057,
+    "sharpe": 0.4478518340789256,
+    "sortino": 0.7533265584890426,
+    "calmar": 0.320269378880297,
+    "trades": 179,
+    "tradesPerYear": 59.70753424657535,
+    "winRatePct": 30.726256983240223,
+    "avgTradeNetPnl": 7.283260574384922,
+    "timeInMarketPct": 57.54946727549467,
+    "turnoverPerYear": 27.54854736400755,
+    "feesPaid": 336.17808233245796,
+    "fundingReceived": -468.0271202339347,
+    "slippageCost": 168.08913220614804,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.02344163637328128,
+    "dailySkewness": 1.5727671674852626,
+    "dailyKurtosis": 13.254064779415076
+  },
+  "attribution": {
+    "grossPnl": 2275.9979775874403,
+    "slippageCost": 168.08913220614804,
+    "commission": 336.17808233245796,
+    "fundingReceived": -468.0271202339347,
+    "netPnl": 1303.7036428149058
+  },
+  "maxBarsHeld": 2497,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 96,
+  "lookAheadAudit": {
+    "strategy": "tsmom-vote",
+    "parameters": {
+      "baseDays": 4,
+      "unanimous": 1,
+      "stopMult": 1
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 355,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 247,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:50:13.0650798Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

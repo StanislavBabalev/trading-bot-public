@@ -1,0 +1,190 @@
+{
+  "candidate": {
+    "id": "2c3dae36c699cd0ea0e66ef233f19ecf",
+    "identity": {
+      "strategy": "turmoil-reversal",
+      "strategyVersion": 1,
+      "parameters": {
+        "holdPeriods": 6,
+        "volQuantile": 0.7,
+        "zEntry": 0.75
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "turmoil-reversal",
+    "family": "turmoil-liquidity-provision",
+    "description": "On 4h bars: turmoil when 4h ATR(14) / open is >= the volQuantile quantile of its previous 540 values (90 days); in turmoil fade a 4h body of >= zEntry x the previous 4h ATR (long after a drop, short after a spike). Exit on a 4h close back across EMA(20) of 4h closes or after holdPeriods 4h bars; stop 1 4h-ATR beyond the period's extreme.",
+    "version": 1
+  },
+  "parameters": {
+    "zEntry": 0.75,
+    "volQuantile": 0.7,
+    "holdPeriods": 6
+  },
+  "searchSpace": [
+    {
+      "name": "zEntry",
+      "min": 0.5,
+      "max": 2,
+      "step": 0.25,
+      "values": [
+        0.5,
+        0.75,
+        1,
+        1.25,
+        1.5,
+        1.75,
+        2
+      ]
+    },
+    {
+      "name": "volQuantile",
+      "min": 0.5,
+      "max": 0.9,
+      "step": 0.1,
+      "values": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ]
+    },
+    {
+      "name": "holdPeriods",
+      "min": 3,
+      "max": 12,
+      "step": 3,
+      "values": [
+        3,
+        6,
+        9,
+        12
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 11472.828998112747,
+    "netProfit": 1472.8289981127473,
+    "netProfitPct": 14.728289981127475,
+    "cagrPct": 4.689661821051816,
+    "maxDrawdownPct": 10.103434515620016,
+    "profitFactor": 1.1936697098057614,
+    "sharpe": 0.6356880340166388,
+    "sortino": 0.9501245049361792,
+    "calmar": 0.46416511274473543,
+    "trades": 199,
+    "tradesPerYear": 66.37876712328767,
+    "winRatePct": 55.778894472361806,
+    "avgTradeNetPnl": 7.401150744285149,
+    "timeInMarketPct": 10.12937595129376,
+    "turnoverPerYear": 40.85138446870269,
+    "feesPaid": 535.4249806393744,
+    "fundingReceived": 2.577619823366973,
+    "slippageCost": 267.71258125524486,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.03327343243086503,
+    "dailySkewness": 0.6110511332795426,
+    "dailyKurtosis": 18.619993627242035
+  },
+  "attribution": {
+    "grossPnl": 2273.3889401839942,
+    "slippageCost": 267.71258125524486,
+    "commission": 535.4249806393744,
+    "fundingReceived": 2.577619823366973,
+    "netPnl": 1472.8289981127473
+  },
+  "maxBarsHeld": 49,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 140,
+  "lookAheadAudit": {
+    "strategy": "turmoil-reversal",
+    "parameters": {
+      "zEntry": 0.75,
+      "volQuantile": 0.7,
+      "holdPeriods": 6
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 481,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 355,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:50:14.6899626Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

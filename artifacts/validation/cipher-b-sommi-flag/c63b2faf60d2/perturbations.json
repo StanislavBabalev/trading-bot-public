@@ -1,0 +1,1681 @@
+{
+  "steps": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "runs": [
+    {
+      "id": "p001",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 6.215356681750284,
+        "profitFactor": 3.1955636489763752,
+        "sharpe": 0.7689638439153442,
+        "dailySharpe": 0.040249407151221835,
+        "maxDrawdownPct": 1.879028785194325,
+        "cagrPct": 2.0316906219816744,
+        "calmar": 1.0812450761745842,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 52.06246140040486,
+        "fundingReceived": 4.948501812588162,
+        "slippageCost": 26.031258487437878
+      }
+    },
+    {
+      "id": "p002",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 2.9393362026131076,
+        "profitFactor": 1.1697992736676412,
+        "sharpe": 0.23143933833913152,
+        "dailySharpe": 0.012114088631515186,
+        "maxDrawdownPct": 8.848662989697965,
+        "cagrPct": 0.97100065040292,
+        "calmar": 0.10973416566247411,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 296.94782351437874,
+        "fundingReceived": 40.97894955728377,
+        "slippageCost": 148.4739396922467
+      }
+    },
+    {
+      "id": "p003",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p004",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p005",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p006",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p007",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p008",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -5.4989879720105606,
+        "profitFactor": 0.9365871458237665,
+        "sharpe": -0.14340001796451882,
+        "dailySharpe": -0.007505899990249555,
+        "maxDrawdownPct": 23.799628707939604,
+        "cagrPct": -1.8689275780397918,
+        "calmar": -0.07852759389545913,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "feesPaid": 1223.935268484015,
+        "fundingReceived": 13.02846622063008,
+        "slippageCost": 611.9676851610355
+      }
+    },
+    {
+      "id": "p009",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -9.018730368327777,
+        "profitFactor": 0.8878493775573487,
+        "sharpe": -0.3069365136205429,
+        "dailySharpe": -0.016065791394542915,
+        "maxDrawdownPct": 24.355205753029573,
+        "cagrPct": -3.103529193763499,
+        "calmar": -0.12742775508588947,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "feesPaid": 1111.5248307525094,
+        "fundingReceived": 7.649791549591008,
+        "slippageCost": 555.7624456868322
+      }
+    },
+    {
+      "id": "p010",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -9.085222361954237,
+        "profitFactor": 0.8780579291045942,
+        "sharpe": -0.3454422941449009,
+        "dailySharpe": -0.018081276062988646,
+        "maxDrawdownPct": 24.592734316635575,
+        "cagrPct": -3.12715611964155,
+        "calmar": -0.12715772387807273,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "feesPaid": 1041.984659302402,
+        "fundingReceived": 11.097003172451675,
+        "slippageCost": 520.9923553855127
+      }
+    },
+    {
+      "id": "p011",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -5.697656856974575,
+        "profitFactor": 0.9096791348408241,
+        "sharpe": -0.2383125586054768,
+        "dailySharpe": -0.012473849422778885,
+        "maxDrawdownPct": 18.70326307762748,
+        "cagrPct": -1.9377897201500072,
+        "calmar": -0.1036070396971509,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "feesPaid": 912.7867041110486,
+        "fundingReceived": 15.302877419534212,
+        "slippageCost": 456.39338341998535
+      }
+    },
+    {
+      "id": "p012",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -7.08399275007543,
+        "profitFactor": 0.8812919676475507,
+        "sharpe": -0.33095119929433015,
+        "dailySharpe": -0.017322777492057385,
+        "maxDrawdownPct": 18.600489122913626,
+        "cagrPct": -2.421030400183821,
+        "calmar": -0.1301595019456448,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "feesPaid": 846.2429198102283,
+        "fundingReceived": 15.307440301824904,
+        "slippageCost": 423.12148173142157
+      }
+    },
+    {
+      "id": "p013",
+      "kind": "1d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 12,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -6.008169135281383,
+        "profitFactor": 0.89071477707203,
+        "sharpe": -0.3006434244139985,
+        "dailySharpe": -0.01573639605077295,
+        "maxDrawdownPct": 16.773514044315615,
+        "cagrPct": -2.045612666948393,
+        "calmar": -0.1219549261737216,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "feesPaid": 798.688771928788,
+        "fundingReceived": 15.529008039868593,
+        "slippageCost": 399.34440923188436
+      }
+    },
+    {
+      "id": "p014",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 8,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": -1.8876524363239722,
+        "profitFactor": 0.7843446771457119,
+        "sharpe": -0.2333650978994616,
+        "dailySharpe": -0.012214887493818544,
+        "maxDrawdownPct": 4.036010774397646,
+        "cagrPct": -0.6336510087691871,
+        "calmar": -0.15699933528144666,
+        "trades": 23,
+        "tradesPerYear": 7.671917808219178,
+        "feesPaid": 91.55285062093691,
+        "fundingReceived": -10.778600476469686,
+        "slippageCost": 45.77642368417369
+      }
+    },
+    {
+      "id": "p015",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 10,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p016",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 11,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p017",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 13,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p018",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 14,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p019",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 16,
+        "atrMult": 1.5
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p020",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 4.389424401799769,
+        "profitFactor": 1.8503237025836488,
+        "sharpe": 0.40192075484204504,
+        "dailySharpe": 0.021037493806984286,
+        "maxDrawdownPct": 4.242754409789522,
+        "cagrPct": 1.4432358120590516,
+        "calmar": 0.34016482517324137,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 71.51623405500263,
+        "fundingReceived": 6.27340072846183,
+        "slippageCost": 35.7581386252378
+      }
+    },
+    {
+      "id": "p021",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 3.3932974919781422,
+        "profitFactor": 1.6801641792286162,
+        "sharpe": 0.35038484856786467,
+        "dailySharpe": 0.018339981185356975,
+        "maxDrawdownPct": 4.165472803146625,
+        "cagrPct": 1.119311568121062,
+        "calmar": 0.2687117695920441,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 63.81390340023085,
+        "fundingReceived": 5.542800374913318,
+        "slippageCost": 31.906968880428263
+      }
+    },
+    {
+      "id": "p022",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 6.903181951240844,
+        "profitFactor": 3.1826943802498335,
+        "sharpe": 0.7686302468945064,
+        "dailySharpe": 0.0402319458851007,
+        "maxDrawdownPct": 2.083009675201166,
+        "cagrPct": 2.2516118810539387,
+        "calmar": 1.08094163356994,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 58.138632774002645,
+        "fundingReceived": 5.529927710266758,
+        "slippageCost": 29.069347266851214
+      }
+    },
+    {
+      "id": "p023",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 5.65215242786723,
+        "profitFactor": 3.2062030647099475,
+        "sharpe": 0.769238063639688,
+        "dailySharpe": 0.0402637604675986,
+        "maxDrawdownPct": 1.71143465399828,
+        "cagrPct": 1.8509071433688407,
+        "calmar": 1.0814944871220895,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 47.1340754478527,
+        "fundingReceived": 4.477461890062553,
+        "slippageCost": 23.567062981483126
+      }
+    },
+    {
+      "id": "p024",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 5.18251968466743,
+        "profitFactor": 3.215145952492431,
+        "sharpe": 0.7694674628140201,
+        "dailySharpe": 0.04027576776916538,
+        "maxDrawdownPct": 1.5712883996844433,
+        "cagrPct": 1.6996675808071515,
+        "calmar": 1.081703130468277,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 43.05673850921317,
+        "fundingReceived": 4.088146680088149,
+        "slippageCost": 21.528392404564695
+      }
+    },
+    {
+      "id": "p025",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 4,
+        "htfHours": 12,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "tfHours": {
+          "value": 4,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 4.784931235706269,
+        "profitFactor": 3.2227681227780485,
+        "sharpe": 0.769662199561647,
+        "dailySharpe": 0.04028596075639692,
+        "maxDrawdownPct": 1.4523574574560183,
+        "cagrPct": 1.5712768548702405,
+        "calmar": 1.081880253930409,
+        "trades": 12,
+        "tradesPerYear": 4.002739726027397,
+        "feesPaid": 39.62777961951748,
+        "fundingReceived": 3.76101459548908,
+        "slippageCost": 19.81391117671073
+      }
+    },
+    {
+      "id": "p026",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 5.559091073100508,
+        "profitFactor": 1.2570216478846161,
+        "sharpe": 0.3169540266505092,
+        "dailySharpe": 0.016590131991017266,
+        "maxDrawdownPct": 10.194848493233339,
+        "cagrPct": 1.8209735026905927,
+        "calmar": 0.17861702446085723,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 374.3036087509051,
+        "fundingReceived": 53.32808926178875,
+        "slippageCost": 187.1518469369116
+      }
+    },
+    {
+      "id": "p027",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 3.9505213406364925,
+        "profitFactor": 1.1943127875686497,
+        "sharpe": 0.25664456552613973,
+        "dailySharpe": 0.01343339051991532,
+        "maxDrawdownPct": 9.888746863361929,
+        "cagrPct": 1.3007666875537671,
+        "calmar": 0.13154009355554871,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 344.88345336846436,
+        "fundingReceived": 47.41708530890762,
+        "slippageCost": 172.44176128264272
+      }
+    },
+    {
+      "id": "p028",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 3.227313784866137,
+        "profitFactor": 1.1712869281246163,
+        "sharpe": 0.23310614438384106,
+        "dailySharpe": 0.01220133324732708,
+        "maxDrawdownPct": 9.60653266235898,
+        "cagrPct": 1.0651344688076492,
+        "calmar": 0.11087605759996394,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 318.48209595512446,
+        "fundingReceived": 43.77546466784085,
+        "slippageCost": 159.2410782447258
+      }
+    },
+    {
+      "id": "p029",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 2.5769376315525117,
+        "profitFactor": 1.1590808690513994,
+        "sharpe": 0.21986664824991933,
+        "dailySharpe": 0.011508346347373553,
+        "maxDrawdownPct": 8.330648871657367,
+        "cagrPct": 0.8522904471201631,
+        "calmar": 0.10230781062203159,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 277.780065651851,
+        "fundingReceived": 37.71642235065217,
+        "slippageCost": 138.89005829182406
+      }
+    },
+    {
+      "id": "p030",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 2.3801915496911574,
+        "profitFactor": 1.157197615893136,
+        "sharpe": 0.2177593428687203,
+        "dailySharpe": 0.011398044942501287,
+        "maxDrawdownPct": 7.797880900432576,
+        "cagrPct": 0.7877256173504099,
+        "calmar": 0.10101790825078029,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 261.1749724587541,
+        "fundingReceived": 35.048504089181826,
+        "slippageCost": 130.58751001870235
+      }
+    },
+    {
+      "id": "p031",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 8,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "htfHours": {
+          "value": 8,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 1.9302637061449746,
+        "profitFactor": 1.1337552554506947,
+        "sharpe": 0.1904263624026989,
+        "dailySharpe": 0.009967371357340625,
+        "maxDrawdownPct": 7.598317378571121,
+        "cagrPct": 0.6397644499928967,
+        "calmar": 0.08419817416381807,
+        "trades": 51,
+        "tradesPerYear": 17.01164383561644,
+        "feesPaid": 245.97445678409028,
+        "fundingReceived": 32.54477024149223,
+        "slippageCost": 122.9872495697774
+      }
+    },
+    {
+      "id": "p032",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p033",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p034",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p035",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p036",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p037",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 10,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "htfHours": {
+          "value": 10,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p038",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p039",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p040",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p041",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p042",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p043",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 11,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "htfHours": {
+          "value": 11,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p044",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p045",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p046",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p047",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p048",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p049",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 13,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "htfHours": {
+          "value": 13,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "invalid parameter combination",
+      "metrics": null
+    },
+    {
+      "id": "p050",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p051",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p052",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p053",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p054",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p055",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 14,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "htfHours": {
+          "value": 14,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p056",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.05
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.05,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p057",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.2
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.2,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p058",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.35
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.35,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p059",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.65
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.65,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p060",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.8
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.8,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    },
+    {
+      "id": "p061",
+      "kind": "2d",
+      "parameters": {
+        "tfHours": 2,
+        "htfHours": 16,
+        "atrMult": 1.95
+      },
+      "steps": {
+        "htfHours": {
+          "value": 16,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "atrMult": {
+          "value": 1.95,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": false,
+      "error": "Period hours must divide 24.",
+      "metrics": null
+    }
+  ]
+}

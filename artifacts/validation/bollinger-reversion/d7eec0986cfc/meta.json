@@ -1,0 +1,189 @@
+{
+  "candidate": {
+    "id": "d7eec0986cfc1b33f6a5e7ebbcabfdce",
+    "identity": {
+      "strategy": "bollinger-reversion",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 3,
+        "bbLen": 70,
+        "bbMult": 1.5
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "bollinger-reversion",
+    "family": "mean-reversion",
+    "description": "Long when close < SMA(bbLen) - bbMult x stdev(bbLen), short when close > SMA + bbMult x stdev; exit when close returns to the SMA or after 48 bars; stop at entry-bar close -/+ ATR(14) x atrMult.",
+    "version": 1
+  },
+  "parameters": {
+    "bbLen": 70,
+    "bbMult": 1.5,
+    "atrMult": 3
+  },
+  "searchSpace": [
+    {
+      "name": "bbLen",
+      "min": 20,
+      "max": 80,
+      "step": 10,
+      "values": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "name": "bbMult",
+      "min": 1.5,
+      "max": 3,
+      "step": 0.5,
+      "values": [
+        1.5,
+        2,
+        2.5,
+        3
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "values": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 7027.487326062029,
+    "netProfit": -2972.512673937971,
+    "netProfitPct": -29.725126739379714,
+    "cagrPct": -11.100692109922395,
+    "maxDrawdownPct": 30.793279847856486,
+    "profitFactor": 0.8767447120294132,
+    "sharpe": -0.8642908325525394,
+    "sortino": -1.158019256229284,
+    "calmar": -0.36049073579588536,
+    "trades": 629,
+    "tradesPerYear": 209.81027397260274,
+    "winRatePct": 53.57710651828299,
+    "avgTradeNetPnl": -4.725775316276571,
+    "timeInMarketPct": 42.73972602739726,
+    "turnoverPerYear": 186.77992959909466,
+    "feesPaid": 1904.83377096812,
+    "fundingReceived": 49.983586563744524,
+    "slippageCost": 952.4168788742336,
+    "dailyReturnCount": 1095,
+    "dailySharpe": -0.04523904978334117,
+    "dailySkewness": -0.05240923980703267,
+    "dailyKurtosis": 3.1770339120069764
+  },
+  "attribution": {
+    "grossPnl": -165.24561065935382,
+    "slippageCost": 952.4168788742336,
+    "commission": 1904.83377096812,
+    "fundingReceived": 49.983586563744524,
+    "netPnl": -2972.512673937971
+  },
+  "maxBarsHeld": 49,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 112,
+  "lookAheadAudit": {
+    "strategy": "bollinger-reversion",
+    "parameters": {
+      "bbLen": 70,
+      "bbMult": 1.5,
+      "atrMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 1434,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 1023,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:37.8798533Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

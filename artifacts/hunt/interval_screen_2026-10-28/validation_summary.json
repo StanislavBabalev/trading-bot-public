@@ -1,0 +1,43 @@
+{
+  "candidates": 1,
+  "passedEveryHardGate": 0,
+  "survivors": [],
+  "trials": {
+    "raw": 5883,
+    "distinct": 5732,
+    "effective": 639
+  },
+  "pboSearch": 0.5043512043512044,
+  "rows": [
+    {
+      "strategy": "funding-crowding-fade",
+      "parameters": {
+        "quantile": 0.25,
+        "holdBars": 72,
+        "stopMult": 1.5
+      },
+      "verdict": "REJECT",
+      "failedHardGates": [
+        "deflated_sharpe",
+        "pbo"
+      ],
+      "netProfitPct": 21.264845583816427,
+      "sharpe": 1.0886530467466107,
+      "profitFactor": 1.3140602270726847,
+      "tradesPerYear": 127.42054794520548,
+      "dsrGate": 0.0006527437832112615,
+      "dsrEffective": 0.0006850836198687212,
+      "dsrRaw": 0.0006527437832112615,
+      "pboSearch": 0.5043512043512044,
+      "plateauScore": 0.8015873015873016,
+      "bootstrapSharpeP05": 0.09319407926075894,
+      "bootstrapPfP05": 1.018864724239464,
+      "slippage2xNetPct": 18.36319314641919,
+      "commission2xNetPct": 15.68045542292722,
+      "minTrackRecordDays": 774.6947090870555,
+      "losingRegimes": [],
+      "lookahead": "pass",
+      "report": "artifacts/validation/funding-crowding-fade/18c863fabcc9/validation_report.json"
+    }
+  ]
+}

@@ -1,0 +1,2677 @@
+{
+  "steps": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "runs": [
+    {
+      "id": "p001",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.092906481530143,
+        "profitFactor": 1.3382981104917908,
+        "sharpe": 0.7725995452190693,
+        "dailySharpe": 0.040439708454998044,
+        "maxDrawdownPct": 5.616806373921639,
+        "cagrPct": 4.495908791573133,
+        "calmar": 0.8004386286925005,
+        "trades": 182,
+        "tradesPerYear": 60.708219178082196,
+        "feesPaid": 167.87582607353022,
+        "fundingReceived": -33.53320831375912,
+        "slippageCost": 83.93798082227164
+      }
+    },
+    {
+      "id": "p002",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 18.381438336672517,
+        "profitFactor": 1.52982269914149,
+        "sharpe": 0.9633696568394722,
+        "dailySharpe": 0.050425072468730466,
+        "maxDrawdownPct": 4.576764176273929,
+        "cagrPct": 5.78999636359161,
+        "calmar": 1.2650851432562573,
+        "trades": 120,
+        "tradesPerYear": 40.02739726027397,
+        "feesPaid": 121.87115898298832,
+        "fundingReceived": -114.26983738814124,
+        "slippageCost": 60.93566490031396
+      }
+    },
+    {
+      "id": "p003",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.072117160132436,
+        "profitFactor": 1.4397110840595724,
+        "sharpe": 0.7915313004940561,
+        "dailySharpe": 0.0414306418157532,
+        "maxDrawdownPct": 4.673570785188935,
+        "cagrPct": 4.183119293921189,
+        "calmar": 0.895058507978088,
+        "trades": 113,
+        "tradesPerYear": 37.69246575342466,
+        "feesPaid": 109.09705239179898,
+        "fundingReceived": -74.54887541729678,
+        "slippageCost": 54.548588012148784
+      }
+    },
+    {
+      "id": "p004",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.197056078622472,
+        "profitFactor": 1.4459853522394268,
+        "sharpe": 0.8306765900747236,
+        "dailySharpe": 0.04347959991807748,
+        "maxDrawdownPct": 4.906277939043378,
+        "cagrPct": 4.527717225465544,
+        "calmar": 0.9228415678277603,
+        "trades": 122,
+        "tradesPerYear": 40.69452054794521,
+        "feesPaid": 117.55900751980097,
+        "fundingReceived": -82.41388447247952,
+        "slippageCost": 58.77957089822328
+      }
+    },
+    {
+      "id": "p005",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.747123990535481,
+        "profitFactor": 1.4193218793882054,
+        "sharpe": 0.8330725607991851,
+        "dailySharpe": 0.04360501075757838,
+        "maxDrawdownPct": 4.890886973584816,
+        "cagrPct": 4.695394114432805,
+        "calmar": 0.9600291603122607,
+        "trades": 133,
+        "tradesPerYear": 44.36369863013699,
+        "feesPaid": 129.73380741929967,
+        "fundingReceived": -92.52744631908347,
+        "slippageCost": 64.8669741832749
+      }
+    },
+    {
+      "id": "p006",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.6403477193227,
+        "profitFactor": 1.3616677856548984,
+        "sharpe": 0.7799569273162354,
+        "dailySharpe": 0.040824811434727416,
+        "maxDrawdownPct": 5.898943282351916,
+        "cagrPct": 4.66288753036963,
+        "calmar": 0.790461495759717,
+        "trades": 151,
+        "tradesPerYear": 50.36780821917809,
+        "feesPaid": 145.61585382724064,
+        "fundingReceived": -99.08252904809814,
+        "slippageCost": 72.80799817526645
+      }
+    },
+    {
+      "id": "p007",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.762145653785462,
+        "profitFactor": 1.3029414498011818,
+        "sharpe": 0.6822653981115685,
+        "dailySharpe": 0.0357114030927131,
+        "maxDrawdownPct": 6.4486433105406995,
+        "cagrPct": 4.087765747106387,
+        "calmar": 0.6338954645583645,
+        "trades": 160,
+        "tradesPerYear": 53.369863013698634,
+        "feesPaid": 154.43483821565837,
+        "fundingReceived": -136.5300052819489,
+        "slippageCost": 77.21748488370498
+      }
+    },
+    {
+      "id": "p008",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.222938480704173,
+        "profitFactor": 1.316792332536105,
+        "sharpe": 0.7037920104266567,
+        "dailySharpe": 0.036838157478517326,
+        "maxDrawdownPct": 6.4486433105406205,
+        "cagrPct": 4.229452008777801,
+        "calmar": 0.6558669483028401,
+        "trades": 162,
+        "tradesPerYear": 54.036986301369865,
+        "feesPaid": 157.00561575675727,
+        "fundingReceived": -147.2574171039167,
+        "slippageCost": 78.5028760807689
+      }
+    },
+    {
+      "id": "p009",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.58005471398087,
+        "profitFactor": 1.2113249135885291,
+        "sharpe": 0.5143692199662162,
+        "dailySharpe": 0.026923315477438536,
+        "maxDrawdownPct": 8.523445585796456,
+        "cagrPct": 3.7225187719199138,
+        "calmar": 0.43673872666274205,
+        "trades": 157,
+        "tradesPerYear": 52.36917808219179,
+        "feesPaid": 203.93680359799214,
+        "fundingReceived": -112.97623325724642,
+        "slippageCost": 101.96846487447499
+      }
+    },
+    {
+      "id": "p010",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.885754002608275,
+        "profitFactor": 1.2943686700022157,
+        "sharpe": 0.6685407173229697,
+        "dailySharpe": 0.03499302046724641,
+        "maxDrawdownPct": 5.77125053138055,
+        "cagrPct": 4.432584575623566,
+        "calmar": 0.7680457730126021,
+        "trades": 150,
+        "tradesPerYear": 50.03424657534247,
+        "feesPaid": 176.2792280709338,
+        "fundingReceived": -101.79308487148938,
+        "slippageCost": 88.13968422696277
+      }
+    },
+    {
+      "id": "p011",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.72825953620256,
+        "profitFactor": 1.3452757392399979,
+        "sharpe": 0.7282505082733506,
+        "dailySharpe": 0.03811837376687541,
+        "maxDrawdownPct": 5.584623737629923,
+        "cagrPct": 4.689652554368373,
+        "calmar": 0.839743691731438,
+        "trades": 147,
+        "tradesPerYear": 49.03356164383562,
+        "feesPaid": 154.42983709558555,
+        "fundingReceived": -105.63124276916187,
+        "slippageCost": 77.21499095187376
+      }
+    },
+    {
+      "id": "p012",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 17.28947498008995,
+        "profitFactor": 1.514868925801751,
+        "sharpe": 0.983908821672278,
+        "dailySharpe": 0.05150014149108188,
+        "maxDrawdownPct": 4.308756435726213,
+        "cagrPct": 5.463495117591433,
+        "calmar": 1.267998133357147,
+        "trades": 142,
+        "tradesPerYear": 47.36575342465754,
+        "feesPaid": 123.75720246897554,
+        "fundingReceived": -94.51529762914303,
+        "slippageCost": 61.87868159843492
+      }
+    },
+    {
+      "id": "p013",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 16.226717844770967,
+        "profitFactor": 1.5490160625846452,
+        "sharpe": 1.0036608202754265,
+        "dailySharpe": 0.052534008349867524,
+        "maxDrawdownPct": 4.047297853139701,
+        "cagrPct": 5.143775593072886,
+        "calmar": 1.2709159987033298,
+        "trades": 141,
+        "tradesPerYear": 47.03219178082192,
+        "feesPaid": 111.51606590886452,
+        "fundingReceived": -84.78524436243306,
+        "slippageCost": 55.75810794368039
+      }
+    },
+    {
+      "id": "p014",
+      "kind": "1d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.8,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.456519484495377,
+        "profitFactor": 1.529338621051273,
+        "sharpe": 0.9707009230351652,
+        "dailySharpe": 0.050808808479700734,
+        "maxDrawdownPct": 3.8258734298606476,
+        "cagrPct": 4.6068762192461366,
+        "calmar": 1.2041371215497676,
+        "trades": 141,
+        "tradesPerYear": 47.03219178082192,
+        "feesPaid": 102.29493621613223,
+        "fundingReceived": -78.06996422300448,
+        "slippageCost": 51.14753519464146
+      }
+    },
+    {
+      "id": "p015",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.56,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.21275336245764,
+        "profitFactor": 1.3821896753892495,
+        "sharpe": 0.7533433282970161,
+        "dailySharpe": 0.039431791995439135,
+        "maxDrawdownPct": 5.139491025615303,
+        "cagrPct": 3.9183314076421283,
+        "calmar": 0.7623967797809362,
+        "trades": 136,
+        "tradesPerYear": 45.36438356164384,
+        "feesPaid": 127.52857131267461,
+        "fundingReceived": -3.840357444629702,
+        "slippageCost": 63.764342312681585
+      }
+    },
+    {
+      "id": "p016",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.64,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.088052976239585,
+        "profitFactor": 1.4084363275472322,
+        "sharpe": 0.8291864840142591,
+        "dailySharpe": 0.0434016042021531,
+        "maxDrawdownPct": 4.722855950690173,
+        "cagrPct": 4.4944260057925955,
+        "calmar": 0.9516330908072275,
+        "trades": 149,
+        "tradesPerYear": 49.70068493150685,
+        "feesPaid": 140.8009768967683,
+        "fundingReceived": -9.396434197223904,
+        "slippageCost": 70.40055362451467
+      }
+    },
+    {
+      "id": "p017",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.72,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.443039080691442,
+        "profitFactor": 1.3129803015292771,
+        "sharpe": 0.7171979017032822,
+        "dailySharpe": 0.03753985389830025,
+        "maxDrawdownPct": 5.323536879515155,
+        "cagrPct": 3.9894194091187885,
+        "calmar": 0.7493926499260258,
+        "trades": 169,
+        "tradesPerYear": 56.37191780821918,
+        "feesPaid": 159.11532571947419,
+        "fundingReceived": -15.811924319853194,
+        "slippageCost": 79.55772281129227
+      }
+    },
+    {
+      "id": "p018",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.88,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.328206668281936,
+        "profitFactor": 1.2251949948312757,
+        "sharpe": 0.5739881404937207,
+        "dailySharpe": 0.030043912401748602,
+        "maxDrawdownPct": 6.1538650579052145,
+        "cagrPct": 3.3328954579039394,
+        "calmar": 0.54159384818205,
+        "trades": 193,
+        "tradesPerYear": 64.37739726027398,
+        "feesPaid": 176.32108944913026,
+        "fundingReceived": -65.3641549375807,
+        "slippageCost": 88.16059923122545
+      }
+    },
+    {
+      "id": "p019",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.96,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 7.432086268205018,
+        "profitFactor": 1.153440569519508,
+        "sharpe": 0.41854724259152587,
+        "dailySharpe": 0.021907763950657425,
+        "maxDrawdownPct": 8.228693710151022,
+        "cagrPct": 2.4200801610253064,
+        "calmar": 0.29410259346995316,
+        "trades": 205,
+        "tradesPerYear": 68.38013698630138,
+        "feesPaid": 183.4890606234697,
+        "fundingReceived": -105.66457334618647,
+        "slippageCost": 91.74457527600825
+      }
+    },
+    {
+      "id": "p020",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 1.04,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 8.573280217425495,
+        "profitFactor": 1.1778730926316263,
+        "sharpe": 0.4751009440174266,
+        "dailySharpe": 0.024867919974391497,
+        "maxDrawdownPct": 7.353614624635234,
+        "cagrPct": 2.7817029123218706,
+        "calmar": 0.37827695008695855,
+        "trades": 207,
+        "tradesPerYear": 69.04726027397261,
+        "feesPaid": 186.93328958973504,
+        "fundingReceived": -115.87945988109303,
+        "slippageCost": 93.46669493916608
+      }
+    },
+    {
+      "id": "p021",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.56,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 15.26003725332079,
+        "profitFactor": 1.57407071018848,
+        "sharpe": 0.9114583627335615,
+        "dailySharpe": 0.04770791114996546,
+        "maxDrawdownPct": 4.443852758244877,
+        "cagrPct": 4.851263223777602,
+        "calmar": 1.0916795599892095,
+        "trades": 91,
+        "tradesPerYear": 30.354109589041098,
+        "feesPaid": 91.88444895085293,
+        "fundingReceived": -88.82330112920286,
+        "slippageCost": 45.94229458157726
+      }
+    },
+    {
+      "id": "p022",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.64,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 17.773728183542282,
+        "profitFactor": 1.6457512819610927,
+        "sharpe": 1.020523946457114,
+        "dailySharpe": 0.05341666471518279,
+        "maxDrawdownPct": 4.331443582888717,
+        "cagrPct": 5.60853759077633,
+        "calmar": 1.2948425815662814,
+        "trades": 98,
+        "tradesPerYear": 32.68904109589041,
+        "feesPaid": 99.68996882618077,
+        "fundingReceived": -98.3649473958308,
+        "slippageCost": 49.84506542400241
+      }
+    },
+    {
+      "id": "p023",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.72,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 17.366201312277063,
+        "profitFactor": 1.5554650437183963,
+        "sharpe": 0.9677416794301703,
+        "dailySharpe": 0.05065391459013809,
+        "maxDrawdownPct": 4.756690354885083,
+        "cagrPct": 5.486502595714482,
+        "calmar": 1.1534285787763938,
+        "trades": 109,
+        "tradesPerYear": 36.358219178082194,
+        "feesPaid": 112.21526502997033,
+        "fundingReceived": -107.55912200650911,
+        "slippageCost": 56.107713015074445
+      }
+    },
+    {
+      "id": "p024",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.88,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 17.89808129753896,
+        "profitFactor": 1.5066466504626315,
+        "sharpe": 0.9373674106886797,
+        "dailySharpe": 0.04906405270109006,
+        "maxDrawdownPct": 4.594339329740335,
+        "cagrPct": 5.645719410366001,
+        "calmar": 1.2288424962039295,
+        "trades": 124,
+        "tradesPerYear": 41.36164383561644,
+        "feesPaid": 124.67077898312655,
+        "fundingReceived": -114.12971809889262,
+        "slippageCost": 62.33547312932732
+      }
+    },
+    {
+      "id": "p025",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.96,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 16.988788787450048,
+        "profitFactor": 1.4812413079648488,
+        "sharpe": 0.9025315407042385,
+        "dailySharpe": 0.047240659929680164,
+        "maxDrawdownPct": 4.288806071569719,
+        "cagrPct": 5.373233299896674,
+        "calmar": 1.252850609290909,
+        "trades": 128,
+        "tradesPerYear": 42.69589041095891,
+        "feesPaid": 127.70328472003162,
+        "fundingReceived": -145.20053048733624,
+        "slippageCost": 63.851723785392544
+      }
+    },
+    {
+      "id": "p026",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 1.04,
+        "trailMult": 2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 16.703872352175985,
+        "profitFactor": 1.4724288154541063,
+        "sharpe": 0.8886211373303131,
+        "dailySharpe": 0.04651255613980095,
+        "maxDrawdownPct": 4.288806071569825,
+        "cagrPct": 5.287562574292082,
+        "calmar": 1.232875183921917,
+        "trades": 130,
+        "tradesPerYear": 43.36301369863014,
+        "feesPaid": 129.61325886903376,
+        "fundingReceived": -155.15308389151113,
+        "slippageCost": 64.80671023292837
+      }
+    },
+    {
+      "id": "p027",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 8.144599620282023,
+        "profitFactor": 1.1333229178692594,
+        "sharpe": 0.37681989571844526,
+        "dailySharpe": 0.01972365479269839,
+        "maxDrawdownPct": 8.681739691841504,
+        "cagrPct": 2.646160552713228,
+        "calmar": 0.3047961176721189,
+        "trades": 194,
+        "tradesPerYear": 64.71095890410959,
+        "feesPaid": 243.0467247225345,
+        "fundingReceived": -29.161911020860313,
+        "slippageCost": 121.52341068894755
+      }
+    },
+    {
+      "id": "p028",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.116589011901533,
+        "profitFactor": 1.1930365077159433,
+        "sharpe": 0.5023956183295207,
+        "dailySharpe": 0.02629658852381736,
+        "maxDrawdownPct": 7.902466012821073,
+        "cagrPct": 3.2667411961358583,
+        "calmar": 0.4133825050099363,
+        "trades": 189,
+        "tradesPerYear": 63.04315068493151,
+        "feesPaid": 211.57237344819922,
+        "fundingReceived": -24.59482343380516,
+        "slippageCost": 105.78624086859323
+      }
+    },
+    {
+      "id": "p029",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.312457556766908,
+        "profitFactor": 1.2627753232565995,
+        "sharpe": 0.6321625169634004,
+        "dailySharpe": 0.033088898434348556,
+        "maxDrawdownPct": 7.33948873996551,
+        "cagrPct": 3.9491214963853993,
+        "calmar": 0.5380649301744084,
+        "trades": 186,
+        "tradesPerYear": 62.042465753424665,
+        "feesPaid": 187.59636918699096,
+        "fundingReceived": -32.64681657585871,
+        "slippageCost": 93.79824640498298
+      }
+    },
+    {
+      "id": "p030",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 15.047069248177646,
+        "profitFactor": 1.3981394640628584,
+        "sharpe": 0.8804341894255976,
+        "dailySharpe": 0.046084031701168156,
+        "maxDrawdownPct": 4.992912602844343,
+        "cagrPct": 4.786600653252382,
+        "calmar": 0.9586790384685625,
+        "trades": 181,
+        "tradesPerYear": 60.37465753424658,
+        "feesPaid": 152.3661183419871,
+        "fundingReceived": -33.15878173986769,
+        "slippageCost": 76.18312982759177
+      }
+    },
+    {
+      "id": "p031",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.034072321502443,
+        "profitFactor": 1.379185147159847,
+        "sharpe": 0.8371560628863437,
+        "dailySharpe": 0.043818751025614965,
+        "maxDrawdownPct": 4.670640601632478,
+        "cagrPct": 4.1714253129684575,
+        "calmar": 0.8931163128908838,
+        "trades": 181,
+        "tradesPerYear": 60.37465753424658,
+        "feesPaid": 138.611515624875,
+        "fundingReceived": -30.45593492714714,
+        "slippageCost": 69.30581948365759
+      }
+    },
+    {
+      "id": "p032",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 3,
+        "maxRank": 0.8,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "channelDays": {
+          "value": 3,
+          "relative": null,
+          "gridSteps": -1
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.721602285677868,
+        "profitFactor": 1.3696154797141578,
+        "sharpe": 0.8157001021707091,
+        "dailySharpe": 0.042695694713543064,
+        "maxDrawdownPct": 4.398263981628676,
+        "cagrPct": 3.766390174756329,
+        "calmar": 0.8563356338974533,
+        "trades": 181,
+        "tradesPerYear": 60.37465753424658,
+        "feesPaid": 127.43517049889672,
+        "fundingReceived": -27.96187009118221,
+        "slippageCost": 63.717640900444785
+      }
+    },
+    {
+      "id": "p033",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.235226083100772,
+        "profitFactor": 1.2782305818889903,
+        "sharpe": 0.6298012793724848,
+        "dailySharpe": 0.032965305610148106,
+        "maxDrawdownPct": 7.083428750379345,
+        "cagrPct": 4.539369923965442,
+        "calmar": 0.6408435919853561,
+        "trades": 133,
+        "tradesPerYear": 44.36369863013699,
+        "feesPaid": 179.09665087378363,
+        "fundingReceived": -119.7080512539914,
+        "slippageCost": 89.5483979119201
+      }
+    },
+    {
+      "id": "p034",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.085721384959914,
+        "profitFactor": 1.2879297256932911,
+        "sharpe": 0.6396479370686041,
+        "dailySharpe": 0.033480703229718696,
+        "maxDrawdownPct": 5.628809357467081,
+        "cagrPct": 4.187300237701708,
+        "calmar": 0.743905144370702,
+        "trades": 128,
+        "tradesPerYear": 42.69589041095891,
+        "feesPaid": 154.39000542432942,
+        "fundingReceived": -107.79971727473759,
+        "slippageCost": 77.19506863044195
+      }
+    },
+    {
+      "id": "p035",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.617706554394205,
+        "profitFactor": 1.363914718819013,
+        "sharpe": 0.7271123554013932,
+        "dailySharpe": 0.03805880012280068,
+        "maxDrawdownPct": 5.5563793717889425,
+        "cagrPct": 4.655992142914367,
+        "calmar": 0.837954328056494,
+        "trades": 124,
+        "tradesPerYear": 41.36164383561644,
+        "feesPaid": 135.30060288832502,
+        "fundingReceived": -116.5997559401732,
+        "slippageCost": 67.65037269701796
+      }
+    },
+    {
+      "id": "p036",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 19.833190405464272,
+        "profitFactor": 1.6646230670411832,
+        "sharpe": 1.1199639350664319,
+        "dailySharpe": 0.05862159160520432,
+        "maxDrawdownPct": 4.1239114604203895,
+        "cagrPct": 6.220982460596192,
+        "calmar": 1.5085150397390024,
+        "trades": 117,
+        "tradesPerYear": 39.026712328767125,
+        "feesPaid": 108.03514706400873,
+        "fundingReceived": -109.70897137319668,
+        "slippageCost": 54.01766373523726
+      }
+    },
+    {
+      "id": "p037",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 18.411232169343794,
+        "profitFactor": 1.71062641600088,
+        "sharpe": 1.1307817763276888,
+        "dailySharpe": 0.059187823295896856,
+        "maxDrawdownPct": 3.318057404258781,
+        "cagrPct": 5.79887665161154,
+        "calmar": 1.7476721904113492,
+        "trades": 116,
+        "tradesPerYear": 38.69315068493151,
+        "feesPaid": 96.93786267518024,
+        "fundingReceived": -98.30446769849921,
+        "slippageCost": 48.46901473097258
+      }
+    },
+    {
+      "id": "p038",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 5,
+        "maxRank": 0.8,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "channelDays": {
+          "value": 5,
+          "relative": null,
+          "gridSteps": 1
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 16.235387704983584,
+        "profitFactor": 1.6769075667145252,
+        "sharpe": 1.086606494798001,
+        "dailySharpe": 0.056875583381917234,
+        "maxDrawdownPct": 3.1067674771265246,
+        "cagrPct": 5.146391697044916,
+        "calmar": 1.6565100976932001,
+        "trades": 116,
+        "tradesPerYear": 38.69315068493151,
+        "feesPaid": 88.72007469692286,
+        "fundingReceived": -90.63774592167802,
+        "slippageCost": 44.36011123872952
+      }
+    },
+    {
+      "id": "p039",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.02313593927482,
+        "profitFactor": 1.248775157573501,
+        "sharpe": 0.5184964487191883,
+        "dailySharpe": 0.027139344503769317,
+        "maxDrawdownPct": 6.708894517159424,
+        "cagrPct": 3.2374996542414713,
+        "calmar": 0.4825682749908913,
+        "trades": 119,
+        "tradesPerYear": 39.693835616438356,
+        "feesPaid": 158.42439514270816,
+        "fundingReceived": -80.17387505568179,
+        "slippageCost": 79.21225037631866
+      }
+    },
+    {
+      "id": "p040",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 9.422321042590266,
+        "profitFactor": 1.2547939972662314,
+        "sharpe": 0.536400614636905,
+        "dailySharpe": 0.028076491379305044,
+        "maxDrawdownPct": 5.6915846430475785,
+        "cagrPct": 3.0491077651229936,
+        "calmar": 0.535722115430113,
+        "trades": 118,
+        "tradesPerYear": 39.36027397260274,
+        "feesPaid": 139.5816928618065,
+        "fundingReceived": -79.78833372763766,
+        "slippageCost": 69.79089568662428
+      }
+    },
+    {
+      "id": "p041",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.297308786164994,
+        "profitFactor": 1.3051247997472133,
+        "sharpe": 0.5912263546944172,
+        "dailySharpe": 0.03094620177128649,
+        "maxDrawdownPct": 5.403298916276873,
+        "cagrPct": 3.3232416780772045,
+        "calmar": 0.6150393915958057,
+        "trades": 116,
+        "tradesPerYear": 38.69315068493151,
+        "feesPaid": 121.61074367890389,
+        "fundingReceived": -80.92821638217282,
+        "slippageCost": 60.80542356246235
+      }
+    },
+    {
+      "id": "p042",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.126189951020773,
+        "profitFactor": 1.4889412824585997,
+        "sharpe": 0.8532129672067932,
+        "dailySharpe": 0.04465920781002151,
+        "maxDrawdownPct": 3.9451539745713067,
+        "cagrPct": 4.199735334006038,
+        "calmar": 1.0645301453569744,
+        "trades": 112,
+        "tradesPerYear": 37.35890410958904,
+        "feesPaid": 98.04134219342035,
+        "fundingReceived": -72.87179961136609,
+        "slippageCost": 49.02073239882496
+      }
+    },
+    {
+      "id": "p043",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.187543292622593,
+        "profitFactor": 1.4986445829978754,
+        "sharpe": 0.8570904835156357,
+        "dailySharpe": 0.044862166289649695,
+        "maxDrawdownPct": 3.62363917519915,
+        "cagrPct": 3.9105432879896984,
+        "calmar": 1.0791756846968021,
+        "trades": 112,
+        "tradesPerYear": 37.35890410958904,
+        "feesPaid": 89.35430998499281,
+        "fundingReceived": -64.07511377752051,
+        "slippageCost": 44.67721166693501
+      }
+    },
+    {
+      "id": "p044",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.56,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.56,
+          "relative": -0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.86765548115618,
+        "profitFactor": 1.478680089890828,
+        "sharpe": 0.8282986914825268,
+        "dailySharpe": 0.04335513501721254,
+        "maxDrawdownPct": 3.350580889117344,
+        "cagrPct": 3.5011520717866063,
+        "calmar": 1.044938829311155,
+        "trades": 112,
+        "tradesPerYear": 37.35890410958904,
+        "feesPaid": 82.00960075997723,
+        "fundingReceived": -59.22305368553077,
+        "slippageCost": 41.004851140110794
+      }
+    },
+    {
+      "id": "p045",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.521091740853873,
+        "profitFactor": 1.2388199395822552,
+        "sharpe": 0.5207906400340329,
+        "dailySharpe": 0.02725942796548815,
+        "maxDrawdownPct": 7.829637384312692,
+        "cagrPct": 3.3931200590487487,
+        "calmar": 0.4333687363155716,
+        "trades": 129,
+        "tradesPerYear": 43.029452054794525,
+        "feesPaid": 170.46599954220162,
+        "fundingReceived": -91.14827841139571,
+        "slippageCost": 85.2330557293611
+      }
+    },
+    {
+      "id": "p046",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.701053236483649,
+        "profitFactor": 1.2701300711227135,
+        "sharpe": 0.5827541869945501,
+        "dailySharpe": 0.03050274824625583,
+        "maxDrawdownPct": 5.5293635751947585,
+        "cagrPct": 3.4492463939468365,
+        "calmar": 0.6238053162972459,
+        "trades": 127,
+        "tradesPerYear": 42.36232876712329,
+        "feesPaid": 149.82740874498526,
+        "fundingReceived": -89.2600924890684,
+        "slippageCost": 74.91375973675606
+      }
+    },
+    {
+      "id": "p047",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.49537798910718,
+        "profitFactor": 1.3189217790130128,
+        "sharpe": 0.6358440454130959,
+        "dailySharpe": 0.033281598440575266,
+        "maxDrawdownPct": 5.1866508698669636,
+        "cagrPct": 3.696256245821705,
+        "calmar": 0.712647976229893,
+        "trades": 125,
+        "tradesPerYear": 41.695205479452056,
+        "feesPaid": 130.80251260030604,
+        "fundingReceived": -89.35017948712009,
+        "slippageCost": 65.40131370382521
+      }
+    },
+    {
+      "id": "p048",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.152279138453206,
+        "profitFactor": 1.4921071321663097,
+        "sharpe": 0.8904113207844374,
+        "dailySharpe": 0.046606258624372336,
+        "maxDrawdownPct": 4.1584196552197135,
+        "cagrPct": 4.5140442250258594,
+        "calmar": 1.0855191633580703,
+        "trades": 121,
+        "tradesPerYear": 40.360958904109594,
+        "feesPaid": 105.7417357614907,
+        "fundingReceived": -80.00070075574419,
+        "slippageCost": 52.8709340343967
+      }
+    },
+    {
+      "id": "p049",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.122541862600556,
+        "profitFactor": 1.5010031414599858,
+        "sharpe": 0.8940698898017757,
+        "dailySharpe": 0.046797756878984555,
+        "maxDrawdownPct": 3.819861555495996,
+        "cagrPct": 4.198614478618667,
+        "calmar": 1.0991535734005133,
+        "trades": 121,
+        "tradesPerYear": 40.360958904109594,
+        "feesPaid": 96.39552864457286,
+        "fundingReceived": -70.55025343032614,
+        "slippageCost": 48.19782541819818
+      }
+    },
+    {
+      "id": "p050",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.64,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.64,
+          "relative": -0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.722293213454748,
+        "profitFactor": 1.4820760778019064,
+        "sharpe": 0.8659904803966225,
+        "dailySharpe": 0.045328013417498376,
+        "maxDrawdownPct": 3.532280757267298,
+        "cagrPct": 3.766604230761561,
+        "calmar": 1.0663377261312446,
+        "trades": 121,
+        "tradesPerYear": 40.360958904109594,
+        "feesPaid": 88.48440958505128,
+        "fundingReceived": -65.1054883666389,
+        "slippageCost": 44.2422595949848
+      }
+    },
+    {
+      "id": "p051",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.024812408480768,
+        "profitFactor": 1.2699900199763856,
+        "sharpe": 0.6021190366249589,
+        "dailySharpe": 0.031516350801647657,
+        "maxDrawdownPct": 8.261000015845182,
+        "cagrPct": 4.168578662790057,
+        "calmar": 0.5046094485890846,
+        "trades": 142,
+        "tradesPerYear": 47.36575342465754,
+        "feesPaid": 191.27703828034637,
+        "fundingReceived": -109.92653979994452,
+        "slippageCost": 95.63858711310942
+      }
+    },
+    {
+      "id": "p052",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.884899111871139,
+        "profitFactor": 1.299164809752731,
+        "sharpe": 0.6614066610970286,
+        "dailySharpe": 0.03461960689787028,
+        "maxDrawdownPct": 5.60899675905849,
+        "cagrPct": 4.125548076080965,
+        "calmar": 0.7355233481670735,
+        "trades": 138,
+        "tradesPerYear": 46.03150684931507,
+        "feesPaid": 165.3631964968087,
+        "fundingReceived": -100.57224974609737,
+        "slippageCost": 82.68166373268527
+      }
+    },
+    {
+      "id": "p053",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.059802670028265,
+        "profitFactor": 1.3336064995992367,
+        "sharpe": 0.6885460302184081,
+        "dailySharpe": 0.0360401464020839,
+        "maxDrawdownPct": 5.17235582868956,
+        "cagrPct": 4.179334431190163,
+        "calmar": 0.8080137116647321,
+        "trades": 136,
+        "tradesPerYear": 45.36438356164384,
+        "feesPaid": 144.17328105276596,
+        "fundingReceived": -99.79395642966763,
+        "slippageCost": 72.08670540775137
+      }
+    },
+    {
+      "id": "p054",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 16.158381292974823,
+        "profitFactor": 1.527486689138234,
+        "sharpe": 0.9759640588829779,
+        "dailySharpe": 0.05108429360075946,
+        "maxDrawdownPct": 4.142181236982654,
+        "cagrPct": 5.123150692359113,
+        "calmar": 1.2368243684313147,
+        "trades": 131,
+        "tradesPerYear": 43.696575342465756,
+        "feesPaid": 115.29730115112017,
+        "fundingReceived": -90.08731609260118,
+        "slippageCost": 57.64872573041894
+      }
+    },
+    {
+      "id": "p055",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.945223532999474,
+        "profitFactor": 1.5374235049275267,
+        "sharpe": 0.9789996484720962,
+        "dailySharpe": 0.051243183621770494,
+        "maxDrawdownPct": 3.803493227851249,
+        "cagrPct": 4.75564947308269,
+        "calmar": 1.2503373052590798,
+        "trades": 131,
+        "tradesPerYear": 43.696575342465756,
+        "feesPaid": 105.0486141886358,
+        "fundingReceived": -79.67492141966225,
+        "slippageCost": 52.52437636512851
+      }
+    },
+    {
+      "id": "p056",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.72,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.72,
+          "relative": -0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.384072038273121,
+        "profitFactor": 1.5205581159101322,
+        "sharpe": 0.9515165124512251,
+        "dailySharpe": 0.049804650535658024,
+        "maxDrawdownPct": 3.5159994837312345,
+        "cagrPct": 4.278907246706609,
+        "calmar": 1.2169817619443348,
+        "trades": 131,
+        "tradesPerYear": 43.696575342465756,
+        "feesPaid": 96.3706302354531,
+        "fundingReceived": -73.4054090106946,
+        "slippageCost": 48.18537737247136
+      }
+    },
+    {
+      "id": "p057",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.405602649390477,
+        "profitFactor": 1.1821275582037523,
+        "sharpe": 0.46413362667165065,
+        "dailySharpe": 0.024293864347849723,
+        "maxDrawdownPct": 7.581283223485145,
+        "cagrPct": 3.3570692656653245,
+        "calmar": 0.4428101637551099,
+        "trades": 164,
+        "tradesPerYear": 54.7041095890411,
+        "feesPaid": 213.17376067277,
+        "fundingReceived": -115.83134673758597,
+        "slippageCost": 106.58693938247745
+      }
+    },
+    {
+      "id": "p058",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.586048846244324,
+        "profitFactor": 1.2543860069653452,
+        "sharpe": 0.6067017405048779,
+        "dailySharpe": 0.03175622048573731,
+        "maxDrawdownPct": 5.742911296014205,
+        "cagrPct": 4.033516954367644,
+        "calmar": 0.7023470756316671,
+        "trades": 157,
+        "tradesPerYear": 52.36917808219179,
+        "feesPaid": 184.44857962977085,
+        "fundingReceived": -104.49025002027709,
+        "slippageCost": 92.22435540560812
+      }
+    },
+    {
+      "id": "p059",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.48172866398285,
+        "profitFactor": 1.3018657433974545,
+        "sharpe": 0.6689079240378206,
+        "dailySharpe": 0.03501224094515528,
+        "maxDrawdownPct": 5.900960488368442,
+        "cagrPct": 4.308857302856239,
+        "calmar": 0.730195925112455,
+        "trades": 154,
+        "tradesPerYear": 51.368493150684934,
+        "feesPaid": 161.85792269743771,
+        "fundingReceived": -108.15781390647255,
+        "slippageCost": 80.92902931342417
+      }
+    },
+    {
+      "id": "p060",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 14.485887841172262,
+        "profitFactor": 1.3954289583576391,
+        "sharpe": 0.8314520501944979,
+        "dailySharpe": 0.043520189355847935,
+        "maxDrawdownPct": 5.540390794170513,
+        "cagrPct": 4.615828595379878,
+        "calmar": 0.8331232880244765,
+        "trades": 150,
+        "tradesPerYear": 50.03424657534247,
+        "feesPaid": 131.35417549796824,
+        "fundingReceived": -95.03780971772836,
+        "slippageCost": 65.67715737530119
+      }
+    },
+    {
+      "id": "p061",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.681327341097681,
+        "profitFactor": 1.4228883756175263,
+        "sharpe": 0.8520775304965754,
+        "dailySharpe": 0.04459977633635,
+        "maxDrawdownPct": 4.040003898361267,
+        "cagrPct": 4.370018312876378,
+        "calmar": 1.0816866574433193,
+        "trades": 149,
+        "tradesPerYear": 49.70068493150685,
+        "feesPaid": 118.4907741802584,
+        "fundingReceived": -85.30474836206838,
+        "slippageCost": 59.24545233707751
+      }
+    },
+    {
+      "id": "p062",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.88,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.88,
+          "relative": 0.1,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.144035916706875,
+        "profitFactor": 1.406501310556034,
+        "sharpe": 0.8203535571691493,
+        "dailySharpe": 0.042939267680431124,
+        "maxDrawdownPct": 3.807675104444905,
+        "cagrPct": 3.89709985756983,
+        "calmar": 1.0234853948070661,
+        "trades": 149,
+        "tradesPerYear": 49.70068493150685,
+        "feesPaid": 108.72364022908597,
+        "fundingReceived": -78.56597118370318,
+        "slippageCost": 54.36187835674627
+      }
+    },
+    {
+      "id": "p063",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 5.9238469494744095,
+        "profitFactor": 1.0979068343317306,
+        "sharpe": 0.28203080021455795,
+        "dailySharpe": 0.014762166773956082,
+        "maxDrawdownPct": 9.320672859609493,
+        "cagrPct": 1.9381986042392274,
+        "calmar": 0.2079462109048243,
+        "trades": 176,
+        "tradesPerYear": 58.706849315068496,
+        "feesPaid": 223.9087528006446,
+        "fundingReceived": -158.26721748963968,
+        "slippageCost": 111.95441986092574
+      }
+    },
+    {
+      "id": "p064",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.393020103719719,
+        "profitFactor": 1.2017856036939407,
+        "sharpe": 0.5048881666715366,
+        "dailySharpe": 0.026427054466859726,
+        "maxDrawdownPct": 7.111362878973614,
+        "cagrPct": 3.3531400109065634,
+        "calmar": 0.47151861998505185,
+        "trades": 167,
+        "tradesPerYear": 55.70479452054795,
+        "feesPaid": 194.78498458542873,
+        "fundingReceived": -147.5849482933852,
+        "slippageCost": 97.39255145529428
+      }
+    },
+    {
+      "id": "p065",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.200308522334247,
+        "profitFactor": 1.2409213764697926,
+        "sharpe": 0.5597544067100044,
+        "dailySharpe": 0.02929888472473084,
+        "maxDrawdownPct": 7.067922897687108,
+        "cagrPct": 3.6046363127717473,
+        "calmar": 0.5099993824142197,
+        "trades": 164,
+        "tradesPerYear": 54.7041095890411,
+        "feesPaid": 170.9796527504646,
+        "fundingReceived": -150.80613014574715,
+        "slippageCost": 85.4898874674931
+      }
+    },
+    {
+      "id": "p066",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.675160483509407,
+        "profitFactor": 1.3311101996782784,
+        "sharpe": 0.7288664252299144,
+        "dailySharpe": 0.03815061233381485,
+        "maxDrawdownPct": 6.042265402939185,
+        "cagrPct": 4.060975954829726,
+        "calmar": 0.6720949319528923,
+        "trades": 159,
+        "tradesPerYear": 53.03630136986302,
+        "feesPaid": 139.3796856828354,
+        "fundingReceived": -128.8726995523114,
+        "slippageCost": 69.68990705975128
+      }
+    },
+    {
+      "id": "p067",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.92775622329143,
+        "profitFactor": 1.3513086301074118,
+        "sharpe": 0.7432100700915945,
+        "dailySharpe": 0.038901393019589,
+        "maxDrawdownPct": 4.507551924291255,
+        "cagrPct": 3.830219528747003,
+        "calmar": 0.8497338673140737,
+        "trades": 158,
+        "tradesPerYear": 52.7027397260274,
+        "feesPaid": 125.78831203389858,
+        "fundingReceived": -116.2326869621515,
+        "slippageCost": 62.89421592458277
+      }
+    },
+    {
+      "id": "p068",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 0.96,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 0.96,
+          "relative": 0.2,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 10.441648162836437,
+        "profitFactor": 1.3322371786572489,
+        "sharpe": 0.7053643031476831,
+        "dailySharpe": 0.036920455040867294,
+        "maxDrawdownPct": 4.240450794158488,
+        "cagrPct": 3.368323842076748,
+        "calmar": 0.7943315476545194,
+        "trades": 158,
+        "tradesPerYear": 52.7027397260274,
+        "feesPaid": 115.38620439291778,
+        "fundingReceived": -107.89495900185426,
+        "slippageCost": 57.69315520202433
+      }
+    },
+    {
+      "id": "p069",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 1.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.4,
+          "relative": -0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 7.28448591201678,
+        "profitFactor": 1.1211628407724843,
+        "sharpe": 0.335155211516442,
+        "dailySharpe": 0.017542825548848884,
+        "maxDrawdownPct": 8.674410937005945,
+        "cagrPct": 2.3731217338097244,
+        "calmar": 0.2735772781625711,
+        "trades": 179,
+        "tradesPerYear": 59.70753424657535,
+        "feesPaid": 229.1871712826286,
+        "fundingReceived": -169.83492354839328,
+        "slippageCost": 114.59363532388727
+      }
+    },
+    {
+      "id": "p070",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 1.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.6,
+          "relative": -0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.401582998335202,
+        "profitFactor": 1.2228423845300185,
+        "sharpe": 0.5475793140101761,
+        "dailySharpe": 0.028661611246846477,
+        "maxDrawdownPct": 6.277274684488988,
+        "cagrPct": 3.667150164095778,
+        "calmar": 0.5841946303795225,
+        "trades": 169,
+        "tradesPerYear": 56.37191780821918,
+        "feesPaid": 198.3990311333172,
+        "fundingReceived": -160.11366240388347,
+        "slippageCost": 99.19957948148155
+      }
+    },
+    {
+      "id": "p071",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 1.8
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 1.8,
+          "relative": -0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.821202108527352,
+        "profitFactor": 1.2566162815521955,
+        "sharpe": 0.586825548836057,
+        "dailySharpe": 0.030715853064792395,
+        "maxDrawdownPct": 6.268609691204692,
+        "cagrPct": 3.7972380499821323,
+        "calmar": 0.6057544235542259,
+        "trades": 166,
+        "tradesPerYear": 55.371232876712334,
+        "feesPaid": 173.88191153338238,
+        "fundingReceived": -162.52237313601637,
+        "slippageCost": 86.94101998531183
+      }
+    },
+    {
+      "id": "p072",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 2.2
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.2,
+          "relative": 0.1,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 13.4275329373168,
+        "profitFactor": 1.3543051723721042,
+        "sharpe": 0.7663611372929408,
+        "dailySharpe": 0.04011317526025684,
+        "maxDrawdownPct": 6.042265402939191,
+        "cagrPct": 4.292238278702953,
+        "calmar": 0.7103690408261516,
+        "trades": 161,
+        "tradesPerYear": 53.70342465753425,
+        "feesPaid": 141.70435511155222,
+        "fundingReceived": -144.00990976650928,
+        "slippageCost": 70.85224552856825
+      }
+    },
+    {
+      "id": "p073",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 2.4
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.4,
+          "relative": 0.2,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 12.61574335487805,
+        "profitFactor": 1.375625214564023,
+        "sharpe": 0.7806535081367595,
+        "dailySharpe": 0.0408612721412754,
+        "maxDrawdownPct": 4.507551924291214,
+        "cagrPct": 4.042668675678196,
+        "calmar": 0.8968656919717862,
+        "trades": 160,
+        "tradesPerYear": 53.369863013698634,
+        "feesPaid": 127.86449545264377,
+        "fundingReceived": -130.02220546001035,
+        "slippageCost": 63.93231106205574
+      }
+    },
+    {
+      "id": "p074",
+      "kind": "2d",
+      "parameters": {
+        "channelDays": 4,
+        "maxRank": 1.04,
+        "trailMult": 2.6
+      },
+      "steps": {
+        "maxRank": {
+          "value": 1.04,
+          "relative": 0.3,
+          "gridSteps": null
+        },
+        "trailMult": {
+          "value": 2.6,
+          "relative": 0.3,
+          "gridSteps": null
+        }
+      },
+      "valid": true,
+      "error": null,
+      "metrics": {
+        "netProfitPct": 11.070906425933092,
+        "profitFactor": 1.3561979702845266,
+        "sharpe": 0.7429024252454002,
+        "dailySharpe": 0.03888529015237304,
+        "maxDrawdownPct": 4.24045079415837,
+        "cagrPct": 3.5644054732627772,
+        "calmar": 0.8405722990992113,
+        "trades": 160,
+        "tradesPerYear": 53.369863013698634,
+        "feesPaid": 117.25527917216029,
+        "fundingReceived": -120.49500809985643,
+        "slippageCost": 58.6276957248252
+      }
+    }
+  ]
+}

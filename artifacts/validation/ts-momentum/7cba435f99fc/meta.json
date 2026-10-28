@@ -1,0 +1,193 @@
+{
+  "candidate": {
+    "id": "7cba435f99fcb563f0d3e486c8027922",
+    "identity": {
+      "strategy": "ts-momentum",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 3,
+        "lookback": 96,
+        "threshold": 0.01
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "ts-momentum",
+    "family": "momentum",
+    "description": "Long when close / close[lookback] - 1 > threshold, short when < -threshold, otherwise keep the position; reversals flip directly; stop at entry-bar close -/+ ATR(14) x atrMult.",
+    "version": 1
+  },
+  "parameters": {
+    "lookback": 96,
+    "threshold": 0.01,
+    "atrMult": 3
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "lookback",
+      "min": 24,
+      "max": 216,
+      "step": 24,
+      "values": [
+        24,
+        48,
+        72,
+        96,
+        120,
+        144,
+        168,
+        192,
+        216
+      ]
+    },
+    {
+      "name": "threshold",
+      "min": 0,
+      "max": 0.02,
+      "step": 0.005,
+      "values": [
+        0,
+        0.005,
+        0.01,
+        0.015,
+        0.02
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "values": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 10991.894406244948,
+    "netProfit": 991.8944062449482,
+    "netProfitPct": 9.918944062449487,
+    "cagrPct": 3.204878410088985,
+    "maxDrawdownPct": 31.555069690235843,
+    "profitFactor": 1.0406745009889387,
+    "sharpe": 0.25023564889518785,
+    "sortino": 0.4190328021254228,
+    "calmar": 0.10156461201163747,
+    "trades": 465,
+    "tradesPerYear": 155.10616438356166,
+    "winRatePct": 27.311827956989248,
+    "avgTradeNetPnl": 2.1331062499890616,
+    "timeInMarketPct": 89.77168949771689,
+    "turnoverPerYear": 132.97610785553573,
+    "feesPaid": 1584.0914328339495,
+    "fundingReceived": -362.57058809274645,
+    "slippageCost": 792.0458656410674,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.013097932491662672,
+    "dailySkewness": 1.5360118906977298,
+    "dailyKurtosis": 10.768806878571523
+  },
+  "attribution": {
+    "grossPnl": 3730.6022928126745,
+    "slippageCost": 792.0458656410674,
+    "commission": 1584.0914328339495,
+    "fundingReceived": -362.57058809274645,
+    "netPnl": 991.8944062449482
+  },
+  "maxBarsHeld": 788,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 180,
+  "lookAheadAudit": {
+    "strategy": "ts-momentum",
+    "parameters": {
+      "lookback": 96,
+      "threshold": 0.01,
+      "atrMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 1128,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 788,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:45.287341Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

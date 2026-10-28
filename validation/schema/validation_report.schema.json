@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "validation_report.schema.json",
+  "title": "Validation report for one candidate (strategy + parameters) on the development window",
+  "description": "Written by python -m validation next to the candidate's validate-export bundle. The C# holdout gate reads candidate.id, validator.fingerprint, validator.configSha256, gates[] and allHardGatesPassed. Non-finite numbers are written as null (NaN) or the strings \"Infinity\"/\"-Infinity\".",
+  "type": "object",
+  "$defs": {
+    "metric": { "type": ["number", "string", "null"] },
+    "metrics": { "type": "object", "additionalProperties": true },
+    "gate": {
+      "type": "object",
+      "required": ["name", "description", "value", "threshold", "comparator", "passed", "hard", "detail"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "value": {},
+        "threshold": {},
+        "comparator": { "type": "string" },
+        "passed": { "type": "boolean" },
+        "hard": { "type": "boolean" },
+        "detail": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "percentiles": {
+      "type": "object",
+      "required": ["p05", "p50", "p95"],
+      "properties": { "p05": { "$ref": "#/$defs/metric" }, "p50": { "$ref": "#/$defs/metric" }, "p95": { "$ref": "#/$defs/metric" } }
+    }
+  },
+  "required": [
+    "schemaVersion", "generatedUtc", "candidate", "validator", "window", "data", "baseline", "attribution", "multipleTesting",
+    "trackRecord", "cpcv", "plateau", "regimes", "bootstrap", "stress", "lookAheadAudit", "crossChecks", "gates",
+    "allHardGatesPassed", "failedHardGates", "verdict"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedUtc": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$" },
+    "candidate": {
+      "type": "object",
+      "required": ["id", "strategy", "family", "version", "parameters", "identity"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[0-9a-f]{32}$" },
+        "strategy": { "type": "string" },
+        "family": { "type": "string" },
+        "version": { "type": "integer" },
+        "parameters": { "type": "object", "additionalProperties": { "type": "number" } },
+        "identity": {
+          "type": "object",
+          "required": ["strategy", "strategyVersion", "parameters", "devFromMs", "devToMs", "costs", "sizing", "risk", "engineVersion", "codeFingerprint", "dataFingerprint"]
+        }
+      }
+    },
+    "validator": {
+      "type": "object",
+      "required": ["fingerprint", "configSha256", "configPath", "thresholds", "python", "packages"],
+      "properties": {
+        "fingerprint": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "configSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "window": { "type": "object", "required": ["devFrom", "devTo", "devFromMs", "devToMs"] },
+    "data": { "type": "object", "required": ["bars", "funding"] },
+    "baseline": {
+      "type": "object",
+      "required": ["netProfitPct", "profitFactor", "sharpe", "maxDrawdownPct", "trades", "tradesPerYear"],
+      "additionalProperties": { "$ref": "#/$defs/metric" }
+    },
+    "attribution": {
+      "type": "object",
+      "required": ["grossPnl", "slippageCost", "commission", "fundingReceived", "netPnl"]
+    },
+    "multipleTesting": {
+      "type": "object",
+      "required": ["dailySharpe", "annualSharpe", "observations", "psr", "nTrialsRaw", "nTrialsDistinct", "nTrialsEffective",
+                   "expectedMaxSharpeRaw", "expectedMaxSharpeEffective", "dsrRaw", "dsrEffective", "dsrGate", "dsrGateBasis", "minBacktestLengthYears", "pboSearch", "pboLocal"],
+      "properties": {
+        "psr": { "$ref": "#/$defs/metric" },
+        "dsrRaw": { "$ref": "#/$defs/metric" },
+        "dsrEffective": { "$ref": "#/$defs/metric" },
+        "dsrGate": { "$ref": "#/$defs/metric" },
+        "dsrGateBasis": { "enum": ["raw", "effective"] },
+        "nTrialsEffective": { "type": "integer", "minimum": 1 },
+        "pboSearch": { "type": "object", "required": ["pbo", "nPartitions", "nConfigurations", "nBlocks"] }
+      }
+    },
+    "trackRecord": { "type": "object", "required": ["devDays", "minTrackRecordDays", "confidence"] },
+    "cpcv": {
+      "type": "object",
+      "required": ["nGroups", "nTestGroups", "nSplits", "nPaths", "purgeHorizonDays", "embargoDays", "paths", "pathSharpe", "candidateByGroup", "selectionSource"],
+      "properties": {
+        "paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "object", "required": ["path", "sharpe", "cagr", "maxDrawdown", "calmar", "profitFactor", "configsUsed"] }
+        }
+      }
+    },
+    "plateau": { "type": "object", "required": ["neighbours", "valid", "robust", "score", "byKind", "oneDimensional", "onEdgeOf", "criteria"] },
+    "regimes": {
+      "type": "object",
+      "required": ["settings", "table", "gates"],
+      "properties": {
+        "table": {
+          "type": "array",
+          "minItems": 6,
+          "items": { "type": "object", "required": ["partition", "regime", "days", "netReturnPct", "sharpe", "trades", "profitFactor", "netPnl"] }
+        }
+      }
+    },
+    "bootstrap": {
+      "type": "object",
+      "required": ["paths", "seed", "byMeanBlockLength", "worstSharpeP05", "worstProfitFactorP05"],
+      "properties": {
+        "byMeanBlockLength": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["meanBlockHours", "sharpe", "profitFactor", "maxDrawdown"],
+            "properties": {
+              "sharpe": { "$ref": "#/$defs/percentiles" },
+              "profitFactor": { "$ref": "#/$defs/percentiles" },
+              "maxDrawdown": { "$ref": "#/$defs/percentiles" }
+            }
+          }
+        }
+      }
+    },
+    "stress": { "type": "object", "required": ["baseCosts", "ladder", "slippageAtMultiplier", "commissionAtMultiplier", "fundingSpikes", "gapThroughStop"] },
+    "lookAheadAudit": { "type": "object", "required": ["verdict", "comparisons", "tradesBeforeCut", "featureSeriesChecked", "fundingTradesChecked", "problems"] },
+    "crossChecks": { "type": "object", "required": ["statistics", "pboSearch"] },
+    "gates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/gate" },
+      "allOf": [
+        { "contains": { "properties": { "name": { "const": "lookahead_audit" } } } },
+        { "contains": { "properties": { "name": { "const": "deflated_sharpe" } } } },
+        { "contains": { "properties": { "name": { "const": "pbo" } } } },
+        { "contains": { "properties": { "name": { "const": "plateau_score" } } } },
+        { "contains": { "properties": { "name": { "const": "plateau_edge" } } } },
+        { "contains": { "properties": { "name": { "const": "regime_losses" } } } },
+        { "contains": { "properties": { "name": { "const": "regime_concentration" } } } },
+        { "contains": { "properties": { "name": { "const": "bootstrap_sharpe_p05" } } } },
+        { "contains": { "properties": { "name": { "const": "bootstrap_pf_p05" } } } },
+        { "contains": { "properties": { "name": { "const": "stress_slippage_2x" } } } },
+        { "contains": { "properties": { "name": { "const": "stress_commission_2x" } } } },
+        { "contains": { "properties": { "name": { "const": "min_track_record" } } } },
+        { "contains": { "properties": { "name": { "const": "trades_per_year" } } } }
+      ]
+    },
+    "allHardGatesPassed": { "type": "boolean" },
+    "failedHardGates": { "type": "array", "items": { "type": "string" } },
+    "verdict": { "enum": ["PASS", "REJECT"] }
+  }
+}

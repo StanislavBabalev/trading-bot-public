@@ -1,0 +1,772 @@
+{
+  "strategy": "ema-cross-control",
+  "objective": "sharpe",
+  "window": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z"
+  },
+  "options": {
+    "maxEvaluations": 200,
+    "minTrades": 150,
+    "maxParameters": 4,
+    "seed": 42,
+    "plateauMinProfitFactor": 1.05,
+    "plateauMinSharpe": 0.3
+  },
+  "gridSize": 20,
+  "sampled": false,
+  "evaluations": 20,
+  "best": {
+    "parameters": {
+      "holdBars": 120,
+      "stopMult": 1.5
+    },
+    "objective": 0.8805671449054283,
+    "profitFactor": 1.2797741482824894,
+    "sharpe": 0.8805671449054283,
+    "trades": 221,
+    "dailySharpe": 0.04609099090904644
+  },
+  "bestAtEdgeOf": [],
+  "plateauPassed": false,
+  "verdict": [
+    "neighbour holdBars=96 stopMult=1.5 fails plateau (PF 0.75, Sharpe -0.94, trades 258)",
+    "neighbour holdBars=144 stopMult=1.5 fails plateau (PF 1.01, Sharpe 0.07, trades 194)",
+    "neighbour holdBars=120 stopMult=1 fails plateau (PF 1.03, Sharpe 0.16, trades 254)"
+  ],
+  "neighbours": [
+    {
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "objective": -0.9444410729141941,
+      "profitFactor": 0.7480319884325483,
+      "sharpe": -0.9444410729141941,
+      "trades": 258,
+      "dailySharpe": -0.04943430510400575
+    },
+    {
+      "parameters": {
+        "holdBars": 144,
+        "stopMult": 1.5
+      },
+      "objective": 0.07140951617967574,
+      "profitFactor": 1.010991364370831,
+      "sharpe": 0.07140951617967574,
+      "trades": 194,
+      "dailySharpe": 0.003737744906903521
+    },
+    {
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 1
+      },
+      "objective": 0.1614774807013627,
+      "profitFactor": 1.0313592659074176,
+      "sharpe": 0.1614774807013627,
+      "trades": 254,
+      "dailySharpe": 0.00845211763586928
+    },
+    {
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 2
+      },
+      "objective": 0.6172455573674867,
+      "profitFactor": 1.198874258507555,
+      "sharpe": 0.6172455573674867,
+      "trades": 209,
+      "dailySharpe": 0.03230810908386727
+    }
+  ],
+  "deflatedSharpe": {
+    "trials": 20,
+    "trialDailySharpeVariance": 0.000981479848852349,
+    "expectedMaxDailySharpe": 0.05954647792172066,
+    "deflatedSharpe": 0.32585337000200965,
+    "probabilisticSharpeVsZero": 0.9389740895428272
+  },
+  "trials": [
+    {
+      "parameters": {
+        "holdBars": 48,
+        "stopMult": 1
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 9477.733002701414,
+        "netProfit": -522.2669972985859,
+        "netProfitPct": -5.2226699729858606,
+        "cagrPct": -1.7733111085891706,
+        "maxDrawdownPct": 14.923110112582853,
+        "profitFactor": 0.961351792098678,
+        "sharpe": -0.12126532921765969,
+        "sortino": -0.17777839091584077,
+        "calmar": -0.11882986155104171,
+        "trades": 454,
+        "tradesPerYear": 151.43698630136987,
+        "winRatePct": 48.89867841409691,
+        "avgTradeNetPnl": -1.1503678354594398,
+        "timeInMarketPct": 73.84703196347031,
+        "turnoverPerYear": 68.87691116730632,
+        "feesPaid": 795.6819091402197,
+        "fundingReceived": 234.63085527285386,
+        "slippageCost": 397.8409720351107,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.006347317429330109,
+        "dailySkewness": 0.5961195994262247,
+        "dailyKurtosis": 8.541846880169656
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 48,
+        "stopMult": 1.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 9996.54910247267,
+        "netProfit": -3.450897527329289,
+        "netProfitPct": -0.03450897527329522,
+        "cagrPct": -0.011512194414065036,
+        "maxDrawdownPct": 11.319041315798653,
+        "profitFactor": 0.999617581585757,
+        "sharpe": 0.03338422590067903,
+        "sortino": 0.048832215758574576,
+        "calmar": -0.0010170644397239532,
+        "trades": 434,
+        "tradesPerYear": 144.76575342465753,
+        "winRatePct": 49.53917050691244,
+        "avgTradeNetPnl": -0.0079513767910564,
+        "timeInMarketPct": 75.82191780821918,
+        "turnoverPerYear": 43.85002161741367,
+        "feesPaid": 521.1178563585845,
+        "fundingReceived": 96.89921234933726,
+        "slippageCost": 260.55895543236034,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.0017474102473571229,
+        "dailySkewness": 0.5127861114171732,
+        "dailyKurtosis": 8.697468256851563
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 48,
+        "stopMult": 2
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 8952.697120734256,
+        "netProfit": -1047.3028792657442,
+        "netProfitPct": -10.473028792657447,
+        "cagrPct": -3.622942810771923,
+        "maxDrawdownPct": 11.77341959808799,
+        "profitFactor": 0.8467493173878241,
+        "sharpe": -0.6734341002334024,
+        "sortino": -0.9122928640385539,
+        "calmar": -0.3077222195801372,
+        "trades": 428,
+        "tradesPerYear": 142.76438356164385,
+        "winRatePct": 46.728971962616825,
+        "avgTradeNetPnl": -2.4469693440789686,
+        "timeInMarketPct": 76.21765601217656,
+        "turnoverPerYear": 32.20654039960656,
+        "feesPaid": 362.5471928041211,
+        "fundingReceived": 75.23230774706153,
+        "slippageCost": 181.27357325348365,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.03524915183501787,
+        "dailySkewness": -0.20417324705783274,
+        "dailyKurtosis": 6.933772449475539
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 48,
+        "stopMult": 2.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 9078.514862719925,
+        "netProfit": -921.4851372800749,
+        "netProfitPct": -9.214851372800748,
+        "cagrPct": -3.173250962094043,
+        "maxDrawdownPct": 10.180881862098184,
+        "profitFactor": 0.834996068446144,
+        "sharpe": -0.7334254742541243,
+        "sortino": -0.9840132610071308,
+        "calmar": -0.3116872393841987,
+        "trades": 426,
+        "tradesPerYear": 142.0972602739726,
+        "winRatePct": 46.478873239436616,
+        "avgTradeNetPnl": -2.1631106508922824,
+        "timeInMarketPct": 76.72374429223744,
+        "turnoverPerYear": 25.624409657873393,
+        "feesPaid": 290.8865264293819,
+        "fundingReceived": 60.06276350665659,
+        "slippageCost": 145.44324140596555,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.038389243866168155,
+        "dailySkewness": -0.3151152318830578,
+        "dailyKurtosis": 7.2764498263710635
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 72,
+        "stopMult": 1
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 9443.529515527149,
+        "netProfit": -556.4704844728512,
+        "netProfitPct": -5.5647048447285075,
+        "cagrPct": -1.8916955182855077,
+        "maxDrawdownPct": 14.41015920096816,
+        "profitFactor": 0.9605135513350109,
+        "sharpe": -0.13077734893973675,
+        "sortino": -0.19588934904341218,
+        "calmar": -0.13127512971254424,
+        "trades": 348,
+        "tradesPerYear": 116.07945205479453,
+        "winRatePct": 45.40229885057471,
+        "avgTradeNetPnl": -1.5990531163012793,
+        "timeInMarketPct": 78.6910197869102,
+        "turnoverPerYear": 52.38414924693953,
+        "feesPaid": 632.2375200153438,
+        "fundingReceived": 200.45288916658495,
+        "slippageCost": 316.1187676649883,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.006845199296798613,
+        "dailySkewness": 0.6762059396352927,
+        "dailyKurtosis": 7.041544252233624
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 72,
+        "stopMult": 1.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 8582.044776247985,
+        "netProfit": -1417.9552237520147,
+        "netProfitPct": -14.179552237520143,
+        "cagrPct": -4.97269119687248,
+        "maxDrawdownPct": 15.010200112416378,
+        "profitFactor": 0.8337213156091502,
+        "sharpe": -0.6755456893299766,
+        "sortino": -0.9742957558919573,
+        "calmar": -0.3312874684967784,
+        "trades": 324,
+        "tradesPerYear": 108.07397260273973,
+        "winRatePct": 44.75308641975309,
+        "avgTradeNetPnl": -4.376405011580292,
+        "timeInMarketPct": 81.35844748858447,
+        "turnoverPerYear": 32.2291791368468,
+        "feesPaid": 357.920862407364,
+        "fundingReceived": 87.242935950558,
+        "slippageCost": 178.96039247100583,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.03535967745980063,
+        "dailySkewness": 0.5559346018508983,
+        "dailyKurtosis": 6.861491636133338
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 72,
+        "stopMult": 2
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 9534.079513823264,
+        "netProfit": -465.9204861767357,
+        "netProfitPct": -4.659204861767352,
+        "cagrPct": -1.578905048157031,
+        "maxDrawdownPct": 11.133878833466202,
+        "profitFactor": 0.9311864933120693,
+        "sharpe": -0.2566717180510879,
+        "sortino": -0.3651429338940644,
+        "calmar": -0.14181087038698137,
+        "trades": 315,
+        "tradesPerYear": 105.07191780821918,
+        "winRatePct": 47.61904761904762,
+        "avgTradeNetPnl": -1.4791126545294027,
+        "timeInMarketPct": 82.82724505327245,
+        "turnoverPerYear": 23.760980510736612,
+        "feesPaid": 289.7274744111535,
+        "fundingReceived": 80.28185410876944,
+        "slippageCost": 144.86373274113134,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.01343481174802698,
+        "dailySkewness": 0.19437168563227122,
+        "dailyKurtosis": 7.206204910181724
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 72,
+        "stopMult": 2.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 9594.644720268427,
+        "netProfit": -405.3552797315733,
+        "netProfitPct": -4.05355279731573,
+        "cagrPct": -1.370795651709944,
+        "maxDrawdownPct": 9.366570509959834,
+        "profitFactor": 0.9257766445708818,
+        "sharpe": -0.28082460474963206,
+        "sortino": -0.3947395680869193,
+        "calmar": -0.14634979262178452,
+        "trades": 312,
+        "tradesPerYear": 104.07123287671233,
+        "winRatePct": 49.35897435897436,
+        "avgTradeNetPnl": -1.299215640165279,
+        "timeInMarketPct": 83.67199391171994,
+        "turnoverPerYear": 18.850843246911868,
+        "feesPaid": 229.94969427123624,
+        "fundingReceived": 71.45536000313643,
+        "slippageCost": 114.974841860174,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.014699031617789878,
+        "dailySkewness": 0.04669429497483769,
+        "dailyKurtosis": 7.378865324552242
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 1
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 7831.139981307758,
+        "netProfit": -2168.860018692242,
+        "netProfitPct": -21.688600186922425,
+        "cagrPct": -7.831167115517879,
+        "maxDrawdownPct": 23.66185252854071,
+        "profitFactor": 0.8180794985608276,
+        "sharpe": -0.7091451291748797,
+        "sortino": -1.0234920178680371,
+        "calmar": -0.3309617075024872,
+        "trades": 289,
+        "tradesPerYear": 96.39931506849315,
+        "winRatePct": 42.21453287197232,
+        "avgTradeNetPnl": -7.504705947031854,
+        "timeInMarketPct": 81.0958904109589,
+        "turnoverPerYear": 42.69547968885853,
+        "feesPaid": 445.0950623261782,
+        "fundingReceived": 301.30875561755624,
+        "slippageCost": 222.54745906203885,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.03711835251984594,
+        "dailySkewness": 0.6654364882556767,
+        "dailyKurtosis": 7.90283117138039
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 1.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 8088.838116791098,
+        "netProfit": -1911.1618832089016,
+        "netProfitPct": -19.111618832089018,
+        "cagrPct": -6.830374303743126,
+        "maxDrawdownPct": 20.728883152009413,
+        "profitFactor": 0.7480319884325483,
+        "sharpe": -0.9444410729141941,
+        "sortino": -1.3398985507661547,
+        "calmar": -0.3295100007875245,
+        "trades": 258,
+        "tradesPerYear": 86.05890410958905,
+        "winRatePct": 47.286821705426355,
+        "avgTradeNetPnl": -7.407604198484074,
+        "timeInMarketPct": 83.42846270928463,
+        "turnoverPerYear": 25.623983528889557,
+        "feesPaid": 273.9491961966038,
+        "fundingReceived": 155.21902291294793,
+        "slippageCost": 136.97453188001495,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.04943430510400575,
+        "dailySkewness": 0.6455026171028897,
+        "dailyKurtosis": 7.757555450245432
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 2
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 8774.527204513573,
+        "netProfit": -1225.4727954864265,
+        "netProfitPct": -12.254727954864265,
+        "cagrPct": -4.267012425513217,
+        "maxDrawdownPct": 16.35860150943179,
+        "profitFactor": 0.8010110193742987,
+        "sharpe": -0.7041277051848017,
+        "sortino": -1.020885067933082,
+        "calmar": -0.26084212779759985,
+        "trades": 250,
+        "tradesPerYear": 83.39041095890411,
+        "winRatePct": 44.8,
+        "avgTradeNetPnl": -4.9018911819454845,
+        "timeInMarketPct": 85.71917808219177,
+        "turnoverPerYear": 18.905010527690894,
+        "feesPaid": 204.46339386187336,
+        "fundingReceived": 95.71269216899157,
+        "slippageCost": 102.23165635131924,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.03685572854522745,
+        "dailySkewness": 0.7720563123145328,
+        "dailyKurtosis": 8.843172832661619
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 96,
+        "stopMult": 2.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 8239.568092152771,
+        "netProfit": -1760.431907847229,
+        "netProfitPct": -17.604319078472287,
+        "cagrPct": -6.254819602072348,
+        "maxDrawdownPct": 19.217661170760742,
+        "profitFactor": 0.6600539781114753,
+        "sharpe": -1.3554457359991028,
+        "sortino": -1.85379760367843,
+        "calmar": -0.32547246756483156,
+        "trades": 247,
+        "tradesPerYear": 82.38972602739726,
+        "winRatePct": 41.29554655870445,
+        "avgTradeNetPnl": -7.127254687640498,
+        "timeInMarketPct": 86.89878234398782,
+        "turnoverPerYear": 14.759884264280887,
+        "feesPaid": 157.95787486888435,
+        "fundingReceived": 74.52250008706282,
+        "slippageCost": 78.97887351373579,
+        "dailyReturnCount": 1095,
+        "dailySharpe": -0.07094727239948297,
+        "dailySkewness": 0.3595875825691668,
+        "dailyKurtosis": 7.6942139258587865
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 1
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 10364.610581013836,
+        "netProfit": 364.61058101383605,
+        "netProfitPct": 3.646105810138356,
+        "cagrPct": 1.2017169684484408,
+        "maxDrawdownPct": 15.82008970031862,
+        "profitFactor": 1.0313592659074176,
+        "sharpe": 0.1614774807013627,
+        "sortino": 0.24422385183954867,
+        "calmar": 0.07596145099128217,
+        "trades": 254,
+        "tradesPerYear": 84.72465753424657,
+        "winRatePct": 44.09448818897638,
+        "avgTradeNetPnl": 1.4354747284010647,
+        "timeInMarketPct": 83.59969558599695,
+        "turnoverPerYear": 38.104306869944494,
+        "feesPaid": 437.4547192381312,
+        "fundingReceived": 316.25189901795324,
+        "slippageCost": 218.72738780069727,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.00845211763586928,
+        "dailySkewness": 0.7868891903878609,
+        "dailyKurtosis": 8.720224172170617
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 1.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 12213.770385580092,
+        "netProfit": 2213.770385580092,
+        "netProfitPct": 22.137703855800915,
+        "cagrPct": 6.898040829534757,
+        "maxDrawdownPct": 7.89657246291071,
+        "profitFactor": 1.2797741482824894,
+        "sharpe": 0.8805671449054283,
+        "sortino": 1.3607306096774472,
+        "calmar": 0.8735487278732715,
+        "trades": 221,
+        "tradesPerYear": 73.71712328767124,
+        "winRatePct": 50.678733031674206,
+        "avgTradeNetPnl": 10.017060568235658,
+        "timeInMarketPct": 87.08904109589041,
+        "turnoverPerYear": 22.61196374490073,
+        "feesPaid": 295.20781772978916,
+        "fundingReceived": 198.90754542234353,
+        "slippageCost": 147.60400717188114,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.04609099090904644,
+        "dailySkewness": 0.6878146109111236,
+        "dailyKurtosis": 8.14529789927742
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 2
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 11106.923117299128,
+        "netProfit": 1106.9231172991276,
+        "netProfitPct": 11.069231172991278,
+        "cagrPct": 3.5638844358871324,
+        "maxDrawdownPct": 6.581943929840215,
+        "profitFactor": 1.198874258507555,
+        "sharpe": 0.6172455573674867,
+        "sortino": 0.9187648137813558,
+        "calmar": 0.5414638097613891,
+        "trades": 209,
+        "tradesPerYear": 69.71438356164384,
+        "winRatePct": 50.717703349282296,
+        "avgTradeNetPnl": 5.296282857890645,
+        "timeInMarketPct": 88.52739726027397,
+        "turnoverPerYear": 16.065923459266806,
+        "feesPaid": 205.85470349481804,
+        "fundingReceived": 116.42145959507465,
+        "slippageCost": 102.9274037187596,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.03230810908386727,
+        "dailySkewness": 0.41433219268114946,
+        "dailyKurtosis": 7.683721161998749
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 120,
+        "stopMult": 2.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 10484.793471556248,
+        "netProfit": 484.7934715562478,
+        "netProfitPct": 4.847934715562485,
+        "cagrPct": 1.5916437923517268,
+        "maxDrawdownPct": 6.87940998847349,
+        "profitFactor": 1.1076959564074658,
+        "sharpe": 0.351841335880469,
+        "sortino": 0.512937853811737,
+        "calmar": 0.23136341561537105,
+        "trades": 204,
+        "tradesPerYear": 68.04657534246576,
+        "winRatePct": 50.490196078431374,
+        "avgTradeNetPnl": 2.3764385860602,
+        "timeInMarketPct": 89.64992389649925,
+        "turnoverPerYear": 12.473506611754802,
+        "feesPaid": 154.46967114433505,
+        "fundingReceived": 108.16291855044453,
+        "slippageCost": 77.23485990557103,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.0184162172155936,
+        "dailySkewness": 0.2905250561301649,
+        "dailyKurtosis": 7.477179722455665
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 144,
+        "stopMult": 1
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 11504.709433065182,
+        "netProfit": 1504.7094330651817,
+        "netProfitPct": 15.047094330651811,
+        "cagrPct": 4.7866082736325755,
+        "maxDrawdownPct": 12.122147780537002,
+        "profitFactor": 1.125903198212055,
+        "sharpe": 0.4734783448933956,
+        "sortino": 0.7198112230946194,
+        "calmar": 0.3948647022203298,
+        "trades": 220,
+        "tradesPerYear": 73.38356164383562,
+        "winRatePct": 41.81818181818182,
+        "avgTradeNetPnl": 6.839588332114518,
+        "timeInMarketPct": 84.96955859969559,
+        "turnoverPerYear": 33.85457963192338,
+        "feesPaid": 446.53944777028875,
+        "fundingReceived": 399.78540965383667,
+        "slippageCost": 223.26979487447505,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.02478298925456232,
+        "dailySkewness": 0.6021551398437538,
+        "dailyKurtosis": 7.42134277744368
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 144,
+        "stopMult": 1.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 10076.438593193434,
+        "netProfit": 76.43859319343392,
+        "netProfitPct": 0.7643859319343305,
+        "cagrPct": 0.2543231428050907,
+        "maxDrawdownPct": 10.901535821042287,
+        "profitFactor": 1.010991364370831,
+        "sharpe": 0.07140951617967574,
+        "sortino": 0.10529064884766547,
+        "calmar": 0.023329111327065756,
+        "trades": 194,
+        "tradesPerYear": 64.71095890410959,
+        "winRatePct": 45.36082474226804,
+        "avgTradeNetPnl": 0.3940133669764115,
+        "timeInMarketPct": 86.96727549467275,
+        "turnoverPerYear": 19.509129187162003,
+        "feesPaid": 233.39496788655444,
+        "fundingReceived": 197.36364709475797,
+        "slippageCost": 116.69749310997346,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.003737744906903521,
+        "dailySkewness": 0.5366189852627925,
+        "dailyKurtosis": 7.54479410249674
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 144,
+        "stopMult": 2
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 10897.677233994491,
+        "netProfit": 897.677233994491,
+        "netProfitPct": 8.976772339944915,
+        "cagrPct": 2.9089556060296173,
+        "maxDrawdownPct": 8.294688346870629,
+        "profitFactor": 1.1805557928732529,
+        "sharpe": 0.5111024185371006,
+        "sortino": 0.7468249019335313,
+        "calmar": 0.35070101303168205,
+        "trades": 180,
+        "tradesPerYear": 60.041095890410965,
+        "winRatePct": 49.44444444444444,
+        "avgTradeNetPnl": 4.987095744413649,
+        "timeInMarketPct": 88.41324200913242,
+        "turnoverPerYear": 13.66895968736286,
+        "feesPaid": 168.7779082443403,
+        "fundingReceived": 156.32266445767303,
+        "slippageCost": 84.38899390302906,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.026752323275603434,
+        "dailySkewness": 0.12875956153810858,
+        "dailyKurtosis": 7.97529354564622
+      }
+    },
+    {
+      "parameters": {
+        "holdBars": 144,
+        "stopMult": 2.5
+      },
+      "metrics": {
+        "from": "2021-01-01T00:00:00Z",
+        "to": "2024-01-01T00:00:00Z",
+        "years": 2.9979466119096507,
+        "initialCapital": 10000,
+        "finalEquity": 10523.679634852282,
+        "netProfit": 523.6796348522821,
+        "netProfitPct": 5.236796348522832,
+        "cagrPct": 1.7171696965960326,
+        "maxDrawdownPct": 5.523304429033715,
+        "profitFactor": 1.136447879291585,
+        "sharpe": 0.37435363932880317,
+        "sortino": 0.5493304640885004,
+        "calmar": 0.3108953559701662,
+        "trades": 175,
+        "tradesPerYear": 58.37328767123288,
+        "winRatePct": 51.42857142857143,
+        "avgTradeNetPnl": 2.9924550562986596,
+        "timeInMarketPct": 89.55098934550989,
+        "turnoverPerYear": 10.723351689661188,
+        "feesPaid": 129.0735064188839,
+        "fundingReceived": 109.08569774897391,
+        "slippageCost": 64.5367775376108,
+        "dailyReturnCount": 1095,
+        "dailySharpe": 0.019594565033340425,
+        "dailySkewness": 0.3724785455546768,
+        "dailyKurtosis": 7.771807562120243
+      }
+    }
+  ]
+}

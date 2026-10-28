@@ -1,0 +1,14 @@
+Hunt cycle 7: 3 hypotheses, 4 walk-forward folds, optimizer cap 200, min 150 dev trades. Trials so far: 194.
+  funding-tilt         REJECTED at dev-baseline   Sharpe 0.37 < 0.50; walk-forward: 2 of 4 folds failed
+  ema-cross-control    REJECTED at dev-baseline   PF 0.75 < 1.10; Sharpe -0.94 < 0.50; walk-forward: 3 of 4 folds failed
+  funding-carry-tilt   REJECTED at dev-baseline   Sharpe 0.26 < 0.50; 36.7 trades/yr < 50 (110 trades)
+
+Trials: 194 -> 197. Locked OOS runs this cycle: 0.
+No champion: every hypothesis so far has been rejected.
+Report: artifacts\hunt\cycle_7\report.json
+HTML:   S:\Personal\trading-bot\artifacts\hunt\cycle_7\report.html
+
+Research run idle: hypothesis queue empty: every registered strategy has been tested.
+Cycles completed this run: 1 (7); trials 194 -> 197
+Experiments: 15 new, 0 reused from the store (254 stored in artifacts/cache/experiments.jsonl); 15 workers; 0.9s.
+Brief: artifacts\research\brief.md (~4274 tokens, estimated). Model calls made by this run: 0.

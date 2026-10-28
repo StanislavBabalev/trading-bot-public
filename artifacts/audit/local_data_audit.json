@@ -1,0 +1,40 @@
+{
+  "generatedUtc": "2026-10-26T15:00:57.3779818Z",
+  "source": "Bybit v5 public API (category=linear)",
+  "symbol": "BTCUSDT",
+  "barsFile": "data/bybit\\BTCUSDT_60.csv",
+  "fundingFile": "data/bybit\\BTCUSDT_funding.csv",
+  "bars": {
+    "schema": "open_time_ms,open,high,low,close,volume",
+    "rows": 57735,
+    "firstOpen": "2020-03-25T10:00:00Z",
+    "lastOpen": "2026-10-26T00:00:00Z",
+    "expectedBars": 57735,
+    "missingBars": 0,
+    "duplicateTimestamps": 0,
+    "outOfOrderRows": 0,
+    "invalidOhlcRows": 0,
+    "misalignedTimestamps": 0,
+    "gaps": [],
+    "windowFrom": "2021-01-01T00:00:00Z",
+    "windowTo": "2026-10-26T00:00:00Z",
+    "windowBars": 50976,
+    "windowExpectedBars": 50976,
+    "windowMissingBars": 0,
+    "windowGaps": 0
+  },
+  "funding": {
+    "schema": "time_ms,rate",
+    "rows": 7217,
+    "firstTime": "2020-03-25T16:00:00Z",
+    "lastTime": "2026-10-26T00:00:00Z",
+    "duplicateTimestamps": 0,
+    "irregularIntervals": [],
+    "windowFrom": "2021-01-01T00:00:00Z",
+    "windowTo": "2026-10-26T00:00:00Z",
+    "windowRows": 6372,
+    "meanRate": 0.00010884762241054221,
+    "minRate": -0.00214698,
+    "maxRate": 0.00375
+  }
+}

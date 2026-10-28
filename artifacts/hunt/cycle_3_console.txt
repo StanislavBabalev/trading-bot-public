@@ -1,0 +1,10 @@
+﻿Hunt cycle 3: 5 hypotheses, 4 walk-forward folds, optimizer cap 200, min 150 dev trades. Trials so far: 25.
+  donchian-breakout    REJECTED at dev-baseline   Sharpe 0.36 < 0.50; walk-forward: 3 of 4 folds failed
+  bollinger-reversion  REJECTED at dev-baseline   PF 0.85 < 1.10; Sharpe -1.09 < 0.50; max DD 38.0% > 30%; walk-forward: 2 of 4 folds failed
+  keltner-breakout     REJECTED at dev-baseline   PF 1.08 < 1.10; Sharpe 0.41 < 0.50; walk-forward: 2 of 4 folds failed
+  ts-momentum          REJECTED at dev-baseline   PF 1.04 < 1.10; Sharpe 0.25 < 0.50; max DD 31.6% > 30%; walk-forward: 2 of 4 folds failed
+  trend-pullback-rsi   REJECTED at dev-baseline   PF 0.84 < 1.10; Sharpe -0.80 < 0.50; walk-forward: 2 of 4 folds failed
+
+Trials: 25 -> 30. Locked OOS runs this cycle: 0.
+No champion: every hypothesis so far has been rejected.
+Report: artifacts\hunt\cycle_3\report.json

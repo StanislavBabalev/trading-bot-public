@@ -1,0 +1,215 @@
+{
+  "candidate": {
+    "id": "5f164250061046507e34e6cc48f78d82",
+    "identity": {
+      "strategy": "ema-cross-atr",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrLen": 14,
+        "atrMult": 6,
+        "fast": 20,
+        "longOnly": 1,
+        "slow": 100
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "ema-cross-atr",
+    "family": "trend",
+    "description": "EMA fast/slow crossover; longOnly 1 = long/flat, 0 = long/short; fixed ATR stop (atrMult 0 = off).",
+    "version": 1
+  },
+  "parameters": {
+    "fast": 20,
+    "slow": 100,
+    "longOnly": 1,
+    "atrLen": 14,
+    "atrMult": 6
+  },
+  "searchSpace": [
+    {
+      "name": "fast",
+      "min": 10,
+      "max": 120,
+      "step": 10,
+      "values": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120
+      ]
+    },
+    {
+      "name": "slow",
+      "min": 100,
+      "max": 400,
+      "step": 20,
+      "values": [
+        100,
+        120,
+        140,
+        160,
+        180,
+        200,
+        220,
+        240,
+        260,
+        280,
+        300,
+        320,
+        340,
+        360,
+        380,
+        400
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "values": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 13109.437915760185,
+    "netProfit": 3109.437915760185,
+    "netProfitPct": 31.09437915760185,
+    "cagrPct": 9.451454192681851,
+    "maxDrawdownPct": 15.025772114808225,
+    "profitFactor": 1.4877074330910134,
+    "sharpe": 0.8269376426218294,
+    "sortino": 1.567053181649419,
+    "calmar": 0.6290162076508027,
+    "trades": 167,
+    "tradesPerYear": 55.70479452054795,
+    "winRatePct": 25.149700598802394,
+    "avgTradeNetPnl": 18.619388717126878,
+    "timeInMarketPct": 47.465753424657535,
+    "turnoverPerYear": 27.130983771209927,
+    "feesPaid": 347.03624255138163,
+    "fundingReceived": -580.6719384681702,
+    "slippageCost": 173.5182897022661,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.04328389446386223,
+    "dailySkewness": 3.160102693941723,
+    "dailyKurtosis": 31.181170791129784
+  },
+  "attribution": {
+    "grossPnl": 4210.664386482005,
+    "slippageCost": 173.5182897022661,
+    "commission": 347.03624255138163,
+    "fundingReceived": -580.6719384681702,
+    "netPnl": 3109.437915760185
+  },
+  "maxBarsHeld": 1797,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 1316,
+  "lookAheadAudit": {
+    "strategy": "ema-cross-atr",
+    "parameters": {
+      "fast": 20,
+      "slow": 100,
+      "longOnly": 1,
+      "atrLen": 14,
+      "atrMult": 6
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 357,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 251,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:36.8027056Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

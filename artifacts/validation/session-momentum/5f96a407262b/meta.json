@@ -1,0 +1,189 @@
+{
+  "candidate": {
+    "id": "5f96a407262b9c0dfb50f4229bdf20cb",
+    "identity": {
+      "strategy": "session-momentum",
+      "strategyVersion": 1,
+      "parameters": {
+        "atrMult": 3,
+        "holdBars": 12,
+        "moveMult": 0.75
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "2a238825cff3412d",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "session-momentum",
+    "family": "time-of-day",
+    "description": "On the 11:00 UTC bar's close, R = close - that day's 00:00 open, S = ATR(14) x sqrt(12); long if R >= moveMult x S, short if R <= -moveMult x S (fill at the 12:00 open); exit after holdBars bars; stop at signal close -/+ atrMult x ATR.",
+    "version": 1
+  },
+  "parameters": {
+    "moveMult": 0.75,
+    "holdBars": 12,
+    "atrMult": 3
+  },
+  "searchSpace": [
+    {
+      "name": "moveMult",
+      "min": 0.5,
+      "max": 1.5,
+      "step": 0.25,
+      "values": [
+        0.5,
+        0.75,
+        1,
+        1.25,
+        1.5
+      ]
+    },
+    {
+      "name": "holdBars",
+      "min": 4,
+      "max": 12,
+      "step": 2,
+      "values": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "name": "atrMult",
+      "min": 2,
+      "max": 4,
+      "step": 0.5,
+      "values": [
+        2,
+        2.5,
+        3,
+        3.5,
+        4
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 9726.249351524553,
+    "netProfit": -273.7506484754467,
+    "netProfitPct": -2.7375064847544706,
+    "cagrPct": -0.9215856334210737,
+    "maxDrawdownPct": 16.00502838335382,
+    "profitFactor": 0.956080654717109,
+    "sharpe": -0.08926277674983267,
+    "sortino": -0.14859906106046558,
+    "calmar": -0.057581005878101256,
+    "trades": 197,
+    "tradesPerYear": 65.71164383561644,
+    "winRatePct": 46.192893401015226,
+    "avgTradeNetPnl": -1.389597200382874,
+    "timeInMarketPct": 7.846270928462709,
+    "turnoverPerYear": 53.54410924738048,
+    "feesPaid": 586.6653531162569,
+    "fundingReceived": 34.30816951896438,
+    "slippageCost": 293.33269943569786,
+    "dailyReturnCount": 1095,
+    "dailySharpe": -0.0046722272747691945,
+    "dailySkewness": 2.8300668227502213,
+    "dailyKurtosis": 28.53040550990229
+  },
+  "attribution": {
+    "grossPnl": 571.9392345575648,
+    "slippageCost": 293.33269943569786,
+    "commission": 586.6653531162569,
+    "fundingReceived": 34.30816951896438,
+    "netPnl": -273.7506484754467
+  },
+  "maxBarsHeld": 13,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 125,
+  "lookAheadAudit": {
+    "strategy": "session-momentum",
+    "parameters": {
+      "moveMult": 0.75,
+      "holdBars": 12,
+      "atrMult": 3
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 418,
+    "featureSeriesChecked": 0,
+    "fundingTradesChecked": 300,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T06:49:42.6287814Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}

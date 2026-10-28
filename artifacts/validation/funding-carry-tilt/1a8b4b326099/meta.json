@@ -1,0 +1,174 @@
+{
+  "candidate": {
+    "id": "1a8b4b32609908e43fd86d2fe33bb08c",
+    "identity": {
+      "strategy": "funding-carry-tilt",
+      "strategyVersion": 1,
+      "parameters": {
+        "band": 0.3,
+        "stopMult": 2
+      },
+      "symbol": "BTCUSDT",
+      "intervalMinutes": 60,
+      "devFromMs": 1609459200000,
+      "devToMs": 1704067200000,
+      "initialCapital": 10000,
+      "costs": {
+        "commissionRate": 0.0004,
+        "slippageRate": 0.0002,
+        "fundingScale": 1,
+        "adverseFundingRate": null
+      },
+      "fundingEnabled": true,
+      "sizing": {
+        "mode": "RiskPerTrade",
+        "fraction": 1,
+        "riskPerTrade": 0.01,
+        "volTargetAnnual": 0.2,
+        "volLookbackBars": 720
+      },
+      "risk": {
+        "maxLeverage": 1,
+        "maxDrawdownStop": null,
+        "dailyLossStop": null
+      },
+      "engineVersion": "1",
+      "codeFingerprint": "a7e8044f07714b99",
+      "dataFingerprint": "EE99272434D525C87AD96BD914CE6F9F"
+    }
+  },
+  "strategy": {
+    "name": "funding-carry-tilt",
+    "family": "funding-carry",
+    "description": "Funding alone, no price timing: on each daily close, short when the 3-day funding rank >= 0.5 + band, long when <= 0.5 - band, else flat; re-evaluated daily. Stop stopMult x dATR.",
+    "version": 1
+  },
+  "parameters": {
+    "band": 0.3,
+    "stopMult": 2
+  },
+  "intervalMinutes": 60,
+  "searchSpace": [
+    {
+      "name": "band",
+      "min": 0,
+      "max": 0.4,
+      "step": 0.1,
+      "values": [
+        0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "name": "stopMult",
+      "min": 1,
+      "max": 3,
+      "step": 0.5,
+      "values": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ]
+    }
+  ],
+  "window": {
+    "devFrom": "2021-01-01T00:00:00Z",
+    "devTo": "2024-01-01T00:00:00Z",
+    "devFromMs": 1609459200000,
+    "devToMs": 1704067200000
+  },
+  "data": {
+    "bars": {
+      "path": "data/bybit/BTCUSDT_60.csv",
+      "sha256": "3300870521b4d1d1aafe15fea13192df1d84cde6998f5c7e30c5c20c354b7ed0"
+    },
+    "funding": {
+      "path": "data/bybit/BTCUSDT_funding.csv",
+      "sha256": "5f8e125edb6e13a208af80ce208c596d10b711d6115f403ba0542e1992978bfc"
+    }
+  },
+  "config": {
+    "path": "config/hunt.json",
+    "sha256": "235800a17cae50bd5bed2f7e3e56fdc4e31767972df9f9828f49736a84bbf1f8"
+  },
+  "metrics": {
+    "from": "2021-01-01T00:00:00Z",
+    "to": "2024-01-01T00:00:00Z",
+    "years": 2.9979466119096507,
+    "initialCapital": 10000,
+    "finalEquity": 10294.595041721497,
+    "netProfit": 294.5950417214972,
+    "netProfitPct": 2.945950417214971,
+    "cagrPct": 0.9731646659958848,
+    "maxDrawdownPct": 4.788143398447003,
+    "profitFactor": 1.1098681041085736,
+    "sharpe": 0.25564119917656586,
+    "sortino": 0.3925846649925424,
+    "calmar": 0.20324467857656958,
+    "trades": 110,
+    "tradesPerYear": 36.69178082191781,
+    "winRatePct": 43.63636363636363,
+    "avgTradeNetPnl": 2.6781367429226854,
+    "timeInMarketPct": 46.15677321156773,
+    "turnoverPerYear": 8.58597999718316,
+    "feesPaid": 104.33446962430128,
+    "fundingReceived": 191.9170854215566,
+    "slippageCost": 52.16724517933752,
+    "dailyReturnCount": 1095,
+    "dailySharpe": 0.013380871924866422,
+    "dailySkewness": 1.2552256097177494,
+    "dailyKurtosis": 17.192995118173645
+  },
+  "attribution": {
+    "grossPnl": 259.1796711035777,
+    "slippageCost": 52.16724517933752,
+    "commission": 104.33446962430128,
+    "fundingReceived": 191.9170854215566,
+    "netPnl": 294.5950417214972
+  },
+  "maxBarsHeld": 1369,
+  "fundingSpikes": [
+    {
+      "month": "2021-05",
+      "meanAbsRate": 0.000325209139784946
+    },
+    {
+      "month": "2022-06",
+      "meanAbsRate": 7.742166666666666E-05
+    },
+    {
+      "month": "2022-11",
+      "meanAbsRate": 0.0001545715555555555
+    }
+  ],
+  "registeredTrialsForStrategy": 25,
+  "lookAheadAudit": {
+    "strategy": "funding-carry-tilt",
+    "parameters": {
+      "band": 0.3,
+      "stopMult": 2
+    },
+    "seeds": 2,
+    "comparisons": 8,
+    "tradesBeforeCut": 449,
+    "featureSeriesChecked": 16,
+    "fundingTradesChecked": 312,
+    "verdict": "pass",
+    "problems": []
+  },
+  "exportedUtc": "2026-10-28T07:59:48.0212425Z",
+  "files": {
+    "equity": "equity.csv",
+    "trades": "trades.csv",
+    "stress": "stress.json",
+    "perturbations": "perturbations.json",
+    "selection": "selection.json",
+    "selectionDaily": "selection_daily.csv",
+    "selectionTrades": "selection_trades.csv"
+  }
+}
